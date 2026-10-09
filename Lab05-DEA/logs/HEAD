@@ -1,0 +1,9 @@
+0000000000000000000000000000000000000000 77c9e607cd043bfeeb59d4a13a4fba1985aa4253 MFC <michael.fernandez.c@tecsup.edu.pe> 1790916529 -0500	commit (initial): Initial commit: Lab05-DEA - Django movies admin and public view
+77c9e607cd043bfeeb59d4a13a4fba1985aa4253 77c9e607cd043bfeeb59d4a13a4fba1985aa4253 MFC <michael.fernandez.c@tecsup.edu.pe> 1790916684 -0500	checkout: moving from main to master
+77c9e607cd043bfeeb59d4a13a4fba1985aa4253 95fc1596b9b99dd677732014e0219a54627607fa MFC <michael.fernandez.c@tecsup.edu.pe> 1791518484 -0500	commit: Add news app with models, views, templates, urls, admin, static files and media config
+95fc1596b9b99dd677732014e0219a54627607fa f2a6cc3807056d010decc21cd189f7735493c485 MFC <michael.fernandez.c@tecsup.edu.pe> 1791518709 -0500	commit: Fix TEMPLATES DIRS to include project templates
+f2a6cc3807056d010decc21cd189f7735493c485 cd9a8cc082409450984c9eef5425be6a976e045e MFC <michael.fernandez.c@tecsup.edu.pe> 1791519749 -0500	commit: Update news models/templates to match spec (slug, photo, published_at required, modern UI)
+cd9a8cc082409450984c9eef5425be6a976e045e 59c0898b15f31b599610b7915fbaadf0d6669b44 MFC <michael.fernandez.c@tecsup.edu.pe> 1791520598 -0500	commit: Enhance news UI: modern 2-column layout with badges, sidebar categories, FontAwesome icons, improved styling
+59c0898b15f31b599610b7915fbaadf0d6669b44 fa74ddeb155175f877294bde4d71b6fee545a060 MFC <michael.fernandez.c@tecsup.edu.pe> 1791520639 -0500	commit: Add XSS documentation and ensure admin config per spec
+fa74ddeb155175f877294bde4d71b6fee545a060 0000000000000000000000000000000000000000 MFC <michael.fernandez.c@tecsup.edu.pe> 1791529187 -0500	Branch: renamed refs/heads/master to refs/heads/main
+0000000000000000000000000000000000000000 fa74ddeb155175f877294bde4d71b6fee545a060 MFC <michael.fernandez.c@tecsup.edu.pe> 1791529187 -0500	Branch: renamed refs/heads/master to refs/heads/main
