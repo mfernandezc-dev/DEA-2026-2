@@ -1,0 +1,5 @@
+{
+  "database": "<PROJECT_ROOT>\\db.sqlite3",
+  "backup": "<PROJECT_ROOT>\\.venv\\laboratorio_inicial.sqlite3",
+  "logical_sha256": "ed7e9f0478113f5e2ad654e16302f387a1682e7fdaf6088ae15919a32e1ec14b"
+}

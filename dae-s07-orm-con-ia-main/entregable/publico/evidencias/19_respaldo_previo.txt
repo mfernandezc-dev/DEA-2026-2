@@ -1,0 +1,22 @@
+{
+  "started_utc": "2026-10-16T03:18:47.629092+00:00",
+  "finished_utc": "2026-10-16T03:18:48.532038+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "entregable/herramientas/respaldo.py",
+    "crear"
+  ],
+  "exit_code": 0,
+  "evidence": "19_respaldo_previo.txt"
+}
+
+--- REAL OUTPUT ---
+{
+  "database": "<PROJECT_ROOT>\\db.sqlite3",
+  "backup": "<PROJECT_ROOT>\\.venv\\laboratorio_inicial.sqlite3",
+  "logical_sha256": "ed7e9f0478113f5e2ad654e16302f387a1682e7fdaf6088ae15919a32e1ec14b"
+}
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

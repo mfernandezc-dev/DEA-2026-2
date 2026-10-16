@@ -1,0 +1,36 @@
+{
+  "started_utc": "2026-10-16T03:18:32.290100+00:00",
+  "finished_utc": "2026-10-16T03:18:33.059757+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+    "manage.py",
+    "agent",
+    "--intent",
+    "{\"action\": \"posts_per_author\", \"args\": {}}"
+  ],
+  "exit_code": 0,
+  "evidence": "18_1_intencion.txt"
+}
+
+--- REAL OUTPUT ---
+{
+  "status": "ok",
+  "untrusted_data": [
+    {
+      "author": "Beto Salas",
+      "total": 6
+    },
+    {
+      "author": "Ana Quispe",
+      "total": 6
+    },
+    {
+      "author": "Carla Rojas",
+      "total": 3
+    }
+  ]
+}
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

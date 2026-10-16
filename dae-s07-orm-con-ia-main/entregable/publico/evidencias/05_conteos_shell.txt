@@ -1,0 +1,24 @@
+{
+  "started_utc": "2026-10-16T03:15:20.375284+00:00",
+  "finished_utc": "2026-10-16T03:15:21.074134+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "manage.py",
+    "shell",
+    "-c",
+    "from blog.models import Author, Post, Comment, Category, Tag, Profile; print({model.__name__: model.objects.count() for model in (Author, Post, Comment, Category, Tag, Profile)}); print('Published:', Post.objects.filter(published=True).count()); print('Database:', __import__('django.conf', fromlist=['settings']).settings.DATABASES['default'])"
+  ],
+  "exit_code": 0,
+  "evidence": "05_conteos_shell.txt"
+}
+
+--- REAL OUTPUT ---
+18 objects imported automatically (use -v 2 for details).
+
+{'Author': 4, 'Post': 15, 'Comment': 23, 'Category': 4, 'Tag': 5, 'Profile': 4}
+Published: 11
+Database: {'ENGINE': 'django.db.backends.sqlite3', 'NAME': WindowsPath('<PROJECT_ROOT>/db.sqlite3'), 'ATOMIC_REQUESTS': False, 'AUTOCOMMIT': True, 'CONN_MAX_AGE': 0, 'CONN_HEALTH_CHECKS': False, 'OPTIONS': {}, 'TIME_ZONE': None, 'USER': '', 'PASSWORD': '', 'HOST': '', 'PORT': '', 'TEST': {'CHARSET': None, 'COLLATION': None, 'MIGRATE': True, 'MIRROR': None, 'NAME': None}}
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

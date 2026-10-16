@@ -1,0 +1,19 @@
+{
+  "started_utc": "2026-10-16T04:25:02.993955+00:00",
+  "finished_utc": "2026-10-16T04:25:04.145997+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "-B",
+    "manage.py",
+    "check"
+  ],
+  "exit_code": 0,
+  "evidence": "64_check_final.txt"
+}
+
+--- REAL OUTPUT ---
+System check identified no issues (0 silenced).
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

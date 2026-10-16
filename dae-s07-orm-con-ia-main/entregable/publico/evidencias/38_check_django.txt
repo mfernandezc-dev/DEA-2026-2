@@ -1,0 +1,18 @@
+{
+  "started_utc": "2026-10-16T03:27:59.382934+00:00",
+  "finished_utc": "2026-10-16T03:28:00.677106+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "manage.py",
+    "check"
+  ],
+  "exit_code": 0,
+  "evidence": "38_check_django.txt"
+}
+
+--- REAL OUTPUT ---
+System check identified no issues (0 silenced).
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

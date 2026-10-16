@@ -1,0 +1,18 @@
+{
+  "intent": {
+    "action": "comments_of_post",
+    "args": {
+      "post_id": 5
+    }
+  },
+  "approval": null,
+  "result": {
+    "status": "ok",
+    "untrusted_data": [
+      {
+        "author_name": "Lector 1",
+        "text": "Comentario 1 sobre «Reseña: festival de cine andino»"
+      }
+    ]
+  }
+}

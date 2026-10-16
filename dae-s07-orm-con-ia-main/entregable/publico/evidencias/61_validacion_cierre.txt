@@ -1,0 +1,25 @@
+{
+  "started_utc": "2026-10-16T04:23:15.656022+00:00",
+  "finished_utc": "2026-10-16T04:23:16.511333+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "-B",
+    "entregable/herramientas/validacion_final.py"
+  ],
+  "exit_code": 1,
+  "evidence": "61_validacion_cierre.txt"
+}
+
+--- REAL OUTPUT ---
+Traceback (most recent call last):
+  File "<PROJECT_ROOT>\entregable\herramientas\validacion_final.py", line 167, in <module>
+    audit()
+    ~~~~~^^
+  File "<PROJECT_ROOT>\entregable\herramientas\validacion_final.py", line 116, in audit
+    assert all(len(line) <= 79 and "\t" not in line for line in source.splitlines())
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

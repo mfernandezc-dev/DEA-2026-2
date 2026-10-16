@@ -1,0 +1,18 @@
+{
+  "started_utc": "2026-10-16T03:19:55.500645+00:00",
+  "finished_utc": "2026-10-16T03:19:56.237130+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "manage.py",
+    "seed_blog"
+  ],
+  "exit_code": 0,
+  "evidence": "30_seed_restauracion2.txt"
+}
+
+--- REAL OUTPUT ---
+Listo: 4 autores, 15 artículos, 23 comentarios.
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

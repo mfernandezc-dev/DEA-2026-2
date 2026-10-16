@@ -1,0 +1,21 @@
+{
+  "started_utc": "2026-10-16T03:27:59.498792+00:00",
+  "finished_utc": "2026-10-16T03:27:59.785835+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "-m",
+    "compileall",
+    "-q",
+    "blog",
+    "config",
+    "entregable/herramientas"
+  ],
+  "exit_code": 0,
+  "evidence": "44_sintaxis.txt"
+}
+
+--- REAL OUTPUT ---
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

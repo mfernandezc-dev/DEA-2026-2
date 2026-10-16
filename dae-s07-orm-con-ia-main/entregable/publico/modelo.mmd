@@ -1,0 +1,47 @@
+erDiagram
+    Author ||--o| Profile : has
+    Author ||--o{ Post : writes
+    Category |o--o{ Post : classifies
+    Post ||--o{ Comment : receives
+    Post ||--o{ PostTags : links
+    Tag ||--o{ PostTags : links
+
+    Author {
+        bigint id PK
+        varchar name
+    }
+    Profile {
+        bigint id PK
+        bigint author_id FK,UK
+        varchar country
+        text bio
+    }
+    Category {
+        bigint id PK
+        varchar name UK
+    }
+    Tag {
+        bigint id PK
+        varchar name UK
+    }
+    Post {
+        bigint id PK
+        varchar title
+        text body
+        bigint author_id FK
+        bigint category_id FK "nullable"
+        boolean published
+        date published_at "nullable"
+    }
+    Comment {
+        bigint id PK
+        bigint post_id FK
+        varchar author_name
+        text text
+        datetime created_at
+    }
+    PostTags {
+        bigint id PK
+        bigint post_id FK
+        bigint tag_id FK
+    }

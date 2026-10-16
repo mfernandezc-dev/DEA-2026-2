@@ -1,0 +1,17 @@
+{
+  "started_utc": "2026-10-16T03:27:42.006391+00:00",
+  "finished_utc": "2026-10-16T03:27:42.082145+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "entregable/herramientas/generar_anexos.py"
+  ],
+  "exit_code": 0,
+  "evidence": "43_anexos.txt"
+}
+
+--- REAL OUTPUT ---
+Created CONSULTAS_ORM.md and SQL_DUELO.md from captured evidence.
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

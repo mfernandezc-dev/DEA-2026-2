@@ -1,0 +1,19 @@
+{
+  "started_utc": "2026-10-16T03:27:59.480296+00:00",
+  "finished_utc": "2026-10-16T03:28:00.481812+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "-m",
+    "pip",
+    "check"
+  ],
+  "exit_code": 0,
+  "evidence": "36_pip_check.txt"
+}
+
+--- REAL OUTPUT ---
+No broken requirements found.
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

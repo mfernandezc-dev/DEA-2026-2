@@ -1,0 +1,22 @@
+{
+  "started_utc": "2026-10-16T03:19:35.528628+00:00",
+  "finished_utc": "2026-10-16T03:19:36.279594+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "manage.py",
+    "shell",
+    "-c",
+    "from blog.models import Comment; comment = Comment.objects.create(post_id=5, author_name='Prueba S07', text='Comentario temporal para invalidar el plan'); print({'id': comment.pk, 'post_id': comment.post_id, 'comments_on_5': Comment.objects.filter(post_id=5).count(), 'comments_total': Comment.objects.count()})"
+  ],
+  "exit_code": 0,
+  "evidence": "27_comentario_intermedio.txt"
+}
+
+--- REAL OUTPUT ---
+18 objects imported automatically (use -v 2 for details).
+
+{'id': 24, 'post_id': 5, 'comments_on_5': 2, 'comments_total': 24}
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

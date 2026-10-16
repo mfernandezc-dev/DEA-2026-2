@@ -1,0 +1,19 @@
+{
+  "started_utc": "2026-10-16T04:23:27.847514+00:00",
+  "finished_utc": "2026-10-16T04:23:27.912635+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "-B",
+    "-c",
+    "from pathlib import Path; files=['blog/duel/team.py','blog/queries.py']; print([(name, number, len(line), line) for name in files for number, line in enumerate(Path(name).read_text(encoding='utf-8').splitlines(), 1) if len(line)>79 or '\\t' in line])"
+  ],
+  "exit_code": 0,
+  "evidence": "62_diagnostico_estilo.txt"
+}
+
+--- REAL OUTPUT ---
+[('blog/queries.py', 6, 80, '    # Join the single author and fetch all many-to-many tags in one extra query.')]
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

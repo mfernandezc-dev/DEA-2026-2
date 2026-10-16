@@ -1,0 +1,88 @@
+{
+  "counts": {
+    "Author": 4,
+    "Profile": 4,
+    "Post": 15,
+    "Comment": 23,
+    "Category": 4,
+    "Tag": 5
+  },
+  "matches_seed": true,
+  "posts": [
+    {
+      "id": 1,
+      "title": "Introducción al ORM de Django",
+      "comments": 6
+    },
+    {
+      "id": 2,
+      "title": "Managers propios paso a paso",
+      "comments": 4
+    },
+    {
+      "id": 3,
+      "title": "QuerySets perezosos",
+      "comments": 3
+    },
+    {
+      "id": 4,
+      "title": "El problema de las N+1 consultas",
+      "comments": 2
+    },
+    {
+      "id": 5,
+      "title": "Reseña: festival de cine andino",
+      "comments": 1
+    },
+    {
+      "id": 6,
+      "title": "Poesía en la ciudad",
+      "comments": 0
+    },
+    {
+      "id": 7,
+      "title": "Final del torneo regional",
+      "comments": 2
+    },
+    {
+      "id": 8,
+      "title": "Opinión: ¿vale la pena aprender SQL?",
+      "comments": 2
+    },
+    {
+      "id": 9,
+      "title": "Notas sobre pruebas en Django",
+      "comments": 0
+    },
+    {
+      "id": 10,
+      "title": "Entrevista a una desarrolladora",
+      "comments": 1
+    },
+    {
+      "id": 11,
+      "title": "Guía de despliegue",
+      "comments": 2
+    },
+    {
+      "id": 12,
+      "title": "Borrador: migraciones",
+      "comments": 0
+    },
+    {
+      "id": 13,
+      "title": "Borrador: señales",
+      "comments": 0
+    },
+    {
+      "id": 14,
+      "title": "Borrador: reseña de un libro",
+      "comments": 0
+    },
+    {
+      "id": 15,
+      "title": "Borrador: columna semanal",
+      "comments": 0
+    }
+  ]
+}

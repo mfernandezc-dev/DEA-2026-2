@@ -1,0 +1,23 @@
+{
+  "started_utc": "2026-10-16T03:19:05.944395+00:00",
+  "finished_utc": "2026-10-16T03:19:06.657182+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+    "manage.py",
+    "agent",
+    "--intent",
+    "{\"action\": \"comments_of_post\", \"args\": {\"post_id\": 5}}"
+  ],
+  "exit_code": 0,
+  "evidence": "23_comentarios5_despues.txt"
+}
+
+--- REAL OUTPUT ---
+{
+  "status": "ok",
+  "untrusted_data": []
+}
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

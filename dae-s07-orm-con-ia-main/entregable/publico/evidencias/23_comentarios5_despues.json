@@ -1,0 +1,13 @@
+{
+  "intent": {
+    "action": "comments_of_post",
+    "args": {
+      "post_id": 5
+    }
+  },
+  "approval": null,
+  "result": {
+    "status": "ok",
+    "untrusted_data": []
+  }
+}

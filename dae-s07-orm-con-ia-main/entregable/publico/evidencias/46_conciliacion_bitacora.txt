@@ -1,0 +1,40 @@
+{
+  "started_utc": "2026-10-16T04:15:18.657385+00:00",
+  "finished_utc": "2026-10-16T04:15:18.769401+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "-B",
+    "entregable/herramientas/conciliar_bitacora.py"
+  ],
+  "exit_code": 0,
+  "evidence": "46_conciliacion_bitacora.txt"
+}
+
+--- REAL OUTPUT ---
+{
+  "reconciled_utc": "2026-10-16T04:15:18.759558+00:00",
+  "source": "12_duelo_resuelto.txt",
+  "source_sha256": "b3d5168a32b95a06f3d504a272f57e2414b54bf26bd5f69b608803f18cde13f6",
+  "ledger_sha256_before": "6ac10a23ceb9457a44c9c841f11907c3508527cede174d08e1968571524c2631",
+  "ledger_sha256_after": "7700be87547b3f4c3c2fd1f5ecbeed5290d4a7c4e25e78086e8109df0ecdad5f",
+  "original_metadata": {
+    "started_utc": "2026-10-16T03:16:58.800074+00:00",
+    "finished_utc": "2026-10-16T03:16:59.618691+00:00",
+    "cwd": "<PROJECT_ROOT>",
+    "argv": [
+      ".venv/Scripts/python.exe",
+      "manage.py",
+      "duel"
+    ],
+    "exit_code": 0,
+    "evidence": "12_duelo_resuelto.txt"
+  },
+  "metadata_appended": true,
+  "original_command_rerun": false,
+  "original_transcript_modified": false,
+  "reason": "Metadata missing from ledger; authentic TXT preserved."
+}
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

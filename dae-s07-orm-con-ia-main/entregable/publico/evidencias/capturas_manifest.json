@@ -1,0 +1,124 @@
+{
+  "method": "Real browser captures; private paths removed before recapture",
+  "captures": [
+    {
+      "image": "capturas/portada.png",
+      "kind": "original_live_http",
+      "source": "http://127.0.0.1:8000/",
+      "captured_utc": "2026-10-16T04:17:51.077456+00:00",
+      "original_image_sha256": "f84fe23c3442f2e63483b16800830218df3bacb3e9bfb53bb34e109a1e643462",
+      "sha256": "f84fe23c3442f2e63483b16800830218df3bacb3e9bfb53bb34e109a1e643462",
+      "width": 1600,
+      "height": 1800
+    },
+    {
+      "image": "capturas/admin_login.png",
+      "kind": "original_live_http",
+      "source": "http://127.0.0.1:8000/admin/",
+      "captured_utc": "2026-10-16T04:17:51.781769+00:00",
+      "original_image_sha256": "8db47e8448b2a843bab3ac5d95cfeb05d9bbcf7afbf2e3c7818a8c2bd0ea336b",
+      "sha256": "8db47e8448b2a843bab3ac5d95cfeb05d9bbcf7afbf2e3c7818a8c2bd0ea336b",
+      "width": 1600,
+      "height": 1000
+    },
+    {
+      "image": "capturas/duelo_equipo.png",
+      "kind": "browser_of_redacted_transcript",
+      "source": "evidencias/48_duelo_cierre.txt",
+      "source_sha256": "8caa7441e7ea898d516e1ce304580727c53d4a89e951a9e8816667f58a7561f5",
+      "captured_utc": "2026-10-16T04:48:02.312362+00:00",
+      "lab_command_reexecuted": false,
+      "sha256": "e211b837bcb9c22c023a0a696ebc7bc29eaf77d3999dcf66e6965b1aaa4a255d",
+      "width": 1600,
+      "height": 1400
+    },
+    {
+      "image": "capturas/duelo_ia.png",
+      "kind": "browser_of_redacted_transcript",
+      "source": "evidencias/49_duelo_ia_cierre.txt",
+      "source_sha256": "d9891fc6a6917792714bfdfce3c62b2827264c03721bded25059cc2e326aa3b7",
+      "captured_utc": "2026-10-16T04:48:03.069569+00:00",
+      "lab_command_reexecuted": false,
+      "sha256": "8c17e709e9ff00b1f44c2365970923e8044301c935019014e078862ba131e67e",
+      "width": 1600,
+      "height": 1800
+    },
+    {
+      "image": "capturas/n1_antes.png",
+      "kind": "browser_of_redacted_transcript",
+      "source": "evidencias/07_n1_antes_test.txt",
+      "source_sha256": "39657301384d09e2955a4997bd68bc2a76063cfb22652d497c33b0c2082eed79",
+      "captured_utc": "2026-10-16T04:48:03.878048+00:00",
+      "lab_command_reexecuted": false,
+      "sha256": "a2741dc2a00417d5fd3fcc3a28821bf1193ff3dca43e36de9a760c7cf2f30156",
+      "width": 1600,
+      "height": 2600
+    },
+    {
+      "image": "capturas/n1_despues.png",
+      "kind": "browser_of_redacted_transcript",
+      "source": "evidencias/50_portada_test_cierre.txt",
+      "source_sha256": "eac3ff072c7cbd2bab4b54f121f725daabd67187aa5d6c0fe730eb2455a33c1f",
+      "captured_utc": "2026-10-16T04:48:04.583468+00:00",
+      "lab_command_reexecuted": false,
+      "sha256": "96939ca0848423e6fbfa244db085c05d4709469dafc4a53c6081f0fb3ffa01b4",
+      "width": 1600,
+      "height": 2000
+    },
+    {
+      "image": "capturas/suite_completa.png",
+      "kind": "browser_of_redacted_transcript",
+      "source": "evidencias/51_suite_cierre.txt",
+      "source_sha256": "c943af715cfbf4be48d8dbedeace67592e6876754f9e0afbd6374a336d53e940",
+      "captured_utc": "2026-10-16T04:48:05.647083+00:00",
+      "lab_command_reexecuted": false,
+      "sha256": "1e99a47adeb50f94a40eed6960a5bc1c1ecbb572274d5cd5c6d093aae7927c3a",
+      "width": 1600,
+      "height": 2600
+    },
+    {
+      "image": "capturas/agente_intenciones.png",
+      "kind": "browser_of_redacted_transcript",
+      "source": "evidencias/57_intenciones_cierre.txt",
+      "source_sha256": "f01436538ca293d5d75f9c44ec25b36cdbff9739ecc3c993ddc40749541cf92b",
+      "captured_utc": "2026-10-16T04:48:06.378561+00:00",
+      "lab_command_reexecuted": false,
+      "sha256": "84f1bc58ef5f9e0b396d71dd84eb394516f1313d505924fd70e5b42c63d166a3",
+      "width": 1600,
+      "height": 3200
+    },
+    {
+      "image": "capturas/plan_aplicado.png",
+      "kind": "browser_of_redacted_transcript",
+      "source": "evidencias/22_aprobacion5.txt",
+      "source_sha256": "bf21112eeda7100b321d91be38ee9b4aaf975deed97b6083a21ef936f2e7d77e",
+      "captured_utc": "2026-10-16T04:48:07.012815+00:00",
+      "lab_command_reexecuted": false,
+      "sha256": "0771008abe3c06cd833c23bd88f402dbac30c47c1345edea5af033ecaea5fb13",
+      "width": 1600,
+      "height": 1400
+    },
+    {
+      "image": "capturas/plan_obsoleto.png",
+      "kind": "browser_of_redacted_transcript",
+      "source": "evidencias/28_aprobacion_obsoleta.txt",
+      "source_sha256": "97c5e6e3f62402e3a575637420e5687a541dd61aec0bd5e9423b357f112c86fc",
+      "captured_utc": "2026-10-16T04:48:07.752961+00:00",
+      "lab_command_reexecuted": false,
+      "sha256": "fec92c223559fb4937f81bac0bfc89fd3018e851bba830c51ed57a1fcd55b27d",
+      "width": 1600,
+      "height": 1400
+    },
+    {
+      "image": "capturas/restauracion.png",
+      "kind": "browser_of_redacted_transcript",
+      "source": "evidencias/31_restauracion_exacta2.txt",
+      "source_sha256": "98b001545f050d6a193e2d0386027ef0303790d252e88fd9f99da12a9ef294d9",
+      "captured_utc": "2026-10-16T04:48:08.463561+00:00",
+      "lab_command_reexecuted": false,
+      "sha256": "b2d64d8040f181c3c65621880ed50801563bb17b87c8e8243dd54579093e2ec6",
+      "width": 1600,
+      "height": 1600
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "started_utc": "2026-10-16T03:29:23.229704+00:00",
+  "finished_utc": "2026-10-16T03:29:23.297918+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "-c",
+    "from pathlib import Path; import re; root=Path('entregable'); missing=[(str(p), target) for p in root.glob('*.md') for target in re.findall(r'\\]\\(([^)#]+)(?:#[^)]*)?\\)', p.read_text(encoding='utf-8')) if not target.startswith(('http:', 'https:')) and not (p.parent/target).exists()]; print('Missing local links:', missing); assert not missing; print('Markdown files:', len(list(root.glob('*.md')))); print('Evidence TXT before this transcript:', len(list((root/'evidencias').glob('*.txt'))))"
+  ],
+  "exit_code": 0,
+  "evidence": "45_revision_documental.txt"
+}
+
+--- REAL OUTPUT ---
+Missing local links: []
+Markdown files: 5
+Evidence TXT before this transcript: 49
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

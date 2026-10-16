@@ -1,0 +1,32 @@
+{
+  "started_utc": "2026-10-16T03:19:49.162879+00:00",
+  "finished_utc": "2026-10-16T03:19:49.865823+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+    "manage.py",
+    "agent",
+    "--intent",
+    "{\"action\": \"comments_of_post\", \"args\": {\"post_id\": 5}}"
+  ],
+  "exit_code": 0,
+  "evidence": "29_verificacion_no_borrado.txt"
+}
+
+--- REAL OUTPUT ---
+{
+  "status": "ok",
+  "untrusted_data": [
+    {
+      "author_name": "Lector 1",
+      "text": "Comentario 1 sobre «Reseña: festival de cine andino»"
+    },
+    {
+      "author_name": "Prueba S07",
+      "text": "Comentario temporal para invalidar el plan"
+    }
+  ]
+}
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

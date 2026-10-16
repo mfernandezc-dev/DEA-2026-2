@@ -1,0 +1,18 @@
+{
+  "started_utc": "2026-10-16T03:14:10.019345+00:00",
+  "finished_utc": "2026-10-16T03:14:18.290574+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    "python",
+    "-m",
+    "venv",
+    ".venv"
+  ],
+  "exit_code": 0,
+  "evidence": "01_venv.txt"
+}
+
+--- REAL OUTPUT ---
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

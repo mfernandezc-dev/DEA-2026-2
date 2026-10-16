@@ -1,0 +1,39 @@
+{
+  "started_utc": "2026-10-16T03:19:00.322638+00:00",
+  "finished_utc": "2026-10-16T03:19:01.065551+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+    "manage.py",
+    "agent",
+    "--intent",
+    "{\"action\": \"delete_comments_of_post\", \"args\": {\"post_id\": 5}}",
+    "--approve",
+    "4d7ffe2c0e99"
+  ],
+  "exit_code": 0,
+  "evidence": "22_aprobacion5.txt"
+}
+
+--- REAL OUTPUT ---
+{
+  "status": "applied",
+  "plan": {
+    "action": "delete_comments_of_post",
+    "args": {
+      "post_id": 5
+    },
+    "details": {
+      "affected_comment_ids": [
+        16
+      ]
+    },
+    "plan_hash": "4d7ffe2c0e99"
+  },
+  "result": {
+    "deleted": 1
+  }
+}
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

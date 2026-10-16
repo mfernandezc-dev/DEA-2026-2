@@ -1,0 +1,28 @@
+{
+  "started_utc": "2026-10-16T04:17:50.092645+00:00",
+  "finished_utc": "2026-10-16T04:17:57.997045+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "-B",
+    "entregable/herramientas/capturar_navegador.py"
+  ],
+  "exit_code": 0,
+  "evidence": "59_capturas_reales.txt"
+}
+
+--- REAL OUTPUT ---
+Captured portada.png: 1600x1800, 76171 bytes
+Captured admin_login.png: 1600x1000, 15672 bytes
+Captured duelo_equipo.png: 1600x1400, 37912 bytes
+Captured duelo_ia.png: 1600x1800, 53527 bytes
+Captured n1_antes.png: 1600x2600, 150672 bytes
+Captured n1_despues.png: 1600x2000, 76262 bytes
+Captured suite_completa.png: 1600x2600, 139728 bytes
+Captured agente_intenciones.png: 1600x3200, 125452 bytes
+Captured plan_aplicado.png: 1600x1400, 32101 bytes
+Captured plan_obsoleto.png: 1600x1400, 34038 bytes
+Captured restauracion.png: 1600x1600, 33022 bytes
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

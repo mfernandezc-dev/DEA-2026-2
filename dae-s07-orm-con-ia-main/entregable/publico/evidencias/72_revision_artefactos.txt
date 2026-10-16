@@ -1,0 +1,19 @@
+{
+  "started_utc": "2026-10-16T04:26:40.366830+00:00",
+  "finished_utc": "2026-10-16T04:26:40.482022+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "-B",
+    "-c",
+    "from pathlib import Path; import json, re; root=Path('entregable'); evidence=root/'evidencias'; missing=[(str(p), target) for p in root.glob('*.md') for target in re.findall(r'\\]\\(([^)#]+)(?:#[^)]*)?\\)', p.read_text(encoding='utf-8')) if not target.startswith(('http:', 'https:')) and not (p.parent/target).exists()]; ledger=[json.loads(line) for line in (evidence/'comandos.jsonl').read_text(encoding='utf-8').splitlines()]; indexed={row['evidence']:row for row in ledger}; files=list(evidence.glob('*.txt')); bad=[p.name for p in files if indexed.get(p.name)!=json.JSONDecoder().raw_decode(p.read_text(encoding='utf-8'))[0]]; print({'missing_links':missing,'ledger_rows_before_this_record':len(ledger),'transcripts_before_this_record':len(files),'duplicate_rows':len(ledger)-len(indexed),'metadata_mismatches':bad,'png_captures':len(list((evidence/'capturas').glob('*.png'))),'audit_json_exists':(evidence/'validacion_cierre.json').is_file(),'audit_txt_exists':(evidence/'63_validacion_cierre.txt').is_file()}); assert not missing and not bad and len(ledger)==len(indexed)==len(files)"
+  ],
+  "exit_code": 0,
+  "evidence": "72_revision_artefactos.txt"
+}
+
+--- REAL OUTPUT ---
+{'missing_links': [], 'ledger_rows_before_this_record': 80, 'transcripts_before_this_record': 80, 'duplicate_rows': 0, 'metadata_mismatches': [], 'png_captures': 11, 'audit_json_exists': True, 'audit_txt_exists': True}
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

@@ -1,0 +1,42 @@
+{
+  "existing_server_reused": true,
+  "new_server_process_started": false,
+  "listeners": [
+    {
+      "address": "127.0.0.1",
+      "port": 8000,
+      "pid": 22128,
+      "command_line": "\"<PROJECT_ROOT>\\.venv\\Scripts\\python.exe\" manage.py runserver 127.0.0.1:8000 --noreload"
+    }
+  ],
+  "http_responses": [
+    {
+      "requested_url": "http://127.0.0.1:8000/",
+      "final_url": "http://127.0.0.1:8000/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 2195,
+      "sha256": "bda7884d1b74910418918c0f586e69924d74696f66e7be4f74b0d0fdc01f9028"
+    },
+    {
+      "requested_url": "http://127.0.0.1:8000/admin/",
+      "final_url": "http://127.0.0.1:8000/admin/login/?next=/admin/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 4381,
+      "sha256": "fed681f1c6f933c865a3629975025f876ebbfdcf98bce3f1bfdcc99d5f67cdc9"
+    },
+    {
+      "requested_url": "http://127.0.0.1:8000/static/admin/css/base.css",
+      "final_url": "http://127.0.0.1:8000/static/admin/css/base.css",
+      "status": 200,
+      "content_type": "text/css",
+      "bytes": 24538,
+      "sha256": "34a63dad01b867195da348d8011e375b463bcc85476b5670376a8a342e220b1a"
+    }
+  ],
+  "articles_verified": 11,
+  "all_titles_authors_dates_tags_match_database": true,
+  "drafts_excluded": true,
+  "front_page_query_count": 2
+}

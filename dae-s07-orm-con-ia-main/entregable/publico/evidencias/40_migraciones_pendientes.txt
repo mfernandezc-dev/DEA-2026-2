@@ -1,0 +1,20 @@
+{
+  "started_utc": "2026-10-16T03:27:59.522532+00:00",
+  "finished_utc": "2026-10-16T03:28:00.856074+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "manage.py",
+    "makemigrations",
+    "--check",
+    "--dry-run"
+  ],
+  "exit_code": 0,
+  "evidence": "40_migraciones_pendientes.txt"
+}
+
+--- REAL OUTPUT ---
+No changes detected
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

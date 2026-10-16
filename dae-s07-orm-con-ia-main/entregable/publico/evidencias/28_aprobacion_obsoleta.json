@@ -1,0 +1,25 @@
+{
+  "intent": {
+    "action": "delete_comments_of_post",
+    "args": {
+      "post_id": 5
+    }
+  },
+  "approval": "4d7ffe2c0e99",
+  "result": {
+    "status": "approval_required",
+    "plan": {
+      "action": "delete_comments_of_post",
+      "args": {
+        "post_id": 5
+      },
+      "details": {
+        "affected_comment_ids": [
+          16,
+          24
+        ]
+      },
+      "plan_hash": "72e9a213dac7"
+    }
+  }
+}

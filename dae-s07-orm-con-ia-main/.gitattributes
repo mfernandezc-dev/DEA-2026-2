@@ -1,0 +1,2 @@
+# Preserve source bytes and evidence checksums across Git checkouts.
+* -text

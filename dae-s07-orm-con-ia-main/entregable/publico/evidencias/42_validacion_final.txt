@@ -1,0 +1,59 @@
+{
+  "started_utc": "2026-10-16T03:28:29.751911+00:00",
+  "finished_utc": "2026-10-16T03:28:30.536578+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "entregable/herramientas/validacion_final.py"
+  ],
+  "exit_code": 0,
+  "evidence": "42_validacion_final.txt"
+}
+
+--- REAL OUTPUT ---
+{
+  "audit_completed": true,
+  "python": "3.14.3",
+  "django": "6.1.2",
+  "executable": "<PROJECT_ROOT>\\.venv\\Scripts\\python.exe",
+  "changed_original_files": [
+    "blog/duel/team.py",
+    "blog/queries.py"
+  ],
+  "original_tests_unchanged": true,
+  "all_other_original_python_files_unchanged": true,
+  "dataset": {
+    "Author": 4,
+    "Profile": 4,
+    "Post": 15,
+    "Comment": 23,
+    "Category": 4,
+    "Tag": 5
+  },
+  "exact_initial_database_restored": true,
+  "logical_sha256": "ed7e9f0478113f5e2ad654e16302f387a1682e7fdaf6088ae15919a32e1ec14b",
+  "pending_migrations": 0,
+  "duel_team": "8/8 ok, 1 SQL each; final strict command exit 0",
+  "front_page_queries_before": 23,
+  "front_page_queries_after": 2,
+  "suite": {
+    "discovered": 24,
+    "passed": 21,
+    "failed": 1,
+    "errors": 0,
+    "skipped": 2
+  },
+  "suite_fully_green": false,
+  "agent_intents_executed": 4,
+  "approved_deletion_verified": true,
+  "stale_approval_not_applied": true,
+  "all_required_experiments_executed": true,
+  "pending": [
+    "Teacher review of starter-only test requiring all team answers to be todo.",
+    "Student review, personal details and comparison with campus-only rubric.",
+    "Genuine screenshots only if the campus format requires them."
+  ]
+}
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

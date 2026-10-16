@@ -1,0 +1,55 @@
+{
+  "started_utc": "2026-10-16T03:19:17.143810+00:00",
+  "finished_utc": "2026-10-16T03:19:17.974294+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "entregable/herramientas/respaldo.py",
+    "restaurar"
+  ],
+  "exit_code": 0,
+  "evidence": "25_restauracion_exacta1.txt"
+}
+
+--- REAL OUTPUT ---
+{
+  "seed_blog_recreated_ids": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "restored_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "logical_sha256": "ed7e9f0478113f5e2ad654e16302f387a1682e7fdaf6088ae15919a32e1ec14b",
+  "exact_initial_database_restored": true
+}
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

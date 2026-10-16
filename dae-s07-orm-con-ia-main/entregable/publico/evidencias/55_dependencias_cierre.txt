@@ -1,0 +1,20 @@
+{
+  "started_utc": "2026-10-16T04:15:58.024564+00:00",
+  "finished_utc": "2026-10-16T04:15:58.989863+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "-B",
+    "-m",
+    "pip",
+    "check"
+  ],
+  "exit_code": 0,
+  "evidence": "55_dependencias_cierre.txt"
+}
+
+--- REAL OUTPUT ---
+No broken requirements found.
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

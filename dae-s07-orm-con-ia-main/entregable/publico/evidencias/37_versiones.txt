@@ -1,0 +1,22 @@
+{
+  "started_utc": "2026-10-16T03:27:59.350263+00:00",
+  "finished_utc": "2026-10-16T03:28:00.230324+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "-m",
+    "pip",
+    "freeze"
+  ],
+  "exit_code": 0,
+  "evidence": "37_versiones.txt"
+}
+
+--- REAL OUTPUT ---
+asgiref==3.12.1
+Django==6.1.2
+sqlparse==0.6.0
+tzdata==2026.5
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

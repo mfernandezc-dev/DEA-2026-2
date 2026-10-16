@@ -1,0 +1,31 @@
+{
+  "started_utc": "2026-10-16T04:15:57.990441+00:00",
+  "finished_utc": "2026-10-16T04:15:59.362970+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "-B",
+    "entregable/herramientas/diagnostico.py",
+    "portada",
+    "portada_cierre.json"
+  ],
+  "exit_code": 0,
+  "evidence": "53_portada_sql_cierre.txt"
+}
+
+--- REAL OUTPUT ---
+{
+  "http_status": 200,
+  "published_posts": 11,
+  "query_count": 2,
+  "post_queries": 1,
+  "author_queries": 0,
+  "tag_queries": 1,
+  "sql": [
+    "SELECT \"blog_post\".\"id\", \"blog_post\".\"title\", \"blog_post\".\"body\", \"blog_post\".\"author_id\", \"blog_post\".\"category_id\", \"blog_post\".\"published\", \"blog_post\".\"published_at\", \"blog_author\".\"id\", \"blog_author\".\"name\" FROM \"blog_post\" INNER JOIN \"blog_author\" ON (\"blog_post\".\"author_id\" = \"blog_author\".\"id\") WHERE \"blog_post\".\"published\" = 1 ORDER BY \"blog_post\".\"published_at\" DESC",
+    "SELECT (\"blog_post_tags\".\"post_id\") AS \"_prefetch_related_val_post_id\", \"blog_tag\".\"id\", \"blog_tag\".\"name\" FROM \"blog_tag\" INNER JOIN \"blog_post_tags\" ON (\"blog_tag\".\"id\" = \"blog_post_tags\".\"tag_id\") WHERE \"blog_post_tags\".\"post_id\" IN (7, 5, 11, 8, 10, 4, 3, 9, 2, 1, 6)"
+  ]
+}
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

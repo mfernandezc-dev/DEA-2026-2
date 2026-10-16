@@ -1,0 +1,39 @@
+{
+  "started_utc": "2026-10-16T03:14:23.377710+00:00",
+  "finished_utc": "2026-10-16T03:14:42.750878+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    ".venv/Scripts/python.exe",
+    "-m",
+    "pip",
+    "install",
+    "-r",
+    "requirements.txt"
+  ],
+  "exit_code": 0,
+  "evidence": "02_dependencias.txt"
+}
+
+--- REAL OUTPUT ---
+Collecting Django<7,>=5.2 (from -r requirements.txt (line 1))
+  Downloading django-6.1.2-py3-none-any.whl.metadata (3.9 kB)
+Collecting asgiref>=3.9.1 (from Django<7,>=5.2->-r requirements.txt (line 1))
+  Using cached asgiref-3.12.1-py3-none-any.whl.metadata (9.4 kB)
+Collecting sqlparse>=0.5.0 (from Django<7,>=5.2->-r requirements.txt (line 1))
+  Using cached sqlparse-0.6.0-py3-none-any.whl.metadata (6.0 kB)
+Collecting tzdata (from Django<7,>=5.2->-r requirements.txt (line 1))
+  Downloading tzdata-2026.5-py2.py3-none-any.whl.metadata (1.4 kB)
+Downloading django-6.1.2-py3-none-any.whl (8.4 MB)
+   ---------------------------------------- 8.4/8.4 MB 6.8 MB/s  0:00:01
+Using cached asgiref-3.12.1-py3-none-any.whl (25 kB)
+Using cached sqlparse-0.6.0-py3-none-any.whl (50 kB)
+Downloading tzdata-2026.5-py2.py3-none-any.whl (347 kB)
+Installing collected packages: tzdata, sqlparse, asgiref, Django
+
+Successfully installed Django-6.1.2 asgiref-3.12.1 sqlparse-0.6.0 tzdata-2026.5
+
+[notice] A new release of pip is available: 25.3 -> 26.2.1
+[notice] To update, run: <PROJECT_ROOT>\.venv\Scripts\python.exe -m pip install --upgrade pip
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]

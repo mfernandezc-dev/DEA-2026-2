@@ -1,0 +1,135 @@
+{
+  "started_utc": "2026-10-16T03:14:03.335984+00:00",
+  "finished_utc": "2026-10-16T03:14:03.465880+00:00",
+  "cwd": "<PROJECT_ROOT>",
+  "argv": [
+    "python",
+    "entregable/herramientas/inspeccion.py"
+  ],
+  "exit_code": 0,
+  "evidence": "00_inspeccion.txt"
+}
+
+--- REAL OUTPUT ---
+Working directory: <PROJECT_ROOT>
+Python: 3.14.3 <USER_HOME>\AppData\Local\Python\pythoncore-3.14-64\python.exe
+Virtual environment exists: False
+Database exists: False
+Original source files:
+.gitignore
+blog\__init__.py
+blog\admin.py
+blog\agent\__init__.py
+blog\agent\llm.py
+blog\agent\registry.py
+blog\apps.py
+blog\duel\__init__.py
+blog\duel\ai_answers.py
+blog\duel\questions.py
+blog\duel\runner.py
+blog\duel\team.py
+blog\management\__init__.py
+blog\management\commands\__init__.py
+blog\management\commands\agent.py
+blog\management\commands\duel.py
+blog\management\commands\seed_blog.py
+blog\migrations\0001_initial.py
+blog\migrations\__init__.py
+blog\models.py
+blog\queries.py
+blog\seed_data.py
+blog\templates\blog\front_page.html
+blog\tests\__init__.py
+blog\tests\test_agent.py
+blog\tests\test_duel.py
+blog\tests\test_front_page.py
+blog\tests\test_seed.py
+blog\urls.py
+blog\views.py
+config\__init__.py
+config\settings.py
+config\urls.py
+config\wsgi.py
+manage.py
+README.md
+requirements.txt
+Git status (containing repository; no changes made to git):
+?? ./
+
+
+--- ORIGINAL: blog/duel/team.py ---
+"""YOUR answers. One function per question, no arguments.
+
+Write the ORM query that answers each question and return it (a QuerySet or a
+list). Do not write SQL and do not filter in Python what the database can
+filter. Check yourself with:
+
+    python manage.py duel                 # all of them
+    python manage.py duel --question q4   # just one
+
+Question 5 asks for two numbers per post: annotate them as `n_comments` and
+`n_tags`.
+"""
+from datetime import date  # noqa: F401  (you will need it in question 3)
+
+from django.db.models import Count, Q  # noqa: F401
+
+from blog.models import Author, Category, Comment, Post, Profile, Tag  # noqa: F401
+
+
+def q1():
+    """Los artículos que ya están publicados."""
+    raise NotImplementedError
+
+
+def q2():
+    """Los artículos que no tienen categoría asignada."""
+    raise NotImplementedError
+
+
+def q3():
+    """Los artículos publicados entre el 1 de marzo y el 31 de mayo de 2026, ambos días incluidos."""
+    raise NotImplementedError
+
+
+def q4():
+    """Los artículos con más de dos comentarios."""
+    raise NotImplementedError
+
+
+def q5():
+    """Los tres artículos publicados con más comentarios; de cada uno, cuántos comentarios
+    (`n_comments`) y cuántas etiquetas (`n_tags`)."""
+    raise NotImplementedError
+
+
+def q6():
+    """Los artículos escritos por autores de Perú (publicados o no)."""
+    raise NotImplementedError
+
+
+def q7():
+    """Los comentarios de los artículos de la categoría «Tecnología»."""
+    raise NotImplementedError
+
+
+def q8():
+    """Los autores que nunca han publicado un artículo."""
+    raise NotImplementedError
+
+
+--- ORIGINAL: blog/queries.py ---
+"""Queries behind the views. Part 2 of the lab happens in this file."""
+from blog.models import Post
+
+
+def posts_for_front_page():
+    # TODO(team): this works, but the template walks `post.author` and
+    # `post.tags` once per post, so the number of queries grows with the number
+    # of posts (the N+1 problem). Fix it here so the test in
+    # blog/tests/test_front_page.py goes from red to green.
+    return Post.objects.filter(published=True).order_by("-published_at")
+
+
+
+[PUBLIC COPY: local paths redacted; private original preserved. This export is not a new command execution.]
