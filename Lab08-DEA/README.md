@@ -377,5 +377,24 @@ capturas: la inspección visual y las capturas deben completarse manualmente.
 ## 14. Informe, capturas y estado de la rúbrica
 
 <img width="1371" height="502" alt="API Root" src="https://github.com/user-attachments/assets/bca69e03-ecac-46af-b3bf-184374d3840c" />
+<img width="1196" height="724" alt="Consulta de exámenes registrados mediante el método GET" src="https://github.com/user-attachments/assets/c0d93f01-9d50-4b43-b340-6bc9bf05b6ac" />
+<img width="955" height="727" alt="Consulta de preguntas con opciones anidadas y paginación" src="https://github.com/user-attachments/assets/356cc540-5ffb-44ec-9c40-88fe8c77dd95" />
+<img width="985" height="734" alt="Verificación de la paginación de preguntas" src="https://github.com/user-attachments/assets/13223a0d-49c8-4c0f-bbc3-51e395a1acbc" />
+<img width="949" height="733" alt="Filtrado de preguntas por examen" src="https://github.com/user-attachments/assets/edc749d9-0b9b-49af-bbac-39c2e66ea507" />
+<img width="940" height="727" alt="Búsqueda de preguntas por texto del enunciado" src="https://github.com/user-attachments/assets/93ea1545-02b9-4c32-a268-98fe0b609866" />
+<img width="933" height="730" alt="Consulta de opciones de respuesta mediante la API REST" src="https://github.com/user-attachments/assets/4de9c3dc-d0cc-4449-a8f6-78726ec2f59f" />
+<img width="940" height="566" alt="Creación de un examen mediante el método POST" src="https://github.com/user-attachments/assets/e9a0ab64-cfc9-45cd-87a1-18085965471e" />
+<img width="933" height="709" alt="Actualización parcial de un examen mediante PATCH" src="https://github.com/user-attachments/assets/6aa0d1f7-4b43-4010-884b-b7636ecab3c3" />
+<img width="932" height="634" alt="Eliminación de un examen mediante DELETE" src="https://github.com/user-attachments/assets/09d3a1ed-7a6a-4e73-9071-7f4782fa022a" />
+<img width="930" height="698" alt="Validación de un campo obligatorio mediante Django REST Framework" src="https://github.com/user-attachments/assets/8442827e-fbd1-4348-9841-769a5418b12d" />
+<img width="927" height="698" alt="Validación de un tipo de dato incorrecto" src="https://github.com/user-attachments/assets/9894a79f-5b91-488c-b320-3102c494122e" />
+<img width="719" height="272" alt="Ejecución exitosa de las pruebas automatizadas en Django" src="https://github.com/user-attachments/assets/487e3628-dd3e-40e7-b8b3-f131c9deefb3" />
+
+
+
+
+
+
+
 
 
