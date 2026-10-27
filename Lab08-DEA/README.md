@@ -376,18 +376,6 @@ capturas: la inspección visual y las capturas deben completarse manualmente.
 
 ## 14. Informe, capturas y estado de la rúbrica
 
-El desarrollo de doce pasos, fragmentos de código, tabla, cinco observaciones,
-cinco conclusiones y lista exacta de capturas están en
-[`docs/LAB08_INFORME.md`](docs/LAB08_INFORME.md). Deben trasladarse al formato
-Word del docente; ese formato y la guía original no fueron adjuntados.
+<img width="1371" height="502" alt="API Root" src="https://github.com/user-attachments/assets/bca69e03-ecac-46af-b3bf-184374d3840c" />
 
-| Criterio | Estado local | Pendiente |
-|---|---|---|
-| 1 — Serializadores, anidación, validaciones (5) | Implementado y probado | Evaluación del docente |
-| 2 — Tres ViewSets, router, API navegable (5) | Código, HTML y HTTP verificados | Capturas e inspección visual |
-| 3 — Cinco operaciones y errores por HTTP (5) | Verificadas con cliente Python externo al proceso Django | Capturas de evidencia |
-| 4 — Repositorio preparado y tabla (5) | Archivos locales, exclusiones y tabla completos | Autorización para staging/commit/push y entrega |
 
-No se asigna una nota ni se declara cumplida la entrega a GitHub.
-No se ejecutaron `git add`, `git commit`, `git push`, comandos destructivos,
-cambios de rama ni modificaciones fuera de `Lab08-DEA`.
