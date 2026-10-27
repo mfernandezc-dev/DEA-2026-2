@@ -1,0 +1,2121 @@
+{
+  "executed_at_utc": "2026-10-27T16:26:46.852095+00:00",
+  "client": "Python standard library urllib.request (real HTTP)",
+  "base_url": "http://127.0.0.1:8000",
+  "total": 64,
+  "passed": 64,
+  "failed": 0,
+  "cases": [
+    {
+      "case": "root",
+      "endpoint": "http://127.0.0.1:8000/api/",
+      "method": "GET",
+      "request_json": null,
+      "accept": "text/html",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_json": {
+        "html_file": "browsable-root.html",
+        "displayed_json": {
+          "exams": "http://127.0.0.1:8000/api/exams/",
+          "questions": "http://127.0.0.1:8000/api/questions/",
+          "options": "http://127.0.0.1:8000/api/options/"
+        }
+      },
+      "expected_result": "HTML navegable DRF, HTTP 200.",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "exams",
+      "endpoint": "http://127.0.0.1:8000/api/exams/",
+      "method": "GET",
+      "request_json": null,
+      "accept": "text/html",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_json": {
+        "html_file": "browsable-exams.html",
+        "displayed_json": {
+          "count": 2,
+          "next": null,
+          "previous": null,
+          "results": [
+            {
+              "id": 1,
+              "title": "Demo - Django",
+              "description": "Datos locales del Laboratorio 08.",
+              "created_at": "2026-10-27T16:15:03.630678Z"
+            },
+            {
+              "id": 2,
+              "title": "Demo - REST",
+              "description": "Datos locales del Laboratorio 08.",
+              "created_at": "2026-10-27T16:15:03.647048Z"
+            }
+          ]
+        }
+      },
+      "expected_result": "HTML navegable DRF, HTTP 200.",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "questions",
+      "endpoint": "http://127.0.0.1:8000/api/questions/",
+      "method": "GET",
+      "request_json": null,
+      "accept": "text/html",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_json": {
+        "html_file": "browsable-questions.html",
+        "displayed_json": {
+          "count": 12,
+          "next": "http://127.0.0.1:8000/api/questions/?page=2",
+          "previous": null,
+          "results": [
+            {
+              "id": 1,
+              "exam": 1,
+              "text": "Demo - Django: pregunta de práctica 1",
+              "options": [
+                {
+                  "id": 1,
+                  "text": "Respuesta correcta",
+                  "is_correct": true
+                },
+                {
+                  "id": 2,
+                  "text": "Respuesta incorrecta",
+                  "is_correct": false
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "exam": 1,
+              "text": "Demo - Django: pregunta de práctica 2",
+              "options": [
+                {
+                  "id": 3,
+                  "text": "Respuesta correcta",
+                  "is_correct": true
+                },
+                {
+                  "id": 4,
+                  "text": "Respuesta incorrecta",
+                  "is_correct": false
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "exam": 1,
+              "text": "Demo - Django: pregunta de práctica 3",
+              "options": [
+                {
+                  "id": 5,
+                  "text": "Respuesta correcta",
+                  "is_correct": true
+                },
+                {
+                  "id": 6,
+                  "text": "Respuesta incorrecta",
+                  "is_correct": false
+                }
+              ]
+            },
+            {
+              "id": 4,
+              "exam": 1,
+              "text": "Demo - Django: pregunta de práctica 4",
+              "options": [
+                {
+                  "id": 7,
+                  "text": "Respuesta correcta",
+                  "is_correct": true
+                },
+                {
+                  "id": 8,
+                  "text": "Respuesta incorrecta",
+                  "is_correct": false
+                }
+              ]
+            },
+            {
+              "id": 5,
+              "exam": 1,
+              "text": "Demo - Django: pregunta de práctica 5",
+              "options": [
+                {
+                  "id": 9,
+                  "text": "Respuesta correcta",
+                  "is_correct": true
+                },
+                {
+                  "id": 10,
+                  "text": "Respuesta incorrecta",
+                  "is_correct": false
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "expected_result": "HTML navegable DRF, HTTP 200.",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "options",
+      "endpoint": "http://127.0.0.1:8000/api/options/",
+      "method": "GET",
+      "request_json": null,
+      "accept": "text/html",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_json": {
+        "html_file": "browsable-options.html",
+        "displayed_json": {
+          "count": 24,
+          "next": "http://127.0.0.1:8000/api/options/?page=2",
+          "previous": null,
+          "results": [
+            {
+              "id": 1,
+              "question": 1,
+              "text": "Respuesta correcta",
+              "is_correct": true
+            },
+            {
+              "id": 2,
+              "question": 1,
+              "text": "Respuesta incorrecta",
+              "is_correct": false
+            },
+            {
+              "id": 3,
+              "question": 2,
+              "text": "Respuesta correcta",
+              "is_correct": true
+            },
+            {
+              "id": 4,
+              "question": 2,
+              "text": "Respuesta incorrecta",
+              "is_correct": false
+            },
+            {
+              "id": 5,
+              "question": 3,
+              "text": "Respuesta correcta",
+              "is_correct": true
+            }
+          ]
+        }
+      },
+      "expected_result": "HTML navegable DRF, HTTP 200.",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "html-create-exam",
+      "endpoint": "http://127.0.0.1:8000/api/exams/",
+      "method": "POST",
+      "request_json": {
+        "title": "Browsable verification"
+      },
+      "accept": "text/html",
+      "expected_status": 201,
+      "actual_status": 201,
+      "content_type": "text/html; charset=utf-8",
+      "response_json": {
+        "html_file": "browsable-html-create-exam.html",
+        "displayed_json": {
+          "id": 6,
+          "title": "Browsable verification",
+          "description": "",
+          "created_at": "2026-10-27T16:26:45.497119Z"
+        }
+      },
+      "expected_result": "HTTP 201",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "html-create-question",
+      "endpoint": "http://127.0.0.1:8000/api/questions/",
+      "method": "POST",
+      "request_json": {
+        "exam": 6,
+        "text": "HTTP - What is Django?",
+        "options": [
+          {
+            "text": "A Python framework",
+            "is_correct": true
+          },
+          {
+            "text": "A database",
+            "is_correct": false
+          }
+        ]
+      },
+      "accept": "text/html",
+      "expected_status": 201,
+      "actual_status": 201,
+      "content_type": "text/html; charset=utf-8",
+      "response_json": {
+        "html_file": "browsable-html-create-question.html",
+        "displayed_json": {
+          "id": 28,
+          "exam": 6,
+          "text": "HTTP - What is Django?",
+          "options": [
+            {
+              "id": 66,
+              "text": "A Python framework",
+              "is_correct": true
+            },
+            {
+              "id": 67,
+              "text": "A database",
+              "is_correct": false
+            }
+          ]
+        }
+      },
+      "expected_result": "HTTP 201",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "html-create-option",
+      "endpoint": "http://127.0.0.1:8000/api/options/",
+      "method": "POST",
+      "request_json": {
+        "question": 28,
+        "text": "HTML option"
+      },
+      "accept": "text/html",
+      "expected_status": 201,
+      "actual_status": 201,
+      "content_type": "text/html; charset=utf-8",
+      "response_json": {
+        "html_file": "browsable-html-create-option.html",
+        "displayed_json": {
+          "id": 68,
+          "question": 28,
+          "text": "HTML option",
+          "is_correct": false
+        }
+      },
+      "expected_result": "HTTP 201",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "html-detail-exam",
+      "endpoint": "http://127.0.0.1:8000/api/exams/6/",
+      "method": "GET",
+      "request_json": null,
+      "accept": "text/html",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_json": {
+        "html_file": "browsable-html-detail-exam.html",
+        "displayed_json": {
+          "id": 6,
+          "title": "Browsable verification",
+          "description": "",
+          "created_at": "2026-10-27T16:26:45.497119Z"
+        }
+      },
+      "expected_result": "HTTP 200",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "html-patch-exam",
+      "endpoint": "http://127.0.0.1:8000/api/exams/6/",
+      "method": "PATCH",
+      "request_json": {
+        "title": "HTML updated"
+      },
+      "accept": "text/html",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_json": {
+        "html_file": "browsable-html-patch-exam.html",
+        "displayed_json": {
+          "id": 6,
+          "title": "HTML updated",
+          "description": "",
+          "created_at": "2026-10-27T16:26:45.497119Z"
+        }
+      },
+      "expected_result": "HTTP 200",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "html-detail-question",
+      "endpoint": "http://127.0.0.1:8000/api/questions/28/",
+      "method": "GET",
+      "request_json": null,
+      "accept": "text/html",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_json": {
+        "html_file": "browsable-html-detail-question.html",
+        "displayed_json": {
+          "id": 28,
+          "exam": 6,
+          "text": "HTTP - What is Django?",
+          "options": [
+            {
+              "id": 66,
+              "text": "A Python framework",
+              "is_correct": true
+            },
+            {
+              "id": 67,
+              "text": "A database",
+              "is_correct": false
+            },
+            {
+              "id": 68,
+              "text": "HTML option",
+              "is_correct": false
+            }
+          ]
+        }
+      },
+      "expected_result": "HTTP 200",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "html-patch-question",
+      "endpoint": "http://127.0.0.1:8000/api/questions/28/",
+      "method": "PATCH",
+      "request_json": {
+        "text": "HTML updated"
+      },
+      "accept": "text/html",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_json": {
+        "html_file": "browsable-html-patch-question.html",
+        "displayed_json": {
+          "id": 28,
+          "exam": 6,
+          "text": "HTML updated",
+          "options": [
+            {
+              "id": 66,
+              "text": "A Python framework",
+              "is_correct": true
+            },
+            {
+              "id": 67,
+              "text": "A database",
+              "is_correct": false
+            },
+            {
+              "id": 68,
+              "text": "HTML option",
+              "is_correct": false
+            }
+          ]
+        }
+      },
+      "expected_result": "HTTP 200",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "html-detail-option",
+      "endpoint": "http://127.0.0.1:8000/api/options/68/",
+      "method": "GET",
+      "request_json": null,
+      "accept": "text/html",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_json": {
+        "html_file": "browsable-html-detail-option.html",
+        "displayed_json": {
+          "id": 68,
+          "question": 28,
+          "text": "HTML option",
+          "is_correct": false
+        }
+      },
+      "expected_result": "HTTP 200",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "html-patch-option",
+      "endpoint": "http://127.0.0.1:8000/api/options/68/",
+      "method": "PATCH",
+      "request_json": {
+        "text": "HTML updated"
+      },
+      "accept": "text/html",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_json": {
+        "html_file": "browsable-html-patch-option.html",
+        "displayed_json": {
+          "id": 68,
+          "question": 28,
+          "text": "HTML updated",
+          "is_correct": false
+        }
+      },
+      "expected_result": "HTTP 200",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "html-required-error",
+      "endpoint": "http://127.0.0.1:8000/api/exams/",
+      "method": "POST",
+      "request_json": {},
+      "accept": "text/html",
+      "expected_status": 400,
+      "actual_status": 400,
+      "content_type": "text/html; charset=utf-8",
+      "response_json": {
+        "html_file": "browsable-html-required-error.html",
+        "displayed_json": {
+          "title": [
+            "This field is required."
+          ]
+        }
+      },
+      "expected_result": "HTTP 400",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "html-delete-option",
+      "endpoint": "http://127.0.0.1:8000/api/options/68/",
+      "method": "DELETE",
+      "request_json": null,
+      "accept": "text/html",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_json": {
+        "html_file": "browsable-html-delete-option.html",
+        "displayed_json": null
+      },
+      "expected_result": "DRF devuelve HTML 200 al representar DELETE 204.",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "html-delete-question",
+      "endpoint": "http://127.0.0.1:8000/api/questions/28/",
+      "method": "DELETE",
+      "request_json": null,
+      "accept": "text/html",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_json": {
+        "html_file": "browsable-html-delete-question.html",
+        "displayed_json": null
+      },
+      "expected_result": "DRF devuelve HTML 200 al representar DELETE 204.",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "html-delete-exam",
+      "endpoint": "http://127.0.0.1:8000/api/exams/6/",
+      "method": "DELETE",
+      "request_json": null,
+      "accept": "text/html",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "response_json": {
+        "html_file": "browsable-html-delete-exam.html",
+        "displayed_json": null
+      },
+      "expected_result": "DRF devuelve HTML 200 al representar DELETE 204.",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "create-exam",
+      "endpoint": "http://127.0.0.1:8000/api/exams/",
+      "method": "POST",
+      "request_json": {
+        "title": "HTTP verification",
+        "description": "Temporary test data"
+      },
+      "accept": "application/json",
+      "expected_status": 201,
+      "actual_status": 201,
+      "content_type": "application/json",
+      "response_json": {
+        "id": 7,
+        "title": "HTTP verification",
+        "description": "Temporary test data",
+        "created_at": "2026-10-27T16:26:45.886135Z"
+      },
+      "expected_result": "HTTP 201",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "list-exams",
+      "endpoint": "http://127.0.0.1:8000/api/exams/",
+      "method": "GET",
+      "request_json": null,
+      "accept": "application/json",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "application/json",
+      "response_json": {
+        "count": 3,
+        "next": null,
+        "previous": null,
+        "results": [
+          {
+            "id": 1,
+            "title": "Demo - Django",
+            "description": "Datos locales del Laboratorio 08.",
+            "created_at": "2026-10-27T16:15:03.630678Z"
+          },
+          {
+            "id": 2,
+            "title": "Demo - REST",
+            "description": "Datos locales del Laboratorio 08.",
+            "created_at": "2026-10-27T16:15:03.647048Z"
+          },
+          {
+            "id": 7,
+            "title": "HTTP verification",
+            "description": "Temporary test data",
+            "created_at": "2026-10-27T16:26:45.886135Z"
+          }
+        ]
+      },
+      "expected_result": "HTTP 200",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "list-questions",
+      "endpoint": "http://127.0.0.1:8000/api/questions/",
+      "method": "GET",
+      "request_json": null,
+      "accept": "application/json",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "application/json",
+      "response_json": {
+        "count": 12,
+        "next": "http://127.0.0.1:8000/api/questions/?page=2",
+        "previous": null,
+        "results": [
+          {
+            "id": 1,
+            "exam": 1,
+            "text": "Demo - Django: pregunta de práctica 1",
+            "options": [
+              {
+                "id": 1,
+                "text": "Respuesta correcta",
+                "is_correct": true
+              },
+              {
+                "id": 2,
+                "text": "Respuesta incorrecta",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "exam": 1,
+            "text": "Demo - Django: pregunta de práctica 2",
+            "options": [
+              {
+                "id": 3,
+                "text": "Respuesta correcta",
+                "is_correct": true
+              },
+              {
+                "id": 4,
+                "text": "Respuesta incorrecta",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "exam": 1,
+            "text": "Demo - Django: pregunta de práctica 3",
+            "options": [
+              {
+                "id": 5,
+                "text": "Respuesta correcta",
+                "is_correct": true
+              },
+              {
+                "id": 6,
+                "text": "Respuesta incorrecta",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "exam": 1,
+            "text": "Demo - Django: pregunta de práctica 4",
+            "options": [
+              {
+                "id": 7,
+                "text": "Respuesta correcta",
+                "is_correct": true
+              },
+              {
+                "id": 8,
+                "text": "Respuesta incorrecta",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "exam": 1,
+            "text": "Demo - Django: pregunta de práctica 5",
+            "options": [
+              {
+                "id": 9,
+                "text": "Respuesta correcta",
+                "is_correct": true
+              },
+              {
+                "id": 10,
+                "text": "Respuesta incorrecta",
+                "is_correct": false
+              }
+            ]
+          }
+        ]
+      },
+      "expected_result": "HTTP 200",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "list-options",
+      "endpoint": "http://127.0.0.1:8000/api/options/",
+      "method": "GET",
+      "request_json": null,
+      "accept": "application/json",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "application/json",
+      "response_json": {
+        "count": 24,
+        "next": "http://127.0.0.1:8000/api/options/?page=2",
+        "previous": null,
+        "results": [
+          {
+            "id": 1,
+            "question": 1,
+            "text": "Respuesta correcta",
+            "is_correct": true
+          },
+          {
+            "id": 2,
+            "question": 1,
+            "text": "Respuesta incorrecta",
+            "is_correct": false
+          },
+          {
+            "id": 3,
+            "question": 2,
+            "text": "Respuesta correcta",
+            "is_correct": true
+          },
+          {
+            "id": 4,
+            "question": 2,
+            "text": "Respuesta incorrecta",
+            "is_correct": false
+          },
+          {
+            "id": 5,
+            "question": 3,
+            "text": "Respuesta correcta",
+            "is_correct": true
+          }
+        ]
+      },
+      "expected_result": "HTTP 200",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "detail-exam",
+      "endpoint": "http://127.0.0.1:8000/api/exams/7/",
+      "method": "GET",
+      "request_json": null,
+      "accept": "application/json",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "application/json",
+      "response_json": {
+        "id": 7,
+        "title": "HTTP verification",
+        "description": "Temporary test data",
+        "created_at": "2026-10-27T16:26:45.886135Z"
+      },
+      "expected_result": "HTTP 200",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "patch-exam",
+      "endpoint": "http://127.0.0.1:8000/api/exams/7/",
+      "method": "PATCH",
+      "request_json": {
+        "title": "HTTP updated"
+      },
+      "accept": "application/json",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "application/json",
+      "response_json": {
+        "id": 7,
+        "title": "HTTP updated",
+        "description": "Temporary test data",
+        "created_at": "2026-10-27T16:26:45.886135Z"
+      },
+      "expected_result": "HTTP 200",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "put-exam",
+      "endpoint": "http://127.0.0.1:8000/api/exams/7/",
+      "method": "PUT",
+      "request_json": {
+        "title": "HTTP replaced"
+      },
+      "accept": "application/json",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "application/json",
+      "response_json": {
+        "id": 7,
+        "title": "HTTP replaced",
+        "description": "Temporary test data",
+        "created_at": "2026-10-27T16:26:45.886135Z"
+      },
+      "expected_result": "HTTP 200",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "create-question",
+      "endpoint": "http://127.0.0.1:8000/api/questions/",
+      "method": "POST",
+      "request_json": {
+        "exam": 7,
+        "text": "HTTP - What is Django?",
+        "options": [
+          {
+            "text": "A Python framework",
+            "is_correct": true
+          },
+          {
+            "text": "A database",
+            "is_correct": false
+          }
+        ]
+      },
+      "accept": "application/json",
+      "expected_status": 201,
+      "actual_status": 201,
+      "content_type": "application/json",
+      "response_json": {
+        "id": 29,
+        "exam": 7,
+        "text": "HTTP - What is Django?",
+        "options": [
+          {
+            "id": 69,
+            "text": "A Python framework",
+            "is_correct": true
+          },
+          {
+            "id": 70,
+            "text": "A database",
+            "is_correct": false
+          }
+        ]
+      },
+      "expected_result": "HTTP 201",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "detail-question",
+      "endpoint": "http://127.0.0.1:8000/api/questions/29/",
+      "method": "GET",
+      "request_json": null,
+      "accept": "application/json",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "application/json",
+      "response_json": {
+        "id": 29,
+        "exam": 7,
+        "text": "HTTP - What is Django?",
+        "options": [
+          {
+            "id": 69,
+            "text": "A Python framework",
+            "is_correct": true
+          },
+          {
+            "id": 70,
+            "text": "A database",
+            "is_correct": false
+          }
+        ]
+      },
+      "expected_result": "HTTP 200",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "patch-question",
+      "endpoint": "http://127.0.0.1:8000/api/questions/29/",
+      "method": "PATCH",
+      "request_json": {
+        "text": "HTTP - Updated question"
+      },
+      "accept": "application/json",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "application/json",
+      "response_json": {
+        "id": 29,
+        "exam": 7,
+        "text": "HTTP - Updated question",
+        "options": [
+          {
+            "id": 69,
+            "text": "A Python framework",
+            "is_correct": true
+          },
+          {
+            "id": 70,
+            "text": "A database",
+            "is_correct": false
+          }
+        ]
+      },
+      "expected_result": "HTTP 200",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "create-option",
+      "endpoint": "http://127.0.0.1:8000/api/options/",
+      "method": "POST",
+      "request_json": {
+        "question": 29,
+        "text": "Other",
+        "is_correct": false
+      },
+      "accept": "application/json",
+      "expected_status": 201,
+      "actual_status": 201,
+      "content_type": "application/json",
+      "response_json": {
+        "id": 71,
+        "question": 29,
+        "text": "Other",
+        "is_correct": false
+      },
+      "expected_result": "HTTP 201",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "detail-option",
+      "endpoint": "http://127.0.0.1:8000/api/options/71/",
+      "method": "GET",
+      "request_json": null,
+      "accept": "application/json",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "application/json",
+      "response_json": {
+        "id": 71,
+        "question": 29,
+        "text": "Other",
+        "is_correct": false
+      },
+      "expected_result": "HTTP 200",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "patch-option",
+      "endpoint": "http://127.0.0.1:8000/api/options/71/",
+      "method": "PATCH",
+      "request_json": {
+        "text": "Other updated"
+      },
+      "accept": "application/json",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "application/json",
+      "response_json": {
+        "id": 71,
+        "question": 29,
+        "text": "Other updated",
+        "is_correct": false
+      },
+      "expected_result": "HTTP 200",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "put-option",
+      "endpoint": "http://127.0.0.1:8000/api/options/71/",
+      "method": "PUT",
+      "request_json": {
+        "question": 29,
+        "text": "Other replaced",
+        "is_correct": false
+      },
+      "accept": "application/json",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "application/json",
+      "response_json": {
+        "id": 71,
+        "question": 29,
+        "text": "Other replaced",
+        "is_correct": false
+      },
+      "expected_result": "HTTP 200",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "delete-option",
+      "endpoint": "http://127.0.0.1:8000/api/options/71/",
+      "method": "DELETE",
+      "request_json": null,
+      "accept": "application/json",
+      "expected_status": 204,
+      "actual_status": 204,
+      "content_type": "",
+      "response_json": null,
+      "expected_result": "HTTP 204",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "option-deleted",
+      "endpoint": "http://127.0.0.1:8000/api/options/71/",
+      "method": "GET",
+      "request_json": null,
+      "accept": "application/json",
+      "expected_status": 404,
+      "actual_status": 404,
+      "content_type": "application/json",
+      "response_json": {
+        "detail": "No Option matches the given query."
+      },
+      "expected_result": "HTTP 404",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "missing-required-field",
+      "endpoint": "http://127.0.0.1:8000/api/exams/",
+      "method": "POST",
+      "request_json": {
+        "description": "Missing title"
+      },
+      "accept": "application/json",
+      "expected_status": 400,
+      "actual_status": 400,
+      "content_type": "application/json",
+      "response_json": {
+        "title": [
+          "This field is required."
+        ]
+      },
+      "expected_result": "400 con error en title; no se crea examen.",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "wrong-data-type",
+      "endpoint": "http://127.0.0.1:8000/api/questions/",
+      "method": "POST",
+      "request_json": {
+        "exam": "not-an-integer",
+        "text": "HTTP - What is Django?",
+        "options": [
+          {
+            "text": "A Python framework",
+            "is_correct": true
+          },
+          {
+            "text": "A database",
+            "is_correct": false
+          }
+        ]
+      },
+      "accept": "application/json",
+      "expected_status": 400,
+      "actual_status": 400,
+      "content_type": "application/json",
+      "response_json": {
+        "exam": [
+          "Incorrect type. Expected pk value, received str."
+        ]
+      },
+      "expected_result": "400 por id de examen de tipo incorrecto.",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "wrong-boolean-type",
+      "endpoint": "http://127.0.0.1:8000/api/options/69/",
+      "method": "PATCH",
+      "request_json": {
+        "is_correct": {
+          "invalid": true
+        }
+      },
+      "accept": "application/json",
+      "expected_status": 400,
+      "actual_status": 400,
+      "content_type": "application/json",
+      "response_json": {
+        "is_correct": [
+          "Must be a valid boolean."
+        ]
+      },
+      "expected_result": "400 por valor booleano incompatible.",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "create-zero-correct",
+      "endpoint": "http://127.0.0.1:8000/api/questions/",
+      "method": "POST",
+      "request_json": {
+        "exam": 7,
+        "text": "HTTP - What is Django?",
+        "options": [
+          {
+            "text": "A Python framework",
+            "is_correct": false
+          },
+          {
+            "text": "A database",
+            "is_correct": false
+          }
+        ]
+      },
+      "accept": "application/json",
+      "expected_status": 400,
+      "actual_status": 400,
+      "content_type": "application/json",
+      "response_json": {
+        "options": [
+          "A question must have exactly one correct option."
+        ]
+      },
+      "expected_result": "400; se exige exactamente una opción correcta.",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "patch-zero-correct",
+      "endpoint": "http://127.0.0.1:8000/api/questions/29/",
+      "method": "PATCH",
+      "request_json": {
+        "options": [
+          {
+            "text": "A Python framework",
+            "is_correct": false
+          },
+          {
+            "text": "A database",
+            "is_correct": false
+          }
+        ]
+      },
+      "accept": "application/json",
+      "expected_status": 400,
+      "actual_status": 400,
+      "content_type": "application/json",
+      "response_json": {
+        "options": [
+          "A question must have exactly one correct option."
+        ]
+      },
+      "expected_result": "400; la pregunta conserva sus opciones.",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "create-two-correct",
+      "endpoint": "http://127.0.0.1:8000/api/questions/",
+      "method": "POST",
+      "request_json": {
+        "exam": 7,
+        "text": "HTTP - What is Django?",
+        "options": [
+          {
+            "text": "A Python framework",
+            "is_correct": true
+          },
+          {
+            "text": "A database",
+            "is_correct": true
+          }
+        ]
+      },
+      "accept": "application/json",
+      "expected_status": 400,
+      "actual_status": 400,
+      "content_type": "application/json",
+      "response_json": {
+        "options": [
+          "A question must have exactly one correct option."
+        ]
+      },
+      "expected_result": "400; se exige exactamente una opción correcta.",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "patch-two-correct",
+      "endpoint": "http://127.0.0.1:8000/api/questions/29/",
+      "method": "PATCH",
+      "request_json": {
+        "options": [
+          {
+            "text": "A Python framework",
+            "is_correct": true
+          },
+          {
+            "text": "A database",
+            "is_correct": true
+          }
+        ]
+      },
+      "accept": "application/json",
+      "expected_status": 400,
+      "actual_status": 400,
+      "content_type": "application/json",
+      "response_json": {
+        "options": [
+          "A question must have exactly one correct option."
+        ]
+      },
+      "expected_result": "400; la pregunta conserva sus opciones.",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "direct-create-second-correct",
+      "endpoint": "http://127.0.0.1:8000/api/options/",
+      "method": "POST",
+      "request_json": {
+        "question": 29,
+        "text": "Duplicate",
+        "is_correct": true
+      },
+      "accept": "application/json",
+      "expected_status": 400,
+      "actual_status": 400,
+      "content_type": "application/json",
+      "response_json": {
+        "is_correct": [
+          "A question must have exactly one correct option."
+        ]
+      },
+      "expected_result": "HTTP 400",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "unset-correct",
+      "endpoint": "http://127.0.0.1:8000/api/options/69/",
+      "method": "PATCH",
+      "request_json": {
+        "is_correct": false
+      },
+      "accept": "application/json",
+      "expected_status": 400,
+      "actual_status": 400,
+      "content_type": "application/json",
+      "response_json": {
+        "is_correct": [
+          "A question must have exactly one correct option."
+        ]
+      },
+      "expected_result": "HTTP 400",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "set-second-correct",
+      "endpoint": "http://127.0.0.1:8000/api/options/70/",
+      "method": "PATCH",
+      "request_json": {
+        "is_correct": true
+      },
+      "accept": "application/json",
+      "expected_status": 400,
+      "actual_status": 400,
+      "content_type": "application/json",
+      "response_json": {
+        "is_correct": [
+          "A question must have exactly one correct option."
+        ]
+      },
+      "expected_result": "HTTP 400",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "delete-only-correct",
+      "endpoint": "http://127.0.0.1:8000/api/options/69/",
+      "method": "DELETE",
+      "request_json": null,
+      "accept": "application/json",
+      "expected_status": 400,
+      "actual_status": 400,
+      "content_type": "application/json",
+      "response_json": {
+        "is_correct": [
+          "A question must have exactly one correct option."
+        ]
+      },
+      "expected_result": "HTTP 400",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "invariant-after-errors",
+      "endpoint": "http://127.0.0.1:8000/api/questions/29/",
+      "method": "GET",
+      "request_json": null,
+      "accept": "application/json",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "application/json",
+      "response_json": {
+        "id": 29,
+        "exam": 7,
+        "text": "HTTP - Updated question",
+        "options": [
+          {
+            "id": 69,
+            "text": "A Python framework",
+            "is_correct": true
+          },
+          {
+            "id": 70,
+            "text": "A database",
+            "is_correct": false
+          }
+        ]
+      },
+      "expected_result": "HTTP 200",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "switch-correct-atomically",
+      "endpoint": "http://127.0.0.1:8000/api/questions/29/",
+      "method": "PATCH",
+      "request_json": {
+        "options": [
+          {
+            "text": "Old answer",
+            "is_correct": false
+          },
+          {
+            "text": "New answer",
+            "is_correct": true
+          }
+        ]
+      },
+      "accept": "application/json",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "application/json",
+      "response_json": {
+        "id": 29,
+        "exam": 7,
+        "text": "HTTP - Updated question",
+        "options": [
+          {
+            "id": 72,
+            "text": "Old answer",
+            "is_correct": false
+          },
+          {
+            "id": 73,
+            "text": "New answer",
+            "is_correct": true
+          }
+        ]
+      },
+      "expected_result": "HTTP 200",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "put-question",
+      "endpoint": "http://127.0.0.1:8000/api/questions/29/",
+      "method": "PUT",
+      "request_json": {
+        "exam": 7,
+        "text": "HTTP - What is Django?",
+        "options": [
+          {
+            "text": "A Python framework",
+            "is_correct": true
+          },
+          {
+            "text": "A database",
+            "is_correct": false
+          }
+        ]
+      },
+      "accept": "application/json",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "application/json",
+      "response_json": {
+        "id": 29,
+        "exam": 7,
+        "text": "HTTP - What is Django?",
+        "options": [
+          {
+            "id": 74,
+            "text": "A Python framework",
+            "is_correct": true
+          },
+          {
+            "id": 75,
+            "text": "A database",
+            "is_correct": false
+          }
+        ]
+      },
+      "expected_result": "HTTP 200",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "pagination-data-1",
+      "endpoint": "http://127.0.0.1:8000/api/questions/",
+      "method": "POST",
+      "request_json": {
+        "exam": 7,
+        "text": "HTTP - Pagination example 1",
+        "options": [
+          {
+            "text": "A Python framework",
+            "is_correct": true
+          },
+          {
+            "text": "A database",
+            "is_correct": false
+          }
+        ]
+      },
+      "accept": "application/json",
+      "expected_status": 201,
+      "actual_status": 201,
+      "content_type": "application/json",
+      "response_json": {
+        "id": 30,
+        "exam": 7,
+        "text": "HTTP - Pagination example 1",
+        "options": [
+          {
+            "id": 76,
+            "text": "A Python framework",
+            "is_correct": true
+          },
+          {
+            "id": 77,
+            "text": "A database",
+            "is_correct": false
+          }
+        ]
+      },
+      "expected_result": "HTTP 201",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "pagination-data-2",
+      "endpoint": "http://127.0.0.1:8000/api/questions/",
+      "method": "POST",
+      "request_json": {
+        "exam": 7,
+        "text": "HTTP - Pagination example 2",
+        "options": [
+          {
+            "text": "A Python framework",
+            "is_correct": true
+          },
+          {
+            "text": "A database",
+            "is_correct": false
+          }
+        ]
+      },
+      "accept": "application/json",
+      "expected_status": 201,
+      "actual_status": 201,
+      "content_type": "application/json",
+      "response_json": {
+        "id": 31,
+        "exam": 7,
+        "text": "HTTP - Pagination example 2",
+        "options": [
+          {
+            "id": 78,
+            "text": "A Python framework",
+            "is_correct": true
+          },
+          {
+            "id": 79,
+            "text": "A database",
+            "is_correct": false
+          }
+        ]
+      },
+      "expected_result": "HTTP 201",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "pagination-data-3",
+      "endpoint": "http://127.0.0.1:8000/api/questions/",
+      "method": "POST",
+      "request_json": {
+        "exam": 7,
+        "text": "HTTP - Pagination example 3",
+        "options": [
+          {
+            "text": "A Python framework",
+            "is_correct": true
+          },
+          {
+            "text": "A database",
+            "is_correct": false
+          }
+        ]
+      },
+      "accept": "application/json",
+      "expected_status": 201,
+      "actual_status": 201,
+      "content_type": "application/json",
+      "response_json": {
+        "id": 32,
+        "exam": 7,
+        "text": "HTTP - Pagination example 3",
+        "options": [
+          {
+            "id": 80,
+            "text": "A Python framework",
+            "is_correct": true
+          },
+          {
+            "id": 81,
+            "text": "A database",
+            "is_correct": false
+          }
+        ]
+      },
+      "expected_result": "HTTP 201",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "pagination-data-4",
+      "endpoint": "http://127.0.0.1:8000/api/questions/",
+      "method": "POST",
+      "request_json": {
+        "exam": 7,
+        "text": "HTTP - Pagination example 4",
+        "options": [
+          {
+            "text": "A Python framework",
+            "is_correct": true
+          },
+          {
+            "text": "A database",
+            "is_correct": false
+          }
+        ]
+      },
+      "accept": "application/json",
+      "expected_status": 201,
+      "actual_status": 201,
+      "content_type": "application/json",
+      "response_json": {
+        "id": 33,
+        "exam": 7,
+        "text": "HTTP - Pagination example 4",
+        "options": [
+          {
+            "id": 82,
+            "text": "A Python framework",
+            "is_correct": true
+          },
+          {
+            "id": 83,
+            "text": "A database",
+            "is_correct": false
+          }
+        ]
+      },
+      "expected_result": "HTTP 201",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "pagination-data-5",
+      "endpoint": "http://127.0.0.1:8000/api/questions/",
+      "method": "POST",
+      "request_json": {
+        "exam": 7,
+        "text": "HTTP - Pagination example 5",
+        "options": [
+          {
+            "text": "A Python framework",
+            "is_correct": true
+          },
+          {
+            "text": "A database",
+            "is_correct": false
+          }
+        ]
+      },
+      "accept": "application/json",
+      "expected_status": 201,
+      "actual_status": 201,
+      "content_type": "application/json",
+      "response_json": {
+        "id": 34,
+        "exam": 7,
+        "text": "HTTP - Pagination example 5",
+        "options": [
+          {
+            "id": 84,
+            "text": "A Python framework",
+            "is_correct": true
+          },
+          {
+            "id": 85,
+            "text": "A database",
+            "is_correct": false
+          }
+        ]
+      },
+      "expected_result": "HTTP 201",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "pagination-data-6",
+      "endpoint": "http://127.0.0.1:8000/api/questions/",
+      "method": "POST",
+      "request_json": {
+        "exam": 7,
+        "text": "HTTP - Pagination example 6",
+        "options": [
+          {
+            "text": "A Python framework",
+            "is_correct": true
+          },
+          {
+            "text": "A database",
+            "is_correct": false
+          }
+        ]
+      },
+      "accept": "application/json",
+      "expected_status": 201,
+      "actual_status": 201,
+      "content_type": "application/json",
+      "response_json": {
+        "id": 35,
+        "exam": 7,
+        "text": "HTTP - Pagination example 6",
+        "options": [
+          {
+            "id": 86,
+            "text": "A Python framework",
+            "is_correct": true
+          },
+          {
+            "id": 87,
+            "text": "A database",
+            "is_correct": false
+          }
+        ]
+      },
+      "expected_result": "HTTP 201",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "pagination-first",
+      "endpoint": "http://127.0.0.1:8000/api/questions/?exam=7",
+      "method": "GET",
+      "request_json": null,
+      "accept": "application/json",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "application/json",
+      "response_json": {
+        "count": 7,
+        "next": "http://127.0.0.1:8000/api/questions/?exam=7&page=2",
+        "previous": null,
+        "results": [
+          {
+            "id": 29,
+            "exam": 7,
+            "text": "HTTP - What is Django?",
+            "options": [
+              {
+                "id": 74,
+                "text": "A Python framework",
+                "is_correct": true
+              },
+              {
+                "id": 75,
+                "text": "A database",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": 30,
+            "exam": 7,
+            "text": "HTTP - Pagination example 1",
+            "options": [
+              {
+                "id": 76,
+                "text": "A Python framework",
+                "is_correct": true
+              },
+              {
+                "id": 77,
+                "text": "A database",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": 31,
+            "exam": 7,
+            "text": "HTTP - Pagination example 2",
+            "options": [
+              {
+                "id": 78,
+                "text": "A Python framework",
+                "is_correct": true
+              },
+              {
+                "id": 79,
+                "text": "A database",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": 32,
+            "exam": 7,
+            "text": "HTTP - Pagination example 3",
+            "options": [
+              {
+                "id": 80,
+                "text": "A Python framework",
+                "is_correct": true
+              },
+              {
+                "id": 81,
+                "text": "A database",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": 33,
+            "exam": 7,
+            "text": "HTTP - Pagination example 4",
+            "options": [
+              {
+                "id": 82,
+                "text": "A Python framework",
+                "is_correct": true
+              },
+              {
+                "id": 83,
+                "text": "A database",
+                "is_correct": false
+              }
+            ]
+          }
+        ]
+      },
+      "expected_result": "Total 7, primera página 5, enlace next presente.",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "pagination-second",
+      "endpoint": "http://127.0.0.1:8000/api/questions/?exam=7&page=2",
+      "method": "GET",
+      "request_json": null,
+      "accept": "application/json",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "application/json",
+      "response_json": {
+        "count": 7,
+        "next": null,
+        "previous": "http://127.0.0.1:8000/api/questions/?exam=7",
+        "results": [
+          {
+            "id": 34,
+            "exam": 7,
+            "text": "HTTP - Pagination example 5",
+            "options": [
+              {
+                "id": 84,
+                "text": "A Python framework",
+                "is_correct": true
+              },
+              {
+                "id": 85,
+                "text": "A database",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": 35,
+            "exam": 7,
+            "text": "HTTP - Pagination example 6",
+            "options": [
+              {
+                "id": 86,
+                "text": "A Python framework",
+                "is_correct": true
+              },
+              {
+                "id": 87,
+                "text": "A database",
+                "is_correct": false
+              }
+            ]
+          }
+        ]
+      },
+      "expected_result": "Total 7, segunda página 2, enlace previous presente.",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "pagination-back",
+      "endpoint": "http://127.0.0.1:8000/api/questions/?exam=7",
+      "method": "GET",
+      "request_json": null,
+      "accept": "application/json",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "application/json",
+      "response_json": {
+        "count": 7,
+        "next": "http://127.0.0.1:8000/api/questions/?exam=7&page=2",
+        "previous": null,
+        "results": [
+          {
+            "id": 29,
+            "exam": 7,
+            "text": "HTTP - What is Django?",
+            "options": [
+              {
+                "id": 74,
+                "text": "A Python framework",
+                "is_correct": true
+              },
+              {
+                "id": 75,
+                "text": "A database",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": 30,
+            "exam": 7,
+            "text": "HTTP - Pagination example 1",
+            "options": [
+              {
+                "id": 76,
+                "text": "A Python framework",
+                "is_correct": true
+              },
+              {
+                "id": 77,
+                "text": "A database",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": 31,
+            "exam": 7,
+            "text": "HTTP - Pagination example 2",
+            "options": [
+              {
+                "id": 78,
+                "text": "A Python framework",
+                "is_correct": true
+              },
+              {
+                "id": 79,
+                "text": "A database",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": 32,
+            "exam": 7,
+            "text": "HTTP - Pagination example 3",
+            "options": [
+              {
+                "id": 80,
+                "text": "A Python framework",
+                "is_correct": true
+              },
+              {
+                "id": 81,
+                "text": "A database",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": 33,
+            "exam": 7,
+            "text": "HTTP - Pagination example 4",
+            "options": [
+              {
+                "id": 82,
+                "text": "A Python framework",
+                "is_correct": true
+              },
+              {
+                "id": 83,
+                "text": "A database",
+                "is_correct": false
+              }
+            ]
+          }
+        ]
+      },
+      "expected_result": "HTTP 200",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "search-and-filter",
+      "endpoint": "http://127.0.0.1:8000/api/questions/?exam=7&search=Pagination",
+      "method": "GET",
+      "request_json": null,
+      "accept": "application/json",
+      "expected_status": 200,
+      "actual_status": 200,
+      "content_type": "application/json",
+      "response_json": {
+        "count": 6,
+        "next": "http://127.0.0.1:8000/api/questions/?exam=7&page=2&search=Pagination",
+        "previous": null,
+        "results": [
+          {
+            "id": 30,
+            "exam": 7,
+            "text": "HTTP - Pagination example 1",
+            "options": [
+              {
+                "id": 76,
+                "text": "A Python framework",
+                "is_correct": true
+              },
+              {
+                "id": 77,
+                "text": "A database",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": 31,
+            "exam": 7,
+            "text": "HTTP - Pagination example 2",
+            "options": [
+              {
+                "id": 78,
+                "text": "A Python framework",
+                "is_correct": true
+              },
+              {
+                "id": 79,
+                "text": "A database",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": 32,
+            "exam": 7,
+            "text": "HTTP - Pagination example 3",
+            "options": [
+              {
+                "id": 80,
+                "text": "A Python framework",
+                "is_correct": true
+              },
+              {
+                "id": 81,
+                "text": "A database",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": 33,
+            "exam": 7,
+            "text": "HTTP - Pagination example 4",
+            "options": [
+              {
+                "id": 82,
+                "text": "A Python framework",
+                "is_correct": true
+              },
+              {
+                "id": 83,
+                "text": "A database",
+                "is_correct": false
+              }
+            ]
+          },
+          {
+            "id": 34,
+            "exam": 7,
+            "text": "HTTP - Pagination example 5",
+            "options": [
+              {
+                "id": 84,
+                "text": "A Python framework",
+                "is_correct": true
+              },
+              {
+                "id": 85,
+                "text": "A database",
+                "is_correct": false
+              }
+            ]
+          }
+        ]
+      },
+      "expected_result": "6 preguntas coincidentes del examen de prueba.",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "filter-invalid",
+      "endpoint": "http://127.0.0.1:8000/api/questions/?exam=abc",
+      "method": "GET",
+      "request_json": null,
+      "accept": "application/json",
+      "expected_status": 400,
+      "actual_status": 400,
+      "content_type": "application/json",
+      "response_json": {
+        "exam": [
+          "A valid integer is required."
+        ]
+      },
+      "expected_result": "HTTP 400",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "page-not-found",
+      "endpoint": "http://127.0.0.1:8000/api/questions/?exam=7&page=999",
+      "method": "GET",
+      "request_json": null,
+      "accept": "application/json",
+      "expected_status": 404,
+      "actual_status": 404,
+      "content_type": "application/json",
+      "response_json": {
+        "detail": "Invalid page."
+      },
+      "expected_result": "HTTP 404",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "delete-question",
+      "endpoint": "http://127.0.0.1:8000/api/questions/29/",
+      "method": "DELETE",
+      "request_json": null,
+      "accept": "application/json",
+      "expected_status": 204,
+      "actual_status": 204,
+      "content_type": "",
+      "response_json": null,
+      "expected_result": "HTTP 204",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "question-deleted",
+      "endpoint": "http://127.0.0.1:8000/api/questions/29/",
+      "method": "GET",
+      "request_json": null,
+      "accept": "application/json",
+      "expected_status": 404,
+      "actual_status": 404,
+      "content_type": "application/json",
+      "response_json": {
+        "detail": "No Question matches the given query."
+      },
+      "expected_result": "HTTP 404",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "options-cascade",
+      "endpoint": "http://127.0.0.1:8000/api/options/74/",
+      "method": "GET",
+      "request_json": null,
+      "accept": "application/json",
+      "expected_status": 404,
+      "actual_status": 404,
+      "content_type": "application/json",
+      "response_json": {
+        "detail": "No Option matches the given query."
+      },
+      "expected_result": "HTTP 404",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "delete-exam",
+      "endpoint": "http://127.0.0.1:8000/api/exams/7/",
+      "method": "DELETE",
+      "request_json": null,
+      "accept": "application/json",
+      "expected_status": 204,
+      "actual_status": 204,
+      "content_type": "",
+      "response_json": null,
+      "expected_result": "HTTP 204",
+      "actual_result": "PASS"
+    },
+    {
+      "case": "exam-deleted",
+      "endpoint": "http://127.0.0.1:8000/api/exams/7/",
+      "method": "GET",
+      "request_json": null,
+      "accept": "application/json",
+      "expected_status": 404,
+      "actual_status": 404,
+      "content_type": "application/json",
+      "response_json": {
+        "detail": "No Exam matches the given query."
+      },
+      "expected_result": "HTTP 404",
+      "actual_result": "PASS"
+    }
+  ]
+}

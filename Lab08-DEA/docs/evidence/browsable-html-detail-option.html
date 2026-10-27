@@ -1,0 +1,401 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+
+      
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="robots" content="NONE,NOARCHIVE" />
+      
+
+      <title>Option Instance – Django REST framework</title>
+
+      
+        
+          <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/bootstrap.min.css"/>
+          <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/bootstrap-tweaks.css"/>
+        
+
+        <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/prettify.css"/>
+        <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/default.css"/>
+        
+      
+
+    
+  </head>
+
+  
+  <body class="">
+
+    <div class="wrapper">
+      
+        <div class="navbar navbar-static-top navbar-inverse"
+             role="navigation" aria-label="navbar">
+          <div class="container">
+            <span>
+              
+                <a class='navbar-brand' rel="nofollow" href='https://www.django-rest-framework.org/'>
+                    Django REST framework
+                </a>
+              
+            </span>
+            <ul class="nav navbar-nav pull-right">
+              
+                
+                  
+                
+              
+            </ul>
+          </div>
+        </div>
+      
+
+      <div class="container">
+        
+          <ul class="breadcrumb">
+            
+              
+                <li><a href="/api/">Api Root</a></li>
+              
+            
+              
+                <li><a href="/api/options/">Option List</a></li>
+              
+            
+              
+                <li class="active"><a href="/api/options/68/">Option Instance</a></li>
+              
+            
+          </ul>
+        
+
+        <!-- Content -->
+        <div id="content" role="main" aria-label="content">
+          
+
+          <div class="region"  aria-label="request form">
+          
+
+          
+            <form id="get-form" class="pull-right">
+              <fieldset>
+                
+                  <div class="btn-group format-selection">
+                    <a class="btn btn-primary js-tooltip" href="/api/options/68/" rel="nofollow" title="Make a GET request on the Option Instance resource">GET</a>
+
+                    <button class="btn btn-primary dropdown-toggle js-tooltip" data-toggle="dropdown" title="Specify a format for the GET request">
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      
+                        <li>
+                          <a class="js-tooltip format-option" href="/api/options/68/?format=json" rel="nofollow" title="Make a GET request on the Option Instance resource with the format set to `json`">json</a>
+                        </li>
+                      
+                        <li>
+                          <a class="js-tooltip format-option" href="/api/options/68/?format=api" rel="nofollow" title="Make a GET request on the Option Instance resource with the format set to `api`">api</a>
+                        </li>
+                      
+                    </ul>
+                  </div>
+                
+              </fieldset>
+            </form>
+          
+
+          
+            <form class="button-form" action="/api/options/68/" data-method="OPTIONS">
+              <button class="btn btn-primary js-tooltip" title="Make an OPTIONS request on the Option Instance resource">OPTIONS</button>
+            </form>
+          
+
+          
+            <button class="btn btn-danger button-form js-tooltip" title="Make a DELETE request on the Option Instance resource" data-toggle="modal" data-target="#deleteModal">DELETE</button>
+
+            <!-- Delete Modal -->
+            <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <h4 class="text-center">Are you sure you want to delete this Option Instance?</h4>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <form class="button-form" action="/api/options/68/" data-method="DELETE">
+                      <button class="btn btn-danger">Delete</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+
+          
+
+          
+
+          
+          </div>
+
+            <div class="content-main" role="main"  aria-label="main content">
+              <div class="page-header">
+                <h1>Option Instance</h1>
+              </div>
+              <div class="pull-left">
+                
+                  <p></p>
+                
+              </div>
+
+              
+
+              <div class="request-info" aria-label="request info">
+                <pre class="prettyprint"><b>GET</b> /api/options/68/</pre>
+              </div>
+
+              <div class="response-info" aria-label="response info">
+                <pre class="prettyprint"><span class="meta nocode"><b>HTTP 200 OK</b>
+<b>Allow:</b> <span class="lit">GET, PUT, PATCH, DELETE, HEAD, OPTIONS</span>
+<b>Content-Type:</b> <span class="lit">application/json</span>
+<b>Vary:</b> <span class="lit">Accept</span>
+
+</span>{
+    &quot;id&quot;: 68,
+    &quot;question&quot;: 28,
+    &quot;text&quot;: &quot;HTML option&quot;,
+    &quot;is_correct&quot;: false
+}</pre>
+              </div>
+            </div>
+
+            
+              
+
+              
+                <div class="tabbable">
+                  
+                    <ul class="nav nav-tabs form-switcher">
+                      <li>
+                        <a name='html-tab' href="#put-object-form" data-toggle="tab">HTML form</a>
+                      </li>
+                      <li>
+                        <a  name='raw-tab' href="#put-generic-content-form" data-toggle="tab">Raw data</a>
+                      </li>
+                    </ul>
+                  
+
+                  <div class="well tab-content">
+                    
+                      <div class="tab-pane" id="put-object-form">
+                        <form action="/api/options/68/" data-method="PUT" enctype="multipart/form-data" class="form-horizontal" novalidate>
+                          <fieldset>
+                            
+
+  
+
+  
+    
+
+<div class="form-group">
+  
+    <label class="col-sm-2 control-label ">
+      Question
+    </label>
+  
+
+  <div class="col-sm-10">
+    <select class="form-control" name="question">
+      
+      
+          
+            <option value="1"  >Demo - Django: pregunta de práctica 1</option>
+          
+      
+          
+            <option value="2"  >Demo - Django: pregunta de práctica 2</option>
+          
+      
+          
+            <option value="3"  >Demo - Django: pregunta de práctica 3</option>
+          
+      
+          
+            <option value="4"  >Demo - Django: pregunta de práctica 4</option>
+          
+      
+          
+            <option value="5"  >Demo - Django: pregunta de práctica 5</option>
+          
+      
+          
+            <option value="6"  >Demo - Django: pregunta de práctica 6</option>
+          
+      
+          
+            <option value="7"  >Demo - Django: pregunta de práctica 7</option>
+          
+      
+          
+            <option value="8"  >Demo - Django: pregunta de práctica 8</option>
+          
+      
+          
+            <option value="9"  >Demo - REST: pregunta de práctica 1</option>
+          
+      
+          
+            <option value="10"  >Demo - REST: pregunta de práctica 2</option>
+          
+      
+          
+            <option value="11"  >Demo - REST: pregunta de práctica 3</option>
+          
+      
+          
+            <option value="12"  >Demo - REST: pregunta de práctica 4</option>
+          
+      
+          
+            <option value="28" selected >HTML updated</option>
+          
+      
+    </select>
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    <div class="form-group ">
+  
+    <label class="col-sm-2 control-label ">
+      Text
+    </label>
+  
+
+  <div class="col-sm-10">
+    <input name="text" class="form-control" type="text"  value="HTML option" >
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    <div class="form-group horizontal-checkbox ">
+  
+    <label class="col-sm-2 control-label ">
+      Is correct
+    </label>
+  
+
+  <div class="col-sm-10">
+    <input type="checkbox" name="is_correct" value="true" >
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+
+                            <div class="form-actions">
+                              <button class="btn btn-primary js-tooltip" title="Make a PUT request on the Option Instance resource">PUT</button>
+                            </div>
+                          </fieldset>
+                        </form>
+                      </div>
+                    
+
+                    <div class="tab-pane" id="put-generic-content-form">
+                      
+                        <form action="/api/options/68/" data-method="PUT" class="form-horizontal">
+                          <fieldset>
+                            
+
+
+  <div class="form-group">
+    <label for="id__content_type" class="col-sm-2 control-label">Media type:</label>
+    <div class="col-sm-10">
+      <select name="_content_type" data-override="content-type" id="id__content_type" class="form-control">
+  <option value="application/json" selected>application/json</option>
+
+  <option value="application/x-www-form-urlencoded">application/x-www-form-urlencoded</option>
+
+  <option value="multipart/form-data">multipart/form-data</option>
+
+</select>
+      <span class="help-block"></span>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="id__content" class="col-sm-2 control-label">Content:</label>
+    <div class="col-sm-10">
+      <textarea name="_content" cols="40" rows="10" data-override="content" id="id__content" class="form-control">
+{
+    &quot;id&quot;: 68,
+    &quot;question&quot;: 28,
+    &quot;text&quot;: &quot;HTML option&quot;,
+    &quot;is_correct&quot;: false
+}</textarea>
+      <span class="help-block"></span>
+    </div>
+  </div>
+
+
+                            <div class="form-actions">
+                              
+                                <button class="btn btn-primary js-tooltip" title="Make a PUT request on the Option Instance resource">PUT</button>
+                              
+                              
+                              <button data-method="PATCH" class="btn btn-primary js-tooltip" title="Make a PATCH request on the Option Instance resource">PATCH</button>
+                                
+                            </div>
+                          </fieldset>
+                        </form>
+                      
+                    </div>
+                  </div>
+                </div>
+              
+            
+          
+        </div><!-- /.content -->
+      </div><!-- /.container -->
+    </div><!-- ./wrapper -->
+
+    
+
+    
+      <script type="application/json" id="drf_csrf">
+        {
+          "csrfHeaderName": "X-CSRFTOKEN",
+          "csrfToken": "REDACTED_LOCAL_CSRF_TOKEN"
+        }
+      </script>
+      <script src="/static/rest_framework/js/jquery-3.7.1.min.js"></script>
+      <script src="/static/rest_framework/js/ajax-form.js"></script>
+      <script src="/static/rest_framework/js/csrf.js"></script>
+      <script src="/static/rest_framework/js/bootstrap.min.js"></script>
+      <script src="/static/rest_framework/js/prettify-min.js"></script>
+      <script src="/static/rest_framework/js/default.js"></script>
+      <script src="/static/rest_framework/js/load-ajax-form.js"></script>
+    
+
+  </body>
+  
+</html>

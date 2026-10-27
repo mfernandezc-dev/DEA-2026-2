@@ -1,0 +1,154 @@
+UTC: 2026-10-27T16:26:56.289856+00:00
+
+$ python --version
+Python 3.14.3
+Exit code: 0
+
+$ python -m pip --version
+pip 25.3 from C:\Users\USER\Desktop\4° Ciclo\DEA-2026-2\Lab08-DEA\.venv\Lib\site-packages\pip (python 3.14)
+
+Exit code: 0
+
+$ python -m pip check
+No broken requirements found.
+Exit code: 0
+
+$ python -m pip freeze
+asgiref==3.13.0
+Django==5.2.15
+djangorestframework==3.16.1
+sqlparse==0.6.0
+tzdata==2026.5
+Exit code: 0
+
+$ python manage.py check
+System check identified no issues (0 silenced).
+Exit code: 0
+
+$ python manage.py makemigrations --check --dry-run
+No changes detected
+Exit code: 0
+
+$ python manage.py showmigrations
+admin
+ [X] 0001_initial
+ [X] 0002_logentry_remove_auto_add
+ [X] 0003_logentry_add_action_flag_choices
+auth
+ [X] 0001_initial
+ [X] 0002_alter_permission_name_max_length
+ [X] 0003_alter_user_email_max_length
+ [X] 0004_alter_user_username_opts
+ [X] 0005_alter_user_last_login_null
+ [X] 0006_require_contenttypes_0002
+ [X] 0007_alter_validators_add_error_messages
+ [X] 0008_alter_user_username_max_length
+ [X] 0009_alter_user_last_name_max_length
+ [X] 0010_alter_group_name_max_length
+ [X] 0011_update_proxy_permissions
+ [X] 0012_alter_user_first_name_max_length
+contenttypes
+ [X] 0001_initial
+ [X] 0002_remove_content_type_name
+quiz
+ [X] 0001_initial
+sessions
+ [X] 0001_initial
+Exit code: 0
+
+$ python manage.py test --verbosity 2
+Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+
+Found 48 test(s).
+Operations to perform:
+  Synchronize unmigrated apps: messages, rest_framework, staticfiles
+  Apply all migrations: admin, auth, contenttypes, quiz, sessions
+Synchronizing apps without migrations:
+  Creating tables...
+    Running deferred SQL...
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying quiz.0001_initial... OK
+  Applying sessions.0001_initial...test_combined_filter_and_search (quiz.tests.APIQueryTests.test_combined_filter_and_search) ... ok
+test_filter_by_exam (quiz.tests.APIQueryTests.test_filter_by_exam) ... ok
+test_filter_nonexistent_exam_is_empty (quiz.tests.APIQueryTests.test_filter_nonexistent_exam_is_empty) ... ok
+test_invalid_exam_filters (quiz.tests.APIQueryTests.test_invalid_exam_filters) ... ok
+test_nonexistent_page (quiz.tests.APIQueryTests.test_nonexistent_page) ... ok
+test_pagination_and_navigation_links (quiz.tests.APIQueryTests.test_pagination_and_navigation_links) ... ok
+test_search_by_partial_text (quiz.tests.APIQueryTests.test_search_by_partial_text) ... ok
+test_atomic_correct_answer_switch (quiz.tests.APIResourceTests.test_atomic_correct_answer_switch) ... ok
+test_browsable_api_for_all_resources (quiz.tests.APIResourceTests.test_browsable_api_for_all_resources) ... ok
+test_cannot_delete_only_correct_option (quiz.tests.APIResourceTests.test_cannot_delete_only_correct_option) ... ok
+test_cannot_move_an_option (quiz.tests.APIResourceTests.test_cannot_move_an_option) ... ok
+test_cannot_set_second_correct_option (quiz.tests.APIResourceTests.test_cannot_set_second_correct_option) ... ok
+test_cannot_unset_only_correct_option (quiz.tests.APIResourceTests.test_cannot_unset_only_correct_option) ... ok
+test_create_exam (quiz.tests.APIResourceTests.test_create_exam) ... ok
+test_create_incorrect_option (quiz.tests.APIResourceTests.test_create_incorrect_option) ... ok
+test_create_question (quiz.tests.APIResourceTests.test_create_question) ... ok
+test_delete_exam (quiz.tests.APIResourceTests.test_delete_exam) ... ok
+test_delete_incorrect_option (quiz.tests.APIResourceTests.test_delete_incorrect_option) ... ok
+test_delete_question (quiz.tests.APIResourceTests.test_delete_question) ... ok
+test_details_for_all_resources (quiz.tests.APIResourceTests.test_details_for_all_resources) ... ok
+test_direct_creation_rejects_second_correct (quiz.tests.APIResourceTests.test_direct_creation_rejects_second_correct) ... ok
+test_lists_for_all_resources (quiz.tests.APIResourceTests.test_lists_for_all_resources) ... ok
+test_missing_required_fields (quiz.tests.APIResourceTests.test_missing_required_fields) ... ok
+test_missing_resources_return_404 (quiz.tests.APIResourceTests.test_missing_resources_return_404) ... ok
+test_nonexistent_foreign_keys (quiz.tests.APIResourceTests.test_nonexistent_foreign_keys) ... ok
+test_patch_all_resources (quiz.tests.APIResourceTests.test_patch_all_resources) ... ok
+test_put_all_resources (quiz.tests.APIResourceTests.test_put_all_resources) ... ok
+test_question_creation_rejects_zero_or_two_correct (quiz.tests.APIResourceTests.test_question_creation_rejects_zero_or_two_correct) ... ok
+test_question_patch_rejects_zero_two_or_empty_options (quiz.tests.APIResourceTests.test_question_patch_rejects_zero_two_or_empty_options) ... ok
+test_router_root (quiz.tests.APIResourceTests.test_router_root) ... ok
+test_wrong_boolean_type (quiz.tests.APIResourceTests.test_wrong_boolean_type) ... ok
+test_wrong_foreign_key_type (quiz.tests.APIResourceTests.test_wrong_foreign_key_type) ... ok
+test_database_rejects_multiple_correct_options (quiz.tests.ModelTests.test_database_rejects_multiple_correct_options) ... ok
+test_exam_cascade (quiz.tests.ModelTests.test_exam_cascade) ... ok
+test_model_fields_and_strings (quiz.tests.ModelTests.test_model_fields_and_strings) ... ok
+test_option_defaults_to_incorrect (quiz.tests.ModelTests.test_option_defaults_to_incorrect) ... ok
+test_question_cascade (quiz.tests.ModelTests.test_question_cascade) ... ok
+test_related_names (quiz.tests.ModelTests.test_related_names) ... ok
+test_direct_option_serializer_rejects_second_correct (quiz.tests.SerializerTests.test_direct_option_serializer_rejects_second_correct) ... ok
+test_exam_read_only_fields (quiz.tests.SerializerTests.test_exam_read_only_fields) ... ok
+test_nested_creation_and_representation (quiz.tests.SerializerTests.test_nested_creation_and_representation) ... ok
+test_nested_creation_rejects_invalid_correct_counts (quiz.tests.SerializerTests.test_nested_creation_rejects_invalid_correct_counts) ... ok
+test_nested_creation_requires_options (quiz.tests.SerializerTests.test_nested_creation_requires_options) ... ok
+test_nested_creation_rolls_back_on_failure (quiz.tests.SerializerTests.test_nested_creation_rolls_back_on_failure) ... ok
+test_nested_patch_requires_text_in_replacement (quiz.tests.SerializerTests.test_nested_patch_requires_text_in_replacement) ... ok
+test_nested_update_replaces_options (quiz.tests.SerializerTests.test_nested_update_replaces_options) ... ok
+test_nested_update_rolls_back_on_failure (quiz.tests.SerializerTests.test_nested_update_rolls_back_on_failure) ... ok
+test_partial_update_without_options_preserves_them (quiz.tests.SerializerTests.test_partial_update_without_options_preserves_them) ... ok
+
+----------------------------------------------------------------------
+Ran 48 tests in 0.371s
+
+OK
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+
+ OK
+System check identified no issues (0 silenced).
+Exit code: 0
+
+$ python manage.py shell -c from django.db.models import Count, Q; from quiz.models import Exam, Question, Option; invalid = Question.objects.annotate(correct=Count("options", filter=Q(options__is_correct=True))).exclude(correct=1).count(); print({"exams": Exam.objects.count(), "questions": Question.objects.count(), "options": Option.objects.count(), "invalid_questions": invalid}); assert invalid == 0
+9 objects imported automatically (use -v 2 for details).
+
+{'exams': 2, 'questions': 12, 'options': 24, 'invalid_questions': 0}
+Exit code: 0
+
+Basic Python line-length/whitespace review:
+PASS

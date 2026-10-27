@@ -1,0 +1,497 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+
+      
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="robots" content="NONE,NOARCHIVE" />
+      
+
+      <title>Question List – Django REST framework</title>
+
+      
+        
+          <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/bootstrap.min.css"/>
+          <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/bootstrap-tweaks.css"/>
+        
+
+        <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/prettify.css"/>
+        <link rel="stylesheet" type="text/css" href="/static/rest_framework/css/default.css"/>
+        
+      
+
+    
+  </head>
+
+  
+  <body class="">
+
+    <div class="wrapper">
+      
+        <div class="navbar navbar-static-top navbar-inverse"
+             role="navigation" aria-label="navbar">
+          <div class="container">
+            <span>
+              
+                <a class='navbar-brand' rel="nofollow" href='https://www.django-rest-framework.org/'>
+                    Django REST framework
+                </a>
+              
+            </span>
+            <ul class="nav navbar-nav pull-right">
+              
+                
+                  
+                
+              
+            </ul>
+          </div>
+        </div>
+      
+
+      <div class="container">
+        
+          <ul class="breadcrumb">
+            
+              
+                <li><a href="/api/">Api Root</a></li>
+              
+            
+              
+                <li class="active"><a href="/api/questions/">Question List</a></li>
+              
+            
+          </ul>
+        
+
+        <!-- Content -->
+        <div id="content" role="main" aria-label="content">
+          
+
+          <div class="region"  aria-label="request form">
+          
+
+          
+            <form id="get-form" class="pull-right">
+              <fieldset>
+                
+                  <div class="btn-group format-selection">
+                    <a class="btn btn-primary js-tooltip" href="/api/questions/" rel="nofollow" title="Make a GET request on the Question List resource">GET</a>
+
+                    <button class="btn btn-primary dropdown-toggle js-tooltip" data-toggle="dropdown" title="Specify a format for the GET request">
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      
+                        <li>
+                          <a class="js-tooltip format-option" href="/api/questions/?format=json" rel="nofollow" title="Make a GET request on the Question List resource with the format set to `json`">json</a>
+                        </li>
+                      
+                        <li>
+                          <a class="js-tooltip format-option" href="/api/questions/?format=api" rel="nofollow" title="Make a GET request on the Question List resource with the format set to `api`">api</a>
+                        </li>
+                      
+                    </ul>
+                  </div>
+                
+              </fieldset>
+            </form>
+          
+
+          
+            <form class="button-form" action="/api/questions/" data-method="OPTIONS">
+              <button class="btn btn-primary js-tooltip" title="Make an OPTIONS request on the Question List resource">OPTIONS</button>
+            </form>
+          
+
+          
+
+          
+
+          
+            <button style="float: right; margin-right: 10px" data-toggle="modal" data-target="#filtersModal" class="btn btn-default">
+              <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+              Filters
+            </button>
+          
+
+          
+          </div>
+
+            <div class="content-main" role="main"  aria-label="main content">
+              <div class="page-header">
+                <h1>Question List</h1>
+              </div>
+              <div class="pull-left">
+                
+                  <p></p>
+                
+              </div>
+
+              
+                <nav class="pull-right">
+                  <ul class="pagination">
+  
+    <li class="disabled">
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+  
+
+  
+    
+      
+        <li class="active">
+          <a href="http://127.0.0.1:8000/api/questions/">1</a>
+        </li>
+      
+    
+  
+    
+      
+        <li>
+          <a href="http://127.0.0.1:8000/api/questions/?page=2">2</a>
+        </li>
+      
+    
+  
+    
+      
+        <li>
+          <a href="http://127.0.0.1:8000/api/questions/?page=3">3</a>
+        </li>
+      
+    
+  
+
+  
+    <li>
+      <a href="http://127.0.0.1:8000/api/questions/?page=2" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  
+</ul>
+
+                </nav>
+              
+
+              <div class="request-info" aria-label="request info">
+                <pre class="prettyprint"><b>GET</b> /api/questions/</pre>
+              </div>
+
+              <div class="response-info" aria-label="response info">
+                <pre class="prettyprint"><span class="meta nocode"><b>HTTP 200 OK</b>
+<b>Allow:</b> <span class="lit">GET, POST, HEAD, OPTIONS</span>
+<b>Content-Type:</b> <span class="lit">application/json</span>
+<b>Vary:</b> <span class="lit">Accept</span>
+
+</span>{
+    &quot;count&quot;: 12,
+    &quot;next&quot;: &quot;<a href="http://127.0.0.1:8000/api/questions/?page=2" rel="nofollow">http://127.0.0.1:8000/api/questions/?page=2</a>&quot;,
+    &quot;previous&quot;: null,
+    &quot;results&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;exam&quot;: 1,
+            &quot;text&quot;: &quot;Demo - Django: pregunta de práctica 1&quot;,
+            &quot;options&quot;: [
+                {
+                    &quot;id&quot;: 1,
+                    &quot;text&quot;: &quot;Respuesta correcta&quot;,
+                    &quot;is_correct&quot;: true
+                },
+                {
+                    &quot;id&quot;: 2,
+                    &quot;text&quot;: &quot;Respuesta incorrecta&quot;,
+                    &quot;is_correct&quot;: false
+                }
+            ]
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;exam&quot;: 1,
+            &quot;text&quot;: &quot;Demo - Django: pregunta de práctica 2&quot;,
+            &quot;options&quot;: [
+                {
+                    &quot;id&quot;: 3,
+                    &quot;text&quot;: &quot;Respuesta correcta&quot;,
+                    &quot;is_correct&quot;: true
+                },
+                {
+                    &quot;id&quot;: 4,
+                    &quot;text&quot;: &quot;Respuesta incorrecta&quot;,
+                    &quot;is_correct&quot;: false
+                }
+            ]
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;exam&quot;: 1,
+            &quot;text&quot;: &quot;Demo - Django: pregunta de práctica 3&quot;,
+            &quot;options&quot;: [
+                {
+                    &quot;id&quot;: 5,
+                    &quot;text&quot;: &quot;Respuesta correcta&quot;,
+                    &quot;is_correct&quot;: true
+                },
+                {
+                    &quot;id&quot;: 6,
+                    &quot;text&quot;: &quot;Respuesta incorrecta&quot;,
+                    &quot;is_correct&quot;: false
+                }
+            ]
+        },
+        {
+            &quot;id&quot;: 4,
+            &quot;exam&quot;: 1,
+            &quot;text&quot;: &quot;Demo - Django: pregunta de práctica 4&quot;,
+            &quot;options&quot;: [
+                {
+                    &quot;id&quot;: 7,
+                    &quot;text&quot;: &quot;Respuesta correcta&quot;,
+                    &quot;is_correct&quot;: true
+                },
+                {
+                    &quot;id&quot;: 8,
+                    &quot;text&quot;: &quot;Respuesta incorrecta&quot;,
+                    &quot;is_correct&quot;: false
+                }
+            ]
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;exam&quot;: 1,
+            &quot;text&quot;: &quot;Demo - Django: pregunta de práctica 5&quot;,
+            &quot;options&quot;: [
+                {
+                    &quot;id&quot;: 9,
+                    &quot;text&quot;: &quot;Respuesta correcta&quot;,
+                    &quot;is_correct&quot;: true
+                },
+                {
+                    &quot;id&quot;: 10,
+                    &quot;text&quot;: &quot;Respuesta incorrecta&quot;,
+                    &quot;is_correct&quot;: false
+                }
+            ]
+        }
+    ]
+}</pre>
+              </div>
+            </div>
+
+            
+              
+                <div class="tabbable">
+                  
+                    <ul class="nav nav-tabs form-switcher">
+                      <li>
+                        <a name='html-tab' href="#post-object-form" data-toggle="tab">HTML form</a>
+                      </li>
+                      <li>
+                        <a name='raw-tab' href="#post-generic-content-form" data-toggle="tab">Raw data</a>
+                      </li>
+                    </ul>
+                  
+
+                  <div class="well tab-content">
+                    
+                      <div class="tab-pane" id="post-object-form">
+                        
+                          <form action="/api/questions/" method="POST" enctype="multipart/form-data" class="form-horizontal" novalidate>
+                            <fieldset>
+                              <input type="hidden" name="csrfmiddlewaretoken" value="REDACTED_LOCAL_CSRF_TOKEN">
+                              
+
+  
+
+  
+    
+
+<div class="form-group">
+  
+    <label class="col-sm-2 control-label ">
+      Exam
+    </label>
+  
+
+  <div class="col-sm-10">
+    <select class="form-control" name="exam">
+      
+      
+          
+            <option value="1"  >Demo - Django</option>
+          
+      
+          
+            <option value="2"  >Demo - REST</option>
+          
+      
+    </select>
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    <div class="form-group ">
+  
+    <label class="col-sm-2 control-label ">
+      Text
+    </label>
+  
+
+  <div class="col-sm-10">
+    <textarea name="text" class="form-control"  ></textarea>
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    
+
+<fieldset>
+  
+    <div class="form-group" style="border-bottom: 1px solid #e5e5e5">
+      <legend class="control-label col-sm-2 " style="border-bottom: 0">
+        Options
+      </legend>
+    </div>
+  
+
+  <p>Lists are not currently supported in HTML input.</p>
+</fieldset>
+
+  
+
+
+                              <div class="form-actions">
+                                <button class="btn btn-primary js-tooltip" title="Make a POST request on the Question List resource">POST</button>
+                              </div>
+                            </fieldset>
+                          </form>
+                        
+                      </div>
+                    
+
+                    <div class="tab-pane" id="post-generic-content-form">
+                      
+                        <form action="/api/questions/" method="POST" class="form-horizontal">
+                          <fieldset>
+                            
+
+
+  <div class="form-group">
+    <label for="id__content_type" class="col-sm-2 control-label">Media type:</label>
+    <div class="col-sm-10">
+      <select name="_content_type" data-override="content-type" id="id__content_type" class="form-control">
+  <option value="application/json" selected>application/json</option>
+
+  <option value="application/x-www-form-urlencoded">application/x-www-form-urlencoded</option>
+
+  <option value="multipart/form-data">multipart/form-data</option>
+
+</select>
+      <span class="help-block"></span>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="id__content" class="col-sm-2 control-label">Content:</label>
+    <div class="col-sm-10">
+      <textarea name="_content" cols="40" rows="10" data-override="content" id="id__content" class="form-control">
+{
+    &quot;exam&quot;: null,
+    &quot;text&quot;: &quot;&quot;,
+    &quot;options&quot;: []
+}</textarea>
+      <span class="help-block"></span>
+    </div>
+  </div>
+
+
+                            <div class="form-actions">
+                              <button class="btn btn-primary js-tooltip" title="Make a POST request on the Question List resource">POST</button>
+                            </div>
+                          </fieldset>
+                        </form>
+                      
+                    </div>
+                  </div>
+                </div>
+              
+
+              
+            
+          
+        </div><!-- /.content -->
+      </div><!-- /.container -->
+    </div><!-- ./wrapper -->
+
+    
+      <div class="modal fade" id="filtersModal" tabindex="-1" role="dialog" aria-labelledby="filters" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Filters</h4>
+    </div>
+      <div class="modal-body">
+          
+          
+          
+<h2>Search</h2>
+<form class="form-inline">
+  <div class="form-group">
+    <div class="input-group">
+      <input type="text" class="form-control" style="width: 350px" name="search" value="">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search</button>
+      </span>
+    </div>
+  </div>
+</form>
+
+          
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+      <script type="application/json" id="drf_csrf">
+        {
+          "csrfHeaderName": "X-CSRFTOKEN",
+          "csrfToken": "REDACTED_LOCAL_CSRF_TOKEN"
+        }
+      </script>
+      <script src="/static/rest_framework/js/jquery-3.7.1.min.js"></script>
+      <script src="/static/rest_framework/js/ajax-form.js"></script>
+      <script src="/static/rest_framework/js/csrf.js"></script>
+      <script src="/static/rest_framework/js/bootstrap.min.js"></script>
+      <script src="/static/rest_framework/js/prettify-min.js"></script>
+      <script src="/static/rest_framework/js/default.js"></script>
+      <script src="/static/rest_framework/js/load-ajax-form.js"></script>
+    
+
+  </body>
+  
+</html>
