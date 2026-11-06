@@ -1,0 +1,157 @@
+{
+  "executedAt": "2026-11-06T04:19:09.281Z",
+  "results": [
+    {
+      "name": "Original billboard: eight movies, 24 showtimes, header, banner and footer",
+      "status": "passed"
+    },
+    {
+      "name": "Reusable Button: primary banner link, secondary favorite buttons and preserved navigation",
+      "status": "passed"
+    },
+    {
+      "name": "Favorites: add two movies through onClick, visual variants and no duplicated IDs",
+      "status": "passed"
+    },
+    {
+      "name": "Favorites: remove and re-add without changing other movies or reloading",
+      "status": "passed"
+    },
+    {
+      "name": "localStorage: favorites and selected buttons survive an actual page reload",
+      "status": "passed"
+    },
+    {
+      "name": "Controlled search inside banner: onChange updates input immediately, not the list",
+      "status": "passed"
+    },
+    {
+      "name": "400 ms debounce: intermediate timers canceled, one console message and delayed result",
+      "status": "passed"
+    },
+    {
+      "name": "MovieList: partial title, case-insensitive matching, surrounding spaces and favorite state",
+      "status": "passed"
+    },
+    {
+      "name": "Empty state: unmatched title displays zero results and an accessible status message",
+      "status": "passed"
+    },
+    {
+      "name": "Clearing search restores all original data, schedules and favorites",
+      "status": "passed"
+    },
+    {
+      "name": "Removing all favorites persists an empty array after reload",
+      "status": "passed"
+    },
+    {
+      "name": "Saved IDs are validated: duplicates and IDs outside the original billboard are discarded",
+      "status": "passed"
+    },
+    {
+      "name": "Desktop and mobile layouts preserve the billboard without horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "name": "Browser console and local image requests have no errors",
+      "status": "passed"
+    }
+  ],
+  "screenshots": [
+    "evidencias/03-lab10-cartelera.png",
+    "evidencias/04-lab10-favoritas.png",
+    "evidencias/05-lab10-favoritas-recargadas.png",
+    "evidencias/06-lab10-busqueda.png",
+    "evidencias/07-lab10-estado-vacio.png",
+    "evidencias/08-lab10-movil.png"
+  ],
+  "consoleMessages": [
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: faro"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search:  FARO "
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: cielo"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: zzzz-no-existe"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    }
+  ],
+  "browserErrors": [],
+  "failedRequests": []
+}
