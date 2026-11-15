@@ -1,0 +1,649 @@
+{
+  "executedAt": "2026-11-15T06:36:49.495Z",
+  "results": [
+    {
+      "name": "Activity 9: Header initially displays zero and receives only the derived numeric count",
+      "status": "passed"
+    },
+    {
+      "name": "Original billboard: eight movies, 24 showtimes, header, banner and footer",
+      "status": "passed"
+    },
+    {
+      "name": "Reusable Button: primary banner link, secondary favorite buttons and preserved navigation",
+      "status": "passed"
+    },
+    {
+      "name": "Favorites: add two movies through onClick, visual variants and no duplicated IDs",
+      "status": "passed"
+    },
+    {
+      "name": "Favorites: remove and re-add without changing other movies or reloading",
+      "status": "passed"
+    },
+    {
+      "name": "localStorage: favorites and selected buttons survive an actual page reload",
+      "status": "passed"
+    },
+    {
+      "name": "Controlled search inside banner: onChange updates input immediately, not the list",
+      "status": "passed"
+    },
+    {
+      "name": "400 ms debounce: intermediate timers canceled, one console message and delayed result",
+      "status": "passed"
+    },
+    {
+      "name": "MovieList: partial title, case-insensitive matching, surrounding spaces and favorite state",
+      "status": "passed"
+    },
+    {
+      "name": "Empty state: unmatched title displays zero results and an accessible status message",
+      "status": "passed"
+    },
+    {
+      "name": "Clearing search restores all original data, schedules and favorites",
+      "status": "passed"
+    },
+    {
+      "name": "Removing all favorites persists an empty array after reload",
+      "status": "passed"
+    },
+    {
+      "name": "Saved IDs are validated: duplicates and IDs outside the original billboard are discarded",
+      "status": "passed"
+    },
+    {
+      "name": "Desktop and mobile layouts preserve the billboard without horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "name": "Browser console and local image requests have no errors",
+      "status": "passed"
+    },
+    {
+      "name": "Favorite notification: adding shows one accessible message and preserves the existing counts",
+      "status": "passed"
+    },
+    {
+      "name": "Favorite notification: removal replaces the existing message without duplicates",
+      "status": "passed"
+    },
+    {
+      "name": "Favorite notification: rapid toggles stay deduplicated and do not block searching",
+      "status": "passed"
+    },
+    {
+      "name": "Favorite notification: mobile layout, automatic dismissal and persistence after reload",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize layout: 1440px shows 4 columns without overflow",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize layout: 1200px shows 4 columns without overflow",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize layout: 1199px shows 3 columns without overflow",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize layout: 900px shows 3 columns without overflow",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize layout: 899px shows 2 columns without overflow",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize layout: 600px shows 2 columns without overflow",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize layout: 599px shows 1 columns without overflow",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize layout: 390px shows 1 columns without overflow",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize layout: 320px shows 1 columns without overflow",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize layout: search, notifications and persistent favorites survive resizing",
+      "status": "passed"
+    },
+    {
+      "name": "Activity 8 app: initial Skeleton transitions to four premieres after the real request delay",
+      "status": "passed"
+    },
+    {
+      "name": "Activity 8 carousel: desktop buttons, Tab and Enter navigate accessibly",
+      "status": "passed"
+    },
+    {
+      "name": "Activity 8 carousel: mobile buttons, Home, End and native scrolling remain contained",
+      "status": "passed"
+    },
+    {
+      "name": "Activity 8 app: premieres remain independent of search, favorites, notifications and persistence",
+      "status": "passed"
+    },
+    {
+      "name": "Activity 9: multiple cards update the sibling Header without duplicated favorite IDs",
+      "status": "passed"
+    },
+    {
+      "name": "Activity 9: removing a favorite decrements the count and keeps the other cards selected",
+      "status": "passed"
+    },
+    {
+      "name": "Activity 9: a real reload restores both Header count and favorite card states",
+      "status": "passed"
+    },
+    {
+      "name": "Activity 9: removing every favorite persists a zero count after reload",
+      "status": "passed"
+    },
+    {
+      "name": "Activity 10: keyboard clearing synchronizes banner input and list immediately without reloading",
+      "status": "passed"
+    },
+    {
+      "name": "Activity 10: clearing an unmatched search removes the empty state and restores all results",
+      "status": "passed"
+    },
+    {
+      "name": "Activity 10: a pending search is canceled before 400 ms and cannot restore stale results",
+      "status": "passed"
+    },
+    {
+      "name": "Activity 10: typing immediately after clear never reveals the previously confirmed search",
+      "status": "passed"
+    },
+    {
+      "name": "Activities 9 and 10: mobile count, keyboard clearing, navigation and carousel remain accessible",
+      "status": "passed"
+    },
+    {
+      "name": "useDebounce: initial and unchanged values do not schedule unnecessary updates",
+      "status": "passed"
+    },
+    {
+      "name": "useDebounce: default delay is exactly 400 ms and identical rerenders do not restart it",
+      "status": "passed"
+    },
+    {
+      "name": "useDebounce: rapid values cancel previous timers and publish only the final value",
+      "status": "passed"
+    },
+    {
+      "name": "useDebounce: configurable delays, changed delays and zero delay are respected",
+      "status": "passed"
+    },
+    {
+      "name": "useDebounce: returning to the published value cancels a pending change",
+      "status": "passed"
+    },
+    {
+      "name": "useDebounce: non-string values retain their original identity",
+      "status": "passed"
+    },
+    {
+      "name": "useDebounce: unmount clears pending timers under StrictMode",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize: initial dimensions and one active listener under StrictMode",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize: resize updates both width and height without adding listeners",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize: unchanged dimensions preserve state identity and avoid commits",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize: unmount removes the listener and stops subsequent updates",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize: repeated StrictMode mounts do not accumulate listeners",
+      "status": "passed"
+    },
+    {
+      "name": "usePremieres: initial loading lasts 800 ms with one pending StrictMode request",
+      "status": "passed"
+    },
+    {
+      "name": "usePremieres: success returns four adapted local movies and completes only once",
+      "status": "passed"
+    },
+    {
+      "name": "usePremieres: controlled failure provides an understandable error and no data",
+      "status": "passed"
+    },
+    {
+      "name": "usePremieres: stable retry transitions error to loading to success",
+      "status": "passed"
+    },
+    {
+      "name": "usePremieres: equivalent options and rerenders do not restart or duplicate requests",
+      "status": "passed"
+    },
+    {
+      "name": "usePremieres: unmount cancels timers and ignores even forced late callbacks",
+      "status": "passed"
+    },
+    {
+      "name": "usePremieres: changed options cancel stale attempts and retry recovers deterministically",
+      "status": "passed"
+    },
+    {
+      "name": "Activity 8 section: accessible Skeleton has poster, title and metadata placeholders at every width",
+      "status": "passed"
+    },
+    {
+      "name": "Activity 8 Skeleton: reduced-motion preference disables its subtle animation",
+      "status": "passed"
+    },
+    {
+      "name": "Activity 8 section: Skeleton remains at 799 ms and disappears for the four movies at 800 ms",
+      "status": "passed"
+    },
+    {
+      "name": "Activity 8 section: controlled error exposes a clear alert and an accessible retry button",
+      "status": "passed"
+    },
+    {
+      "name": "Activity 8 section: keyboard retry invokes the hook and recovers through loading to success",
+      "status": "passed"
+    },
+    {
+      "name": "Activity 8 carousel: movies are reusable props without another request or artificial records",
+      "status": "passed"
+    }
+  ],
+  "screenshots": [
+    "evidencias/lab11-activities-9-10-G8eFtG/22-lab11-favorite-count-zero.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/03-lab10-cartelera.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/04-lab10-favoritas.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/05-lab10-favoritas-recargadas.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/06-lab10-busqueda.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/07-lab10-estado-vacio.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/08-lab10-movil.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/09-lab11-favorite-added.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/10-lab11-favorite-removed.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/11-lab11-mobile-notification.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/12-lab11-grid-1440.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/12-lab11-grid-1200.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/12-lab11-grid-900.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/12-lab11-grid-600.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/12-lab11-grid-390.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/12-lab11-grid-320.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/17-lab11-premieres-desktop.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/18-lab11-premieres-mobile.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/23-lab11-favorite-count-added.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/24-lab11-favorite-count-removed.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/25-lab11-favorite-count-reloaded.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/26-lab11-filter-applied.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/27-lab11-clear-filters-button.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/28-lab11-filter-cleared-billboard.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/29-lab11-search-pending.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/30-lab11-pending-search-cleared.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/31-lab11-shared-state-mobile.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/13-lab11-premieres-loading.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/14-lab11-premieres-success.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/15-lab11-premieres-error.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/16-lab11-skeleton-loading.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/19-lab11-premieres-error.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/20-lab11-premieres-retry-button.png",
+    "evidencias/lab11-activities-9-10-G8eFtG/21-lab11-premieres-after-retry.png"
+  ],
+  "consoleMessages": [
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: faro"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search:  FARO "
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: cielo"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: zzzz-no-existe"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: faro"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: faro"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: cielo"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search:  FARO "
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: zzzz-no-existe"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: faro"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: faro"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: cielo"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: faro"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: faro"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: faro"
+    },
+    {
+      "type": "info",
+      "text": "[MovieSearch] Debounced search: "
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connecting..."
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected."
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"
+    }
+  ],
+  "browserErrors": [],
+  "failedRequests": []
+}
