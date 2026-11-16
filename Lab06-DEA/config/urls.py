@@ -2,8 +2,10 @@
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.views.generic.base import RedirectView
 
 urlpatterns = [
+    path('', RedirectView.as_view(pattern_name='news:index', permanent=False), name='home'),
     path('admin/', admin.site.urls),
     path('', include('movies.urls')),
     path('news/', include('news.urls')),

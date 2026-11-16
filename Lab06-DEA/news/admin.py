@@ -24,4 +24,3 @@ class ArticleAdmin(admin.ModelAdmin):
     list_filter = ('author', 'categories', 'published_at')
     filter_horizontal = ('categories',)
     prepopulated_fields = {'slug': ('title',)}
-    readonly_fields = ('published_at',)

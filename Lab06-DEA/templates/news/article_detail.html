@@ -22,6 +22,6 @@
                 <img src="{{ article.image.url }}" alt="{{ article.title }}">
             </div>
         {% endif %}
-        <div class="article-detail-content">{{ article.content|safe }}</div>
+        <div class="article-detail-content">{{ article.content|striptags|force_escape }}</div>
     </article>
 {% endblock %}

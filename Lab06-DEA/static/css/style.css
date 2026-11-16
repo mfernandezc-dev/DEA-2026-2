@@ -5,6 +5,9 @@
 }
 
 body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f8f9fa;
     color: #343a40;
@@ -60,11 +63,14 @@ body {
 }
 
 .main-container {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1.5rem 2rem;
     display: grid;
-    grid-template-columns: 75% 25%;
+    flex: 1;
+    align-content: start;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
     gap: 2rem;
 }
 

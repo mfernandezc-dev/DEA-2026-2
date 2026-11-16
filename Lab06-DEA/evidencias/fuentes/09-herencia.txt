@@ -1,0 +1,68 @@
+CODIGO REAL DE HERENCIA DE PLANTILLAS
+Numeracion agregada para facilitar la lectura; codigo sin modificaciones.
+
+ARCHIVO REAL: templates/news/index.html
+001 | ﻿{% extends 'base.html' %}
+002 |
+003 | {% block title %}Inicio - News Portal{% endblock %}
+004 |
+005 | {% block content %}
+006 |     <h1 class="page-title">Últimas Noticias</h1>
+007 |     {% for article in articles %}
+008 |         {% include 'news/_article_card.html' %}
+009 |     {% empty %}
+010 |         <div class="empty-state">
+011 |             <i class="fas fa-newspaper"></i>
+012 |             <p>No hay publicaciones disponibles en este momento.</p>
+013 |         </div>
+014 |     {% endfor %}
+015 | {% endblock %}
+
+ARCHIVO REAL: templates/base.html
+001 | ﻿<!DOCTYPE html>
+002 | <html lang="es">
+003 | <head>
+004 |     <meta charset="UTF-8">
+005 |     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+006 |     <title>{% block title %}News Portal - Noticias{% endblock %}</title>
+007 |     {% load static %}
+008 |     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+009 |     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+010 | </head>
+011 | <body>
+012 |     <header class="navbar">
+013 |         <div class="navbar-container">
+014 |             <div class="navbar-brand">
+015 |                 <i class="fas fa-newspaper"></i>
+016 |                 <span>News Portal</span>
+017 |             </div>
+018 |             <nav class="navbar-nav">
+019 |                 <a href="{% url 'news:index' %}"><i class="fas fa-home"></i> Inicio</a>
+020 |                 <a href="/admin/"><i class="fas fa-cog"></i> Admin</a>
+021 |             </nav>
+022 |         </div>
+023 |     </header>
+024 |     <main class="main-container">
+025 |         <section class="content">
+026 |             {% block content %}{% endblock %}
+027 |         </section>
+028 |         <aside class="sidebar">
+029 |             {% block sidebar %}
+030 |                 <div class="sidebar-widget">
+031 |                     <h3>Categorías</h3>
+032 |                     <ul class="category-list">
+033 |                         {% for category in categories %}
+034 |                             <li><a href="{% url 'news:category_detail' category.pk %}">{{ category.name }}</a></li>
+035 |                         {% empty %}
+036 |                             <li>No hay categorías</li>
+037 |                         {% endfor %}
+038 |                     </ul>
+039 |                 </div>
+040 |             {% endblock %}
+041 |         </aside>
+042 |     </main>
+043 |     <footer class="footer">
+044 |         <p>&copy; 2026 News Portal. Todos los derechos reservados.</p>
+045 |     </footer>
+046 | </body>
+047 | </html>

@@ -1,0 +1,50 @@
+{
+  "date_utc": "2026-11-16T06:02:28.429492+00:00",
+  "original_functional_files_unchanged": 34,
+  "files_outside_lab06_unchanged": 27110,
+  "git_and_other_laboratories_unchanged": true,
+  "added_files_including_this_report": 23,
+  "added_scope": [
+    "README.md",
+    "INFORME-LAB06.md",
+    "evidencias/"
+  ],
+  "databases": {
+    "original": {
+      "content_unchanged": true,
+      "size_bytes": 225280,
+      "sha256": "aea5866ba83b18f0e402b75c9fd1cbcec21351c0b3f141f48b49e9e63feee53e",
+      "mtime_unchanged": true,
+      "no_sidecars": true
+    },
+    "copy": {
+      "content_unchanged": true,
+      "size_bytes": 225280,
+      "sha256": "aea5866ba83b18f0e402b75c9fd1cbcec21351c0b3f141f48b49e9e63feee53e",
+      "mtime_unchanged": true,
+      "no_sidecars": true
+    }
+  },
+  "sqlite_counts": {
+    "news_article": 6,
+    "news_category": 3,
+    "news_author": 3,
+    "news_article_categories": 6
+  },
+  "sqlite_integrity": "ok",
+  "foreign_key_violations": 0,
+  "png_count": 13,
+  "png_formats_dimensions_and_hashes_verified": true,
+  "screenshots_visually_reviewed": true,
+  "source_code_lines_compared": 133,
+  "local_markdown_links_checked": 87,
+  "local_markdown_links_valid": true,
+  "text_files_scanned_for_known_secret_values": 9,
+  "no_database_browser_profile_raw_http_log_or_credentials_added": true,
+  "privacy_scope": "Revision de los PNG y metadatos; comparacion del secreto conocido y busqueda de patrones de credenciales en los textos nuevos. No equivale a una auditoria universal.",
+  "servers_and_browsers_stopped": true,
+  "pending": [
+    "Entrega funcional de imagenes MEDIA sin archivos originales asociados.",
+    "favicon.ico ausente, fuera del alcance."
+  ]
+}

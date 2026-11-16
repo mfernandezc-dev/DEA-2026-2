@@ -1,0 +1,31 @@
+FRAGMENTO REUTILIZABLE REAL
+
+ARCHIVO REAL: templates/news/_article_card.html
+001 | ﻿{% load static %}
+002 | <article class="article-card">
+003 |     {% if article.image %}
+004 |         <div class="article-card-image">
+005 |             <img src="{{ article.image.url }}" alt="{{ article.title }}">
+006 |         </div>
+007 |     {% endif %}
+008 |     <div class="article-card-content">
+009 |         <h2 class="article-card-title">
+010 |             <a href="{% url 'news:article_detail' article.pk %}">{{ article.title }}</a>
+011 |         </h2>
+012 |         <div class="article-meta">
+013 |             <span><i class="fas fa-calendar-alt"></i> {{ article.published_at|date:"d/m/Y" }}</span>
+014 |             <span><i class="fas fa-user"></i> {{ article.author.name }}</span>
+015 |         </div>
+016 |         {% if article.categories.all %}
+017 |             <div class="article-categories">
+018 |                 {% for category in article.categories.all %}
+019 |                     <span class="category-badge">{{ category.name }}</span>
+020 |                 {% endfor %}
+021 |             </div>
+022 |         {% endif %}
+023 |         <p class="article-excerpt">{{ article.content|truncatewords:20 }}</p>
+024 |         <a href="{% url 'news:article_detail' article.pk %}" class="btn-read-more">
+025 |             Leer más <i class="fas fa-arrow-right"></i>
+026 |         </a>
+027 |     </div>
+028 | </article>

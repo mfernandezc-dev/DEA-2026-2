@@ -1,0 +1,20 @@
+LAB06: PRUEBA REAL DEL MOTOR DE PLANTILLAS DJANGO
+Ejecucion en memoria. No se inserto ni modifico una noticia.
+
+Entrada HTML inofensiva:
+<strong>Prueba de HTML</strong> <em>solo texto</em>
+
+1. Expresion evaluada: {{ value }} (autoescape activo)
+Salida real obtenida:
+&lt;strong&gt;Prueba de HTML&lt;/strong&gt; &lt;em&gt;solo texto&lt;/em&gt;
+
+2. Expresion tomada del archivo templates/news/article_detail.html:
+{{ article.content|striptags|force_escape }}
+Salida real obtenida:
+Prueba de HTML solo texto
+
+Comprobaciones ejecutadas: etiquetas escapadas en el primer caso;
+texto sin etiquetas activas en el detalle. Resultado: CORRECTO.
+
+Limite: esta captura documenta una prueba en memoria, no una insercion
+en SQLite ni una auditoria exhaustiva de seguridad.

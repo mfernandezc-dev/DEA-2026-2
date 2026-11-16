@@ -1,0 +1,391 @@
+{
+  "date": "2026-11-16",
+  "scope": "Documentacion y capturas; ningun archivo funcional modificado.",
+  "counts": {
+    "articles": 6,
+    "categories": 3,
+    "authors": 3,
+    "article_categories": 6
+  },
+  "versions": {
+    "Python": "3.14.3",
+    "Django": "6.1",
+    "Pillow": "12.3.0",
+    "django-jazzmin": "3.0.5"
+  },
+  "browser": "Chrome/157.0.8103.51",
+  "news_migrations": [
+    "0001_initial",
+    "0002_remove_article_created_at_remove_article_updated_at_and_more"
+  ],
+  "current_http_checks": [
+    {
+      "route": "/",
+      "status": 302
+    },
+    {
+      "route": "/news/",
+      "status": 200
+    },
+    {
+      "route": "/news/article/6/",
+      "status": 200
+    },
+    {
+      "route": "/news/category/1/",
+      "status": 200
+    },
+    {
+      "route": "/static/css/style.css",
+      "status": 200
+    }
+  ],
+  "current_capture_checks": [
+    {
+      "filename": "01-portada.png",
+      "label": "Portada real con las seis noticias",
+      "width": 1440,
+      "height": 2062,
+      "status": "CORRECTO",
+      "path": "/news/",
+      "cards": 6,
+      "rows": 0,
+      "overflow": false,
+      "hasNewsEntities": false,
+      "detailAsText": false,
+      "sha256": "8fb5172696f38f0cfa44eed15ff34ee6c14b4e7e24c59ea95187579f20d7c759",
+      "bytes": 121951
+    },
+    {
+      "filename": "02-detalle.png",
+      "label": "Detalle real con contenido como texto",
+      "width": 1440,
+      "height": 1000,
+      "status": "CORRECTO",
+      "path": "/news/article/6/",
+      "cards": 0,
+      "rows": 0,
+      "overflow": false,
+      "hasNewsEntities": false,
+      "detailAsText": true,
+      "sha256": "5795de74dcc25041d2b958d15d54b4e205474a74cbcb3e28e86a635332ff702b",
+      "bytes": 56477
+    },
+    {
+      "filename": "03-categoria.png",
+      "label": "Categoria real con sus dos noticias",
+      "width": 1440,
+      "height": 1000,
+      "status": "CORRECTO",
+      "path": "/news/category/1/",
+      "cards": 2,
+      "rows": 0,
+      "overflow": false,
+      "hasNewsEntities": false,
+      "detailAsText": false,
+      "sha256": "8ac489b25bc36754a5dafe114f09fab5aabf8c7d383fc4910bf9e38676a47113",
+      "bytes": 74547
+    },
+    {
+      "filename": "04-admin-entidades.png",
+      "label": "Panel real con las tres entidades de news",
+      "width": 1440,
+      "height": 1000,
+      "status": "CORRECTO",
+      "path": "/admin/",
+      "cards": 0,
+      "rows": 0,
+      "overflow": false,
+      "hasNewsEntities": true,
+      "detailAsText": false,
+      "sha256": "77c8e79098904992e0160be8110361da301ac1d38b210b467fcf1338f3e2800b",
+      "bytes": 36167
+    },
+    {
+      "filename": "05-admin-noticias.png",
+      "label": "Listado administrativo real con seis registros",
+      "width": 1440,
+      "height": 1000,
+      "status": "CORRECTO",
+      "path": "/admin/news/article/",
+      "cards": 0,
+      "rows": 6,
+      "overflow": false,
+      "hasNewsEntities": true,
+      "detailAsText": false,
+      "sha256": "eaf8bd45be29a07ac56570459fa3b4bce314c0f1ed801c567f422c74a58bd0b5",
+      "bytes": 47523
+    },
+    {
+      "filename": "06-admin-filtro.png",
+      "label": "Filtro real por autor: dos registros",
+      "width": 1440,
+      "height": 1000,
+      "status": "CORRECTO",
+      "path": "/admin/news/article/?author__id__exact=3",
+      "cards": 0,
+      "rows": 2,
+      "overflow": false,
+      "hasNewsEntities": true,
+      "detailAsText": false,
+      "sha256": "c9d20c9cc99b70fe204003337c511819aaa0e8478ede7b7d06dac68e2d8ae0be",
+      "bytes": 37907
+    },
+    {
+      "filename": "07-admin-busqueda.png",
+      "label": "Busqueda real de noticias",
+      "width": 1440,
+      "height": 1000,
+      "status": "CORRECTO",
+      "path": "/admin/news/article/?q=Digital",
+      "cards": 0,
+      "rows": 1,
+      "overflow": false,
+      "hasNewsEntities": true,
+      "detailAsText": false,
+      "sha256": "958a75db393c4dd2b48109c3bfa4b2d99d04c58c04ad612821377d35f69368e9",
+      "bytes": 35697
+    },
+    {
+      "filename": "08-estructura.png",
+      "label": "Estructura funcional leida del sistema de archivos",
+      "width": 1440,
+      "height": 1074,
+      "status": "CORRECTO",
+      "path": "archivo de evidencia local",
+      "cards": 0,
+      "rows": 0,
+      "overflow": false,
+      "hasNewsEntities": false,
+      "detailAsText": false,
+      "sha256": "3a58dca379ef168cc469bf2f6d0dce896d3bf0ab394c8d27804c8dd33524e074",
+      "bytes": 66829
+    },
+    {
+      "filename": "09-herencia.png",
+      "label": "Codigo real de extends y bloques",
+      "width": 1440,
+      "height": 1884,
+      "status": "CORRECTO",
+      "path": "archivo de evidencia local",
+      "cards": 0,
+      "rows": 0,
+      "overflow": false,
+      "hasNewsEntities": false,
+      "detailAsText": false,
+      "sha256": "d986203a3fb44509616e5197ecf45100c5eb8043679cdf56f820d13f4462a3f7",
+      "bytes": 137201
+    },
+    {
+      "filename": "10-fragmento.png",
+      "label": "Codigo real del fragmento reutilizable",
+      "width": 1440,
+      "height": 1000,
+      "status": "CORRECTO",
+      "path": "archivo de evidencia local",
+      "cards": 0,
+      "rows": 0,
+      "overflow": false,
+      "hasNewsEntities": false,
+      "detailAsText": false,
+      "sha256": "9c7b5f3aaefb6b93b280cfe51e840578b5d4eda82fdd677eeb9cb03184762e71",
+      "bytes": 68571
+    },
+    {
+      "filename": "11-filtros-etiquetas.png",
+      "label": "Codigo real de variables, etiquetas y filtros",
+      "width": 1440,
+      "height": 1344,
+      "status": "CORRECTO",
+      "path": "archivo de evidencia local",
+      "cards": 0,
+      "rows": 0,
+      "overflow": false,
+      "hasNewsEntities": false,
+      "detailAsText": false,
+      "sha256": "f2de1f9a7f5d44b4ac536c61fb81006bd7642b7822aa3edb64d55bd1aa0b3037",
+      "bytes": 100548
+    },
+    {
+      "filename": "12-escapado.png",
+      "label": "Salida real de una prueba de Django en memoria",
+      "width": 1440,
+      "height": 1000,
+      "status": "CORRECTO",
+      "path": "archivo de evidencia local",
+      "cards": 0,
+      "rows": 0,
+      "overflow": false,
+      "hasNewsEntities": false,
+      "detailAsText": false,
+      "sha256": "9d66fe9fb509c74fe7ca5e7f3a83804a104558de1463245e69edba2ede37d305",
+      "bytes": 43557
+    },
+    {
+      "filename": "13-responsive.png",
+      "label": "Portada real en viewport movil de 390 px",
+      "width": 390,
+      "height": 2360,
+      "status": "CORRECTO",
+      "path": "/news/",
+      "cards": 6,
+      "rows": 0,
+      "overflow": false,
+      "hasNewsEntities": false,
+      "detailAsText": false,
+      "sha256": "fdb2843253f549607af1dd9bda6e3865bc368ce454e1e0f3e42ffa78f8af7da9",
+      "bytes": 95585
+    }
+  ],
+  "current_memory_escape_test": {
+    "status": "CORRECTO",
+    "saved_to_database": false,
+    "tested_expression": "{{ article.content|striptags|force_escape }}",
+    "input_type": "HTML inofensivo",
+    "default_autoescape_verified": true,
+    "detail_plain_text_verified": true
+  },
+  "prior_functional_tests": {
+    "stage": "Antes de las correcciones finales de presentacion; pruebas no repetidas durante las capturas.",
+    "source_name": "functional-results-rerun.json",
+    "selected_results": [
+      {
+        "test": "Proteccion CSRF del administrador",
+        "result": "CORRECTO",
+        "observation": "POST sin token rechazado con HTTP 403; solicitudes validas incluyen CSRF."
+      },
+      {
+        "test": "Validaciones administrativas",
+        "result": "CORRECTO",
+        "observation": "Rechaza campos requeridos vacios, fecha invalida y slug duplicado sin crear noticias."
+      },
+      {
+        "test": "Creacion real de noticia desde Admin",
+        "result": "CORRECTO",
+        "observation": "Alta mediante POST real del administrador: HTTP 302; fecha, autor, categoria y contenido persistidos dentro de la transaccion de prueba."
+      },
+      {
+        "test": "Escapado con contenido almacenado",
+        "result": "CORRECTO",
+        "observation": "HTML inofensivo guardado en SQLite se devuelve como texto escapado, no como etiquetas activas."
+      },
+      {
+        "test": "Truncado con contenido largo",
+        "result": "CORRECTO",
+        "observation": "Contenido temporal de mas de 35 palabras recortado a 20 con elipsis."
+      },
+      {
+        "test": "Categoria sin resultados",
+        "result": "CORRECTO",
+        "observation": "Categoria temporal sin noticias: HTTP 200 y mensaje empty, sin borrar registros originales."
+      },
+      {
+        "test": "Portada y sidebar sin resultados",
+        "result": "CORRECTO",
+        "observation": "Portada y sidebar con consulta vacia controlada: mensajes empty correctos; no se eliminaron datos."
+      },
+      {
+        "test": "Conservacion de registros y copia",
+        "result": "CORRECTO",
+        "observation": "Rollback completo: seis noticias y relaciones originales intactas; copia con el mismo SHA-256 inicial. Usuario y registros temporales no permanecen."
+      }
+    ]
+  },
+  "prior_readonly_tests": {
+    "stage": "Despues de las correcciones finales de presentacion.",
+    "source_name": "readonly-results.json",
+    "results": [
+      {
+        "test": "Sintaxis Python",
+        "result": "CORRECTO",
+        "observation": "25 archivos Python sin errores de sintaxis."
+      },
+      {
+        "test": "Compilacion de plantillas",
+        "result": "CORRECTO",
+        "observation": "6 plantillas compiladas."
+      },
+      {
+        "test": "Sistema y conexion protegida",
+        "result": "CORRECTO",
+        "observation": "System checks correctos; SQLite en mode=ro, immutable=1 y query_only=ON."
+      },
+      {
+        "test": "Redireccion y rutas existentes",
+        "result": "CORRECTO",
+        "observation": "/ -> 302 /news/ -> 200; rutas existentes preservadas."
+      },
+      {
+        "test": "Portada, detalles y categorias",
+        "result": "CORRECTO",
+        "observation": "Seis noticias, seis detalles y tres categorias con dos noticias; herencia y fragmentos conservados."
+      },
+      {
+        "test": "Filtros de plantillas",
+        "result": "CORRECTO",
+        "observation": "date y truncatewords:20 conservados; texto largo comprobado sin guardarlo."
+      },
+      {
+        "test": "Texto legible y escapado XSS",
+        "result": "CORRECTO",
+        "observation": "Siete entradas HTML, peligrosas o malformadas, quedan como texto; originales renderizados sin etiquetas activas. Sin escrituras."
+      },
+      {
+        "test": "Administrador en solo lectura",
+        "result": "CORRECTO",
+        "observation": "Panel, tres listados, login y formulario accesibles; usuario sintetico no persistido para GET autenticados. No se repite el alta para evitar escrituras."
+      },
+      {
+        "test": "Filtros y busqueda Admin",
+        "result": "CORRECTO",
+        "observation": "Filtros por autor y categoria y busqueda devuelven los resultados esperados, en solo lectura."
+      },
+      {
+        "test": "Configuracion Jazzmin",
+        "result": "CORRECTO",
+        "observation": "default_theme_mode=auto reconocido por Jazzmin 3.0.5, sin aviso de dark_mode_theme."
+      },
+      {
+        "test": "Migraciones y 404",
+        "result": "CORRECTO",
+        "observation": "Sin migraciones pendientes ni ejecutadas; 404 conservados fuera de la raiz."
+      }
+    ]
+  },
+  "prior_responsive_tests": {
+    "source_names": [
+      "visual-results.json",
+      "browser-results.json"
+    ],
+    "pages_checked": 21,
+    "widths": [
+      320,
+      390,
+      768,
+      820,
+      968,
+      969,
+      1000,
+      1024,
+      1440
+    ],
+    "no_horizontal_overflow": true,
+    "footer_at_bottom": true
+  },
+  "data_protection": {
+    "original_sha256": "aea5866ba83b18f0e402b75c9fd1cbcec21351c0b3f141f48b49e9e63feee53e",
+    "size_bytes": 225280,
+    "original_unchanged": true,
+    "copy_restored_to_initial_sha256": true,
+    "temporary_admin": "Cuenta real creada con autorizacion, limitada a consulta de news y retirada al restituir la copia; no se incluyen credenciales.",
+    "no_sqlite_in_repository": true
+  },
+  "limitations": [
+    "No existen imagenes asociadas a los registros originales; MEDIA no se verifico mediante una imagen subida.",
+    "Los resumenes conservan etiquetas HTML escapadas; el detalle muestra texto mediante striptags y force_escape.",
+    "favicon.ico continua devolviendo 404, fuera del alcance autorizado.",
+    "Los tests.py del proyecto no contienen los casos externos ejecutados."
+  ],
+  "capture_method": "Chrome headless: capturas de pagina completa. Los PNG 08 a 12 muestran archivos de texto con listado real, codigo real numerado y salida real de Django; no son un IDE ni una consola simulados.",
+  "automation_note": "El primer intento de login de la herramienta uso identificadores que Jazzmin no incluye; se corrigio la seleccion por name en la herramienta externa y se obtuvieron las cuatro capturas administrativas reales sin modificar Django."
+}

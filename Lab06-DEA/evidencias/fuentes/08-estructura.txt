@@ -1,0 +1,38 @@
+LAB06-DEA: ESTRUCTURA FUNCIONAL REAL
+Listado de los 34 archivos existentes antes de agregar documentacion.
+Generado leyendo los nombres del sistema de archivos; no es una estructura supuesta.
+
+XSS_NOTES.txt
+config/__init__.py
+config/asgi.py
+config/settings.py
+config/urls.py
+config/wsgi.py
+manage.py
+movies/__init__.py
+movies/admin.py
+movies/apps.py
+movies/migrations/0001_initial.py
+movies/migrations/__init__.py
+movies/models.py
+movies/templates/movies/recommended.html
+movies/tests.py
+movies/urls.py
+movies/views.py
+news/__init__.py
+news/admin.py
+news/apps.py
+news/migrations/0001_initial.py
+news/migrations/0002_remove_article_created_at_remove_article_updated_at_and_more.py
+news/migrations/__init__.py
+news/models.py
+news/tests.py
+news/urls.py
+news/views.py
+requirements.txt
+static/css/style.css
+templates/base.html
+templates/news/_article_card.html
+templates/news/article_detail.html
+templates/news/category_detail.html
+templates/news/index.html
