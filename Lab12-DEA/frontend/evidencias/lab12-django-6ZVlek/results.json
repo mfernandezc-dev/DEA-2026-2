@@ -1,0 +1,268 @@
+{
+  "executedAt": "2026-11-15T17:03:56.044Z",
+  "target": "real Django",
+  "results": [
+    {
+      "name": "Activity 9: Header initially displays zero and receives only the derived numeric count",
+      "status": "passed"
+    },
+    {
+      "name": "Exam GET renders real results, total count and a loading Skeleton",
+      "status": "passed"
+    },
+    {
+      "name": "Inherited movie catalog, favorites, controlled search and filter clearing remain independent",
+      "status": "passed"
+    },
+    {
+      "name": "Registration uses controlled fields and a real submit handler without native-only validation",
+      "status": "passed"
+    },
+    {
+      "name": "POST creates only one temporary exam, returns to the last page and never reloads",
+      "status": "passed"
+    },
+    {
+      "name": "Pagination reaches earlier records and returns to the new record",
+      "status": "passed"
+    },
+    {
+      "name": "Canceling deletion preserves the record and warns about CASCADE",
+      "status": "passed"
+    },
+    {
+      "name": "Confirmed DELETE accepts 204, updates totals and leaves an empty last page safely",
+      "status": "passed"
+    },
+    {
+      "name": "Exam table and form remain contained on mobile screens",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize layout: 1440px shows 4 columns without overflow",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize layout: 1200px shows 4 columns without overflow",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize layout: 1199px shows 3 columns without overflow",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize layout: 900px shows 3 columns without overflow",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize layout: 899px shows 2 columns without overflow",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize layout: 600px shows 2 columns without overflow",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize layout: 599px shows 1 columns without overflow",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize layout: 390px shows 1 columns without overflow",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize layout: 320px shows 1 columns without overflow",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize layout: search, notifications and persistent favorites survive resizing",
+      "status": "passed"
+    },
+    {
+      "name": "useDebounce: initial and unchanged values do not schedule unnecessary updates",
+      "status": "passed"
+    },
+    {
+      "name": "useDebounce: default delay is exactly 400 ms and identical rerenders do not restart it",
+      "status": "passed"
+    },
+    {
+      "name": "useDebounce: rapid values cancel previous timers and publish only the final value",
+      "status": "passed"
+    },
+    {
+      "name": "useDebounce: configurable delays, changed delays and zero delay are respected",
+      "status": "passed"
+    },
+    {
+      "name": "useDebounce: returning to the published value cancels a pending change",
+      "status": "passed"
+    },
+    {
+      "name": "useDebounce: non-string values retain their original identity",
+      "status": "passed"
+    },
+    {
+      "name": "useDebounce: unmount clears pending timers under StrictMode",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize: initial dimensions and one active listener under StrictMode",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize: resize updates both width and height without adding listeners",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize: unchanged dimensions preserve state identity and avoid commits",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize: unmount removes the listener and stops subsequent updates",
+      "status": "passed"
+    },
+    {
+      "name": "useWindowSize: repeated StrictMode mounts do not accumulate listeners",
+      "status": "passed"
+    },
+    {
+      "name": "usePremieres: initial loading lasts 800 ms with one pending StrictMode request",
+      "status": "passed"
+    },
+    {
+      "name": "usePremieres: success returns four adapted local movies and completes only once",
+      "status": "passed"
+    },
+    {
+      "name": "usePremieres: controlled failure provides an understandable error and no data",
+      "status": "passed"
+    },
+    {
+      "name": "usePremieres: stable retry transitions error to loading to success",
+      "status": "passed"
+    },
+    {
+      "name": "usePremieres: equivalent options and rerenders do not restart or duplicate requests",
+      "status": "passed"
+    },
+    {
+      "name": "usePremieres: unmount cancels timers and ignores even forced late callbacks",
+      "status": "passed"
+    },
+    {
+      "name": "usePremieres: changed options cancel stale attempts and retry recovers deterministically",
+      "status": "passed"
+    },
+    {
+      "name": "Activity 8 section: accessible Skeleton has poster, title and metadata placeholders at every width",
+      "status": "passed"
+    },
+    {
+      "name": "Activity 8 Skeleton: reduced-motion preference disables its subtle animation",
+      "status": "passed"
+    },
+    {
+      "name": "Activity 8 section: Skeleton remains at 799 ms and disappears for the four movies at 800 ms",
+      "status": "passed"
+    },
+    {
+      "name": "Activity 8 section: controlled error exposes a clear alert and an accessible retry button",
+      "status": "passed"
+    },
+    {
+      "name": "Activity 8 section: keyboard retry invokes the hook and recovers through loading to success",
+      "status": "passed"
+    },
+    {
+      "name": "Activity 8 carousel: movies are reusable props without another request or artificial records",
+      "status": "passed"
+    }
+  ],
+  "traffic": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:8000/api/exams/?page=1",
+      "status": 200,
+      "allowOrigin": "http://localhost:5173"
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:8000/api/exams/",
+      "status": 200,
+      "allowOrigin": "http://localhost:5173"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:8000/api/exams/",
+      "status": 400,
+      "allowOrigin": "http://localhost:5173"
+    },
+    {
+      "method": "POST",
+      "url": "http://127.0.0.1:8000/api/exams/",
+      "status": 201,
+      "allowOrigin": "http://localhost:5173"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:8000/api/exams/?page=1",
+      "status": 200,
+      "allowOrigin": "http://localhost:5173"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:8000/api/exams/?page=2",
+      "status": 200,
+      "allowOrigin": "http://localhost:5173"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:8000/api/exams/?page=1",
+      "status": 200,
+      "allowOrigin": "http://localhost:5173"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:8000/api/exams/?page=2",
+      "status": 200,
+      "allowOrigin": "http://localhost:5173"
+    },
+    {
+      "method": "OPTIONS",
+      "url": "http://127.0.0.1:8000/api/exams/10/",
+      "status": 200,
+      "allowOrigin": "http://localhost:5173"
+    },
+    {
+      "method": "DELETE",
+      "url": "http://127.0.0.1:8000/api/exams/10/",
+      "status": 204,
+      "allowOrigin": "http://localhost:5173"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:8000/api/exams/?page=1",
+      "status": 200,
+      "allowOrigin": "http://localhost:5173"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:8000/api/exams/?page=1",
+      "status": 200,
+      "allowOrigin": "http://localhost:5173"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:8000/api/exams/?page=1",
+      "status": 200,
+      "allowOrigin": "http://localhost:5173"
+    }
+  ],
+  "browserErrors": [],
+  "corsErrors": [],
+  "cleanupComplete": true,
+  "originalExamCount": 2,
+  "originalQuestionCount": 12,
+  "originalOptionCount": 24
+}

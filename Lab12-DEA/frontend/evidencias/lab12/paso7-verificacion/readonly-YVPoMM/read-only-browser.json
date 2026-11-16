@@ -1,0 +1,56 @@
+{
+  "checkedAt": "2026-11-16T03:29:41.507Z",
+  "target": "real Django; GET only; existing SQLite opened read-only",
+  "checks": [
+    {
+      "name": "read-only Django GET and exact CORS origin",
+      "passed": true
+    },
+    {
+      "name": "existing browser suite, including real ERR_ABORTED and recovery",
+      "passed": true
+    },
+    {
+      "name": "owned Django launcher/tree stopped; repeat stop safe; sibling alive; ports released",
+      "passed": true
+    }
+  ],
+  "protectedFiles": [
+    {
+      "file": "backend/db.sqlite3",
+      "sha256": "11f811aea8dda52b6dd48feccdea6b92aa88c04b4729b5f17c20477c1a8c65f8",
+      "unchanged": true
+    },
+    {
+      "file": "backend/config/settings.py",
+      "sha256": "0b14d60e1d24c2284de9247c892acb9a20fc085ba734dda99492cfad6a0d6e34",
+      "unchanged": true
+    },
+    {
+      "file": "backend/requirements.txt",
+      "sha256": "8bf22e0156b92a217652b158cd035b743140a170c309648fa2534d71d6d935b0",
+      "unchanged": true
+    },
+    {
+      "file": "frontend/package.json",
+      "sha256": "4102377e5745aeb36af234a09625979b5f8225b80be96450dae388c7f1117e1c",
+      "unchanged": true
+    },
+    {
+      "file": "frontend/package-lock.json",
+      "sha256": "b73b3ecbb27ea284332805196e9413e85726865771f0ca63dd5f8a216b63cf31",
+      "unchanged": true
+    },
+    {
+      "file": "frontend/evidencias/lab12/run-DgJS4v/07-error-validacion-respuesta-http.png",
+      "sha256": "9103ef12db8cc132db231759806532da41dc7723cc60d07fc421cc8bb0e666ff",
+      "unchanged": true
+    },
+    {
+      "file": "frontend/evidencias/lab12/run-DgJS4v/07a-error-validacion-http400.png",
+      "sha256": "904d159d43a69688122242fef1e82cfe24fa3b24a18b979eff07aefd477b9a77",
+      "unchanged": true
+    }
+  ],
+  "exitCode": 0
+}

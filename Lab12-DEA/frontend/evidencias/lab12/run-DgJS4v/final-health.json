@@ -1,0 +1,80 @@
+{
+  "verifiedAt": "2026-11-15T17:24:40.445Z",
+  "http": [
+    {
+      "url": "http://127.0.0.1:8000/api/",
+      "status": 200,
+      "allowOrigin": "http://localhost:5173"
+    },
+    {
+      "url": "http://127.0.0.1:8000/api/exams/",
+      "status": 200,
+      "allowOrigin": "http://localhost:5173",
+      "count": 2
+    },
+    {
+      "url": "http://127.0.0.1:8000/api/questions/",
+      "status": 200,
+      "allowOrigin": "http://localhost:5173",
+      "count": 12
+    },
+    {
+      "url": "http://127.0.0.1:8000/api/options/",
+      "status": 200,
+      "allowOrigin": "http://localhost:5173",
+      "count": 24
+    },
+    {
+      "url": "http://localhost:5173/",
+      "status": 200,
+      "allowOrigin": "http://localhost:5173"
+    }
+  ],
+  "settingsRestored": true,
+  "originalCounts": {
+    "exams": 2,
+    "questions": 12,
+    "options": 24
+  },
+  "legacyTestsUnchanged": true,
+  "originalPackageVersionsUnchanged": true,
+  "canceledRequest": [
+    {
+      "id": "9152.75",
+      "url": "http://127.0.0.1:8000/api/exams/?page=1",
+      "method": "GET",
+      "error": "net::ERR_ABORTED",
+      "canceled": true
+    }
+  ],
+  "controllerCleanup": [
+    [
+      "Error",
+      "    at AbortController.abort (<anonymous>:11:96)",
+      "    at http://localhost:5173/src/components/ExamList/ExamList.jsx:77:15",
+      "    at Object.react_stack_bottom_frame (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=e7f4dbda:14180:5)",
+      "    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=e7f4dbda:942:66)"
+    ],
+    [
+      "Error",
+      "    at AbortController.abort (<anonymous>:11:96)",
+      "    at http://localhost:5173/src/components/ExamList/ExamList.jsx:77:15",
+      "    at Object.react_stack_bottom_frame (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=e7f4dbda:14180:5)",
+      "    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=e7f4dbda:942:66)"
+    ],
+    [
+      "Error",
+      "    at AbortController.abort (<anonymous>:11:96)",
+      "    at http://localhost:5173/src/components/ExamList/ExamList.jsx:77:15",
+      "    at Object.react_stack_bottom_frame (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=e7f4dbda:14180:5)",
+      "    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=e7f4dbda:942:66)"
+    ],
+    [
+      "Error",
+      "    at AbortController.abort (<anonymous>:11:96)",
+      "    at http://localhost:5173/src/components/ExamList/ExamList.jsx:77:15",
+      "    at Object.react_stack_bottom_frame (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=e7f4dbda:14180:5)",
+      "    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=e7f4dbda:942:66)"
+    ]
+  ]
+}

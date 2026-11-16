@@ -1,0 +1,99 @@
+{
+  "executedAt": "2026-11-15T17:23:07.199Z",
+  "target": "Real Chrome, React, Axios and Django; no mocked API responses",
+  "rows": [
+    {
+      "test": "Funcionamiento normal",
+      "request": "GET /api/exams/?page=1",
+      "status": 200,
+      "observed": "Dos exámenes, tabla y controles de paginación; sin bloqueo CORS.",
+      "type": "satisfactoria",
+      "result": "correcto",
+      "evidence": "01-listado-examenes.png"
+    },
+    {
+      "test": "Estado de carga real",
+      "request": "GET /api/exams/?page=1",
+      "status": 200,
+      "observed": "Tres esqueletos durante una petición real con latencia de red aplicada por Chrome; después aparecen los datos.",
+      "type": "satisfactoria",
+      "result": "correcto",
+      "evidence": "02-estado-carga.png"
+    },
+    {
+      "test": "Bloqueo CORS intencional",
+      "request": "GET /api/exams/?page=1",
+      "status": "200 en Django; respuesta bloqueada en el navegador",
+      "observed": "Chrome informa MissingAllowOriginHeader; Axios no puede leer la respuesta y React ofrece Reintentar.",
+      "type": "error provocado",
+      "result": "correcto",
+      "evidence": "03-error-cors-consola.png; 04-error-cors-interfaz.png"
+    },
+    {
+      "test": "Restauración de CORS",
+      "request": "GET /api/exams/?page=1",
+      "status": 200,
+      "observed": "Configuración original restaurada byte por byte; Reintentar vuelve a mostrar los dos exámenes.",
+      "type": "satisfactoria",
+      "result": "correcto",
+      "evidence": "05-cors-restaurado.png"
+    },
+    {
+      "test": "Validación del título vacío",
+      "request": "POST /api/exams/ con title=\"\"",
+      "status": 400,
+      "observed": "Django devuelve un error en title y React lo presenta en español; no se crea un examen.",
+      "type": "error provocado",
+      "result": "correcto",
+      "evidence": "06-error-validacion-formulario.png; 07a-error-validacion-http400.png; 07-error-validacion-respuesta-http.png"
+    },
+    {
+      "test": "Django apagado intencionalmente",
+      "request": "GET /api/exams/?page=1",
+      "status": null,
+      "observed": "Conexión rechazada; React conserva la aplicación y muestra un mensaje y Reintentar.",
+      "type": "error provocado",
+      "result": "correcto",
+      "evidence": "08-servidor-apagado.png"
+    },
+    {
+      "test": "Recuperación tras reiniciar Django",
+      "request": "GET /api/exams/?page=1",
+      "status": 200,
+      "observed": "Reintentar carga nuevamente los dos exámenes sin recargar React.",
+      "type": "satisfactoria",
+      "result": "correcto",
+      "evidence": "09-recuperacion.png"
+    },
+    {
+      "test": "Diagnóstico de cancelación",
+      "request": "GET /api/exams/?page=1 cancelado al desmontar ExamList",
+      "status": null,
+      "observed": "AbortController ejecuta xhr.abort; Chrome registra canceled=true y ERR_ABORTED. Volver al listado recupera los datos.",
+      "type": "cancelación esperada",
+      "result": "correcto",
+      "evidence": "abort-diagnosis.json"
+    },
+    {
+      "test": "Integridad final",
+      "request": "GET de exams, questions y options",
+      "status": 200,
+      "observed": "2 exámenes, 12 preguntas y 24 opciones idénticos al inicio; SQLite y settings.py con el mismo SHA-256.",
+      "type": "satisfactoria",
+      "result": "correcto",
+      "evidence": "results.json"
+    }
+  ],
+  "settingsRestored": true,
+  "settingsSha256": "0b14d60e1d24c2284de9247c892acb9a20fc085ba734dda99492cfad6a0d6e34",
+  "databaseUnchanged": true,
+  "originalCounts": {
+    "exams": 2,
+    "questions": 12,
+    "options": 24
+  },
+  "serversLeftRunning": {
+    "django": 7624,
+    "vite": 13544
+  }
+}
