@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}News Portal - Noticias{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <i class="fas fa-newspaper"></i>
+                <span>News Portal</span>
+            </div>
+            <nav class="navbar-nav">
+                <a href="{% url 'news:index' %}"><i class="fas fa-home"></i> Inicio</a>
+                <a href="/admin/"><i class="fas fa-cog"></i> Admin</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main-container">
+        <section class="content">
+            {% block content %}{% endblock %}
+        </section>
+        <aside class="sidebar">
+            {% block sidebar %}
+                <div class="sidebar-widget">
+                    <h3>Categorías</h3>
+                    <ul class="category-list">
+                        {% for category in categories %}
+                            <li><a href="{% url 'news:category_detail' category.pk %}">{{ category.name }}</a></li>
+                        {% empty %}
+                            <li>No hay categorías</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endblock %}
+        </aside>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2026 News Portal. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

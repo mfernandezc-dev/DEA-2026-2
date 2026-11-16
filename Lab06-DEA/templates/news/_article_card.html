@@ -1,0 +1,28 @@
+﻿{% load static %}
+<article class="article-card">
+    {% if article.image %}
+        <div class="article-card-image">
+            <img src="{{ article.image.url }}" alt="{{ article.title }}">
+        </div>
+    {% endif %}
+    <div class="article-card-content">
+        <h2 class="article-card-title">
+            <a href="{% url 'news:article_detail' article.pk %}">{{ article.title }}</a>
+        </h2>
+        <div class="article-meta">
+            <span><i class="fas fa-calendar-alt"></i> {{ article.published_at|date:"d/m/Y" }}</span>
+            <span><i class="fas fa-user"></i> {{ article.author.name }}</span>
+        </div>
+        {% if article.categories.all %}
+            <div class="article-categories">
+                {% for category in article.categories.all %}
+                    <span class="category-badge">{{ category.name }}</span>
+                {% endfor %}
+            </div>
+        {% endif %}
+        <p class="article-excerpt">{{ article.content|truncatewords:20 }}</p>
+        <a href="{% url 'news:article_detail' article.pk %}" class="btn-read-more">
+            Leer más <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</article>

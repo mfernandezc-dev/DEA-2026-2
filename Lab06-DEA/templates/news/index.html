@@ -1,0 +1,15 @@
+﻿{% extends 'base.html' %}
+
+{% block title %}Inicio - News Portal{% endblock %}
+
+{% block content %}
+    <h1 class="page-title">Últimas Noticias</h1>
+    {% for article in articles %}
+        {% include 'news/_article_card.html' %}
+    {% empty %}
+        <div class="empty-state">
+            <i class="fas fa-newspaper"></i>
+            <p>No hay publicaciones disponibles en este momento.</p>
+        </div>
+    {% endfor %}
+{% endblock %}
