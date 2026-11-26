@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" fill="none">
+  <defs><linearGradient id="sky" x2="0" y2="800" gradientUnits="userSpaceOnUse"><stop stop-color="#5f9dac"/><stop offset=".65" stop-color="#b5c9bb"/><stop offset="1" stop-color="#e5cc9f"/></linearGradient></defs>
+  <path fill="url(#sky)" d="M0 0h600v800H0z"/>
+  <circle cx="450" cy="161" r="67" fill="#f8dfaf"/>
+  <g fill="#e9e5cc" opacity=".7"><path d="M-30 210q25-55 71-31 13-57 64-28 45-19 64 33 34-4 48 26z"/><path d="M355 337q25-55 71-31 13-57 64-28 45-19 64 33 34-4 48 26z"/><path d="M25 413q14-33 43-20 10-34 40-17 29-11 43 22 22-2 33 15z"/></g>
+  <path d="m151 318 271-133-114 207-39-82z" fill="#fff1cc"/>
+  <path d="m269 310 153-125-114 207z" fill="#d7c9a6"/>
+  <path d="m151 318 130 23-12-31z" fill="#b5b8a1"/>
+  <path d="M270 386q-130 12-70 107t-52 131" stroke="#fff0c8" stroke-width="3" stroke-dasharray="8 10"/>
+  <path d="M0 650q120-85 270-8t330-10v168H0z" fill="#739384"/>
+  <path d="M0 729q190-97 364-13t236-21v105H0z" fill="#547d72"/>
+  <g transform="translate(280 566)">
+    <path d="M-11 56q-5-57 37-57t29 60z" fill="#574d43"/>
+    <circle cx="24" cy="31" r="23" fill="#dfac83"/>
+    <path d="M4 15q24 4 43-14-32-30-46 9z" fill="#574d43"/>
+    <path d="m8 57-20 76h68L39 57z" fill="#d6a263"/>
+    <path d="m8 130-3 53h12l8-53m10 0 5 53h12l-4-53" fill="#dfac83"/>
+    <path d="m36 65 30-30 8 8-29 40M8 66l-25 26 7 8 30-24" stroke="#dfac83" stroke-width="10"/>
+    <path d="M0 184h19v9H-5zm39 0h15l7 9H39z" fill="#4b5550"/>
+  </g>
+  <g fill="#ead4a4"><circle cx="88" cy="740" r="4"/><circle cx="482" cy="744" r="4"/><circle cx="449" cy="695" r="3"/><circle cx="151" cy="699" r="3"/></g>
+</svg>

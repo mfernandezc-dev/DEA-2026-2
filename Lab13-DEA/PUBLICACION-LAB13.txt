@@ -1,0 +1,221 @@
+LABORATORIO 13 - INVENTARIO CERRADO DE PUBLICACION
+Estado: candidato local; NO se ha agregado al staging ni publicado.
+Rutas relativas a Lab13-DEA. No incluye otros laboratorios.
+Archivos: 190
+Tamano total: 5489646 bytes
+Capturas: 27; imagenes iniciales: 8
+
+SHA-256 omitido en los dos archivos de control autorreferentes:
+PUBLICACION-LAB13.txt
+evidencias/04-documentacion/VERIFICACION.json
+Todos los demas archivos incluyen SHA-256; cualquier cambio exige regenerar el inventario.
+Los hashes corresponden a bytes locales, no a objetos Git; Git puede normalizar LF/CRLF.
+
+RUTA | BYTES | TIPO | SHA-256
+.gitignore | 421 | text | 6349ee46d143e16d04de2d94db2d05d748d4f8a1aa0305d60512e0868f370be1
+ENTREGABLE-LAB13.md | 20110 | md | 3c968b22968f84a569f4bd0fcec6de11c6ef61ce8e9cef588978ce9f797e2479
+PUBLICACION-LAB13.txt | 24341 | txt | CONTROL-AUTORREFERENTE
+README.md | 35378 | md | b8eb6e807f089b445dd9f1c7a03f15065c70464218af27fa106555ccf56d0413
+backend/.env.example | 294 | example | 3912d2efae2887511cb1ab93b89d108eb28cd6c4470235e557dbd8053bcb0a18
+backend/.gitignore | 221 | text | e52c59e95d55c40c648d863fe00b246b7be7646c8f6cd27d504f39f094045585
+backend/catalog/__init__.py | 0 | py | e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+backend/catalog/admin.py | 923 | py | 65d5f650b4e87da65996be120223379e614a8f11e2e52316390c6964fa038925
+backend/catalog/apps.py | 146 | py | 073b2ad460089be907d459bd54373860aae8a33c1fa87aaf20584940c6aa7544
+backend/catalog/assets/demo/asus-vivobook.png | 15944 | png | 8509ded9bc65dd1ed1b7f41b63ca9c25579deb3b92369c061160f0ae80214739
+backend/catalog/assets/demo/gaming-headset.png | 15717 | png | 8477e1ea310c0e1a44b55e7c565e7c46117e54a430177dedc2e6d2e3fa748215
+backend/catalog/assets/demo/hp-pavilion.png | 14028 | png | 0fe6da1593e3f33cb18b1a478ef8a3bfd77b4981f3fc56e264af19fd8a5408b0
+backend/catalog/assets/demo/lenovo-ideapad.png | 14969 | png | b5e805ef387ee599cc60e071295a69e6ce8bb1e5687c7acaaadf8cc89d3d32f7
+backend/catalog/assets/demo/lg-monitor.png | 13927 | png | bd31b10f6af7226665d19e5cdf0e6bb8b653cff986755bfc08eeee7b6670835e
+backend/catalog/assets/demo/mechanical-keyboard.png | 16335 | png | baf02a051c9987d97108a73401074d9c5b04a58cc35289a9038e340a787b1f8a
+backend/catalog/assets/demo/samsung-monitor.png | 16358 | png | 8c2f33d1f373520caff0f633cc952203cb618f265bc604885758f5bf31810480
+backend/catalog/assets/demo/wireless-mouse.png | 15480 | png | 2a877a6c71b6e5cf68b60f3b07213191ff26e68b0893da00df6c807a897d5e0c
+backend/catalog/demo.py | 1757 | py | aa422d81cd0aaf206d753e2722767222a2abca4e153ba30ae032ec7a7311b14b
+backend/catalog/management/__init__.py | 0 | py | e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+backend/catalog/management/commands/__init__.py | 0 | py | e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+backend/catalog/management/commands/seed_catalog.py | 2556 | py | dba5f9911da1cada57c7048f18a88074211989f7021ef54601b3a56d4d84a514
+backend/catalog/migrations/0001_initial.py | 1972 | py | 697318efb7c371d78e61235864268257c86c7be05cb86c0b2707842778f50d82
+backend/catalog/migrations/__init__.py | 0 | py | e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+backend/catalog/models.py | 1329 | py | 780eacd279544f72177ad4c53c9866c4a3bfc3186bd03559ae6e9ec04952087f
+backend/catalog/serializers.py | 951 | py | 308707bfedef588fa7e2315b990bd3a3be2b6762937f09cd17e9850948c57405
+backend/catalog/test_api.py | 10852 | py | 39facfe298ae89eb8302f73d3350638d60bb3a205d5c8d5bcf910d80bc90567f
+backend/catalog/tests.py | 8267 | py | 23d9a92a877f815422c061aabf1c5b970f33dcec365fa1cbeda307e0dc260725
+backend/catalog/urls.py | 245 | py | 8c2bd9465cddfdc6fe33a71ff70851e57d4659abda6fcc5c851434ffcb2b079f
+backend/catalog/views.py | 1121 | py | 25ac0ca99755e1f6856eedad7bd693b34fe9495d10877b2c535ba8d42e6769a2
+backend/config/__init__.py | 0 | py | e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+backend/config/api_urls.py | 290 | py | 36a7a341e28877b9397444f92634abaf3aeb93b2f65197b04732dd2c0a78e2c0
+backend/config/asgi.py | 405 | py | 1658329613455854c3542dc02a72264db6a17bc35b64ecfcf35266ad0670abb0
+backend/config/settings.py | 4627 | py | 42e08e3aef59ad96890ff44b5a3ba5499e11541788e95e29c34a60e4e4d45784
+backend/config/urls.py | 1011 | py | 2230b5054c34c3a8ae6a72061403415cc85bd2f9edcd7fdb60f980942943a701
+backend/config/wsgi.py | 405 | py | a4b32d6f00a10618fd08ff7a48a5be8bd7053e6a698ff494f60d14ec3592e4aa
+backend/manage.py | 684 | py | b30eeb4890cb6f315cc238313808f636db29e9906b61cc6f6051567156a0097b
+backend/quiz/__init__.py | 0 | py | e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+backend/quiz/admin.py | 66 | py | a7ac68a753eeb831b6530bf71bf6917e577139f0734d17cc6a8666391564ab25
+backend/quiz/apps.py | 146 | py | 5fea1bd5583eea89437e841822b769cf3dc28bf3933e0309a7506e1947086550
+backend/quiz/management/__init__.py | 0 | py | e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+backend/quiz/management/commands/__init__.py | 0 | py | e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+backend/quiz/management/commands/seed_demo.py | 1551 | py | e04b3222d556253a0cce745c76b3860d92fb5a98a3e3c3a933c03c718e916dce
+backend/quiz/migrations/0001_initial.py | 2352 | py | f61110492b7fb58c099919f2f13353b39a07643a221e4293119281beed56faed
+backend/quiz/migrations/__init__.py | 0 | py | e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+backend/quiz/models.py | 1111 | py | 811e86c5ec1c04791a75b4cf60e3b7fa4ff49431f23e294074e8509b58685677
+backend/quiz/serializers.py | 3817 | py | 4457737dc3c4bded7f8ff93fa9fa236bbde786f3265cd46c79b0773822afd675
+backend/quiz/tests.py | 19846 | py | 2cceff49431cfce7d9c2bb188ed4ff2c8f575ba3b7305150252c4a4af4b52148
+backend/quiz/urls.py | 292 | py | 3428c015b09b967a5695c2488e84ffd2a6ec2b6f242d8e494ba6c1088837259a
+backend/quiz/views.py | 1609 | py | f6cd26f20cf65a4129e9d9a100a25d32612ae870dadb63c7dcb9bcafd85eb95c
+backend/requirements.txt | 132 | txt | f13cda8f74894071ec5dd9e2de4bc3b7468ffa20869f8d1afc7b56622be13680
+backend/scripts/capture_admin.mjs | 4312 | mjs | 34385a4d8e8e7c9b5e78411d83c7e1ac493ce6bc35795b29d3cc50fcc84f1057
+backend/scripts/capture_api.mjs | 5051 | mjs | 31e8a7355dbb52ace1d07bea91553b41f4f09e922f631bd4cb5efa17f7e3f5c5
+backend/scripts/capture_documentation.ps1 | 2167 | ps1 | 324c7e6c0a63a70e52d85845b7ffc6e67aadfcd8f6fafbde833a9bd6152cd521
+backend/scripts/generate_catalog_images.py | 3272 | py | b7af8d56af0593c8f584a6671c6e2f2543a8587f8c480c0493b983a5f17bcaa5
+backend/scripts/verify_api_phase.py | 10585 | py | 8cb008f9371aad68e4fae53bde8a77531ec1c24f236a22d1af799dcf309e4278
+backend/scripts/verify_documentation_phase.py | 18194 | py | e7a2fbd2c74d47ae67909121f61bd4fc0c5f4dc96790b233ad22b5de913da63f
+backend/scripts/verify_frontend_phase.py | 8679 | py | 2938f799b475109dcf706fc6a341faf8961696e122afba8bbdd8a87cc0d2fc12
+backend/scripts/verify_http.py | 18708 | py | b89437f2a27d79893fa85e203ad7b73efddadff28926c2c1549d1a896a6e683d
+backend/scripts/verify_local.py | 2948 | py | 90a515df9ce075674d69aaba45adcccd269260abfa404258d3a61edd6d901218
+backend/scripts/verify_phase.py | 9849 | py | 9a6ad435489a38dad6b5f4b0f94a0a3004ef636c6cbe6405c1fbe52c7413f72d
+evidencias/01-backend/03-admin-categories.png | 41005 | png | cf01c54083dc9eb5df084b2e8c0bb0c75b963af5eae375b66c3a867cdbab8e87
+evidencias/01-backend/04-admin-products.png | 74863 | png | e44b2f3d09af4c24c2ebc05a14ad05bf6677c565164ab185915cd406af7b7b99
+evidencias/01-backend/05-product-image.png | 50961 | png | 2b2958c232f43ae2582e2414ba01e457817f04f7e79bfd470713deacc8fb3cf0
+evidencias/01-backend/PASO01-02.md | 5760 | md | d2b39786b1c84e060ab03172e465e25d72991ff05b1646253f7ae174afa8f1b4
+evidencias/01-backend/VERIFICACION.json | 284140 | json | c8655542ced1daf7cc533f16f8098160d33743938695ab039f30b7cefc82c26d
+evidencias/02-api-servicios/01-api-categories.png | 47760 | png | e61af9e41f92a824eae3ccd38da1a221ab2924ac05bd58980efccb18d5518ee7
+evidencias/02-api-servicios/02-api-products-nested.png | 87450 | png | a6fb0dfc7fd6a31c0b487a36483ca296bd577b3b9a51b9546d833e6220ede689
+evidencias/02-api-servicios/03-api-product-detail.png | 57133 | png | 99afb086d398a5df2bae292cfe3e23361c5518e0f2681b0b032fa23601f5cdaa
+evidencias/02-api-servicios/04-api-created-201.png | 42574 | png | 2f3d3f60f3ebf68335d98a9bcf419493b974ceba4e0ea728383851ba0917cc35
+evidencias/02-api-servicios/05-test-results.png | 54811 | png | d5232b908a611a12b66db5540ae95328d42d19f5d754f0c38f9f855263d628f7
+evidencias/02-api-servicios/PASO03-06.md | 8573 | md | cc101d1d1257a62387d413b8ad7cc9fd4d7338c8c15346e6b30a47247dc017b4
+evidencias/02-api-servicios/VERIFICACION.json | 290300 | json | b2b740fe74a7229eb8179fe5fdae9cf12c43fbb2ca0a35daa7d471d4e7a43ece
+evidencias/03-frontend/01-catalogo-completo.png | 229296 | png | 7a500480b1562a8b5f79628638f9048c4539c05ef3a65c127d7aaacc3a1cec24
+evidencias/03-frontend/02-filtro-laptops.png | 176423 | png | b9d992702030d0fb387a55589b3eb2902ba05f284fcb8fcd00715bab9c6c4dcf
+evidencias/03-frontend/03-filtro-accessories.png | 181968 | png | bb9273a50ca74c062f96024142e9a7ddd35edaf301ca540b1db0b75c721ced2e
+evidencias/03-frontend/04-filtro-monitors.png | 168228 | png | 0a0aca7b28ced4bb08e1a6af39bb240daed725951be9538ec7ee965e2f28ea40
+evidencias/03-frontend/05-busqueda-productos.png | 163794 | png | 74fc6f8a1e51ceabf429ed21f77efd5eb0c223a859bcab0e8e39a4b73451bd07
+evidencias/03-frontend/06-formulario-registro.png | 68795 | png | 321ce4aed6264a8c5a017952df386f3a25c0042db092a1ae9321e1b454323351
+evidencias/03-frontend/07-producto-creado.png | 257574 | png | db62355fb4b33a019a35d9879f7d3e5e728b8c74a9509f2711756962e471b9ca
+evidencias/03-frontend/08-formulario-edicion.png | 82895 | png | 9e22d216cdf75495d672013ab2a34f7f1381788e02fb758e9458a5664d8858cc
+evidencias/03-frontend/09-producto-actualizado.png | 256527 | png | 930a6b3efc16d1c03e94e97ad7dc03e871aa6daea07e1ee7170748cc72745f22
+evidencias/03-frontend/10-confirmacion-eliminacion.png | 178200 | png | 62cc89924c60c8e4ddd4d643f5b501f1db48b7b9c8b94fb6e8e71f5e9a490305
+evidencias/03-frontend/11-catalogo-despues-eliminacion.png | 232429 | png | f89108c408c2d958c5691b2d94027882d3077c6cbbeaafb7346a07b7d52727e1
+evidencias/03-frontend/12-vista-movil.png | 215679 | png | 1bfa02f41985df081e9dd0cc7b048c51daa54042941c7ed0c702e57953a230fb
+evidencias/03-frontend/13-validacion-formulario.png | 81778 | png | d053efa6ec8092c42b8f17d6d5ed39f5cb8c2c11b244cdc5f51d072b64d68685
+evidencias/03-frontend/14-estado-error.png | 144597 | png | 36b6e447ef8871f9c577ea6445ffe3d2c2900a0d2b57d124f9ba132fc6e6eb63
+evidencias/03-frontend/PASO07-10.md | 8143 | md | 6df9b62223755d1cf5a7c9051f37670c2bb646ed5b3dedcbd1f629b8dc4e3364
+evidencias/03-frontend/VERIFICACION.json | 341240 | json | 9e8ef3cd37dd6c3b038c50247c2089af2a18f7253764a69794c42e6bf4b9a66f
+evidencias/04-documentacion/01-estructura-proyecto-vscode.png | 108012 | png | bb260acca4a6dc7cd1f17cb6800accdb38a7e053f2198a2fa2eb731c594b182a
+evidencias/04-documentacion/02-estructura-catalog-vscode.png | 107721 | png | 95cafeaa2654d4d53717e92d95e3bcfe8ef84feb6dabc75f31ca70eeacf2f981
+evidencias/04-documentacion/03-estructura-react-vscode.png | 152623 | png | 278670bb36825447870dd4cb0120e92ab7c25799f9602893f10bd4e55f23712d
+evidencias/04-documentacion/04-componentes-react-vscode.png | 147937 | png | dc0898a4dbce828ea8f72e43ec123feaafadae88c0870005024aaf1e8d4b3c2f
+evidencias/04-documentacion/05-migraciones-terminal.png | 43261 | png | 583bbfbd6b83f4f51799925a1e31b531dc902b6683e6e4e3f68d1679a40205e4
+evidencias/04-documentacion/PASO11.md | 6910 | md | 47e882310c6c57c3762d3f53213154cc27ee823ff77af58db32dc744b063563e
+evidencias/04-documentacion/VERIFICACION.json | 336838 | json | CONTROL-AUTORREFERENTE
+frontend/.env.example | 45 | example | 5ed56513df8ab71b18ad67238fb5459447b1fd9b92421374658aeb50c31e7e31
+frontend/.gitignore | 548 | text | eaad0d3bd416c6b9792e74671bfb61c5a7e32a05982f79e476dd7006b7834bb4
+frontend/.oxlintrc.json | 231 | json | 1be899e45c49b2a2edc715bc3bfb31d8ed8e866ed7ebab2065ff6e55e88c2396
+frontend/index.html | 582 | html | 73e8b598c1088eba76bdb3d73e93333603e10b7c30214f0a48ebe36aa7b60a62
+frontend/package-lock.json | 53855 | json | b73b3ecbb27ea284332805196e9413e85726865771f0ca63dd5f8a216b63cf31
+frontend/package.json | 1035 | json | 74374923b6a58c76045330322de107f7c70b5c41d685f008fbdccc5ac0564eb0
+frontend/public/favicon.svg | 215 | svg | 1913dd647632a1e0bd990ee04636765041cdd32051a5c6f09cb639d0f151a854
+frontend/public/images/beyond-summer.svg | 1322 | svg | d81b6d7c4733ff06873aa1737042827b9bc0c626204723629f0b26412e1b0828
+frontend/public/images/deep-tide.svg | 1973 | svg | b7f9c412e37594160c98b429bcec8f5ee8270b71e07fe1fecaa150dbf569541c
+frontend/public/images/echo-forest.svg | 1986 | svg | d6005ef535b04f444afa32cc90487a300cf56ddbb96135d402ab979cd4fba2a3
+frontend/public/images/last-lighthouse.svg | 1711 | svg | a900fc6df55ea8d49683dc46e8a1c6b08d92f6a03d2fb164db4855ee4d470037
+frontend/public/images/lost-orbit-banner.svg | 3063 | svg | 81b321e15a601989bfe9164f7272e2be87e184f32359ef6da3201d45152d6684
+frontend/public/images/lost-orbit.svg | 2093 | svg | 5e7a01ef79ba6942dd3cd265f9f3833b5094065d160fdca0ca18bb8497c59561
+frontend/public/images/midnight-code.svg | 1687 | svg | 9390995cdc32f3d3fc55036c92493595e23c8738a088d15afab7cfa76ba2c95e
+frontend/public/images/neon-city.svg | 1743 | svg | d9b3ca1953f62d483c961a46f183817f8ed7fea595fb0b0f57b138ff7ca4370e
+frontend/public/images/paper-sky.svg | 1686 | svg | a549bbfe4c3a01a3d9fd2de5e2ad66c263848423c2843769caf0dbed0db00269
+frontend/public/product-placeholder.svg | 552 | svg | 64dbaae5c5dc0634102add21d1ea7c09e3a76e0d02672253452d6385b4caa95e
+frontend/public/store-icon.svg | 195 | svg | 970b12420dc2107f2275552529c251045d12f25fd9fa696a846d6f2250e95768
+frontend/src/App.jsx | 2078 | jsx | 48c4bf7d8c62b012309aa29b91267e17da9ef8276bf5055897156609d2116545
+frontend/src/LegacyApp.jsx | 3435 | jsx | 56f19e61e34e9c095c25a71e44e40f191506b8200fb6e90cea92b43211c88d5c
+frontend/src/adapters/movieAdapter.js | 674 | js | f45cc3c27e3b09b730da2ef313982645a58570a04ce0df42175f7c06030fc77a
+frontend/src/api/client.js | 139 | js | d6a2a22279007f75c1230a4de52b0423d26ce4b66b32812cb1c78fca47a74c61
+frontend/src/api/exams.js | 1940 | js | ffd25d640980aa4e92f75b8115344e44e21bf54c47e2d3cf60526f3b0636d6e4
+frontend/src/components/Button/Button.jsx | 389 | jsx | 8dc93d1089e0dd3bfcdbf69b2d1041336c750e6208e751e57991fccaaeb1671b
+frontend/src/components/CategoryFilter/CategoryFilter.jsx | 578 | jsx | acf7bf6003be2827df38a8f0a154e516d537f52676cc8911a852a40e9be8b69b
+frontend/src/components/ConfirmDialog/ConfirmDialog.jsx | 1184 | jsx | ce662be003ac0bd9df1ca4bef422fe58fbec8035c8cf017d906cc26d7a6a54fd
+frontend/src/components/EmptyState/EmptyState.jsx | 328 | jsx | cf3cf0a35fc7fe18a1d1a577b39ea8669ab4bacefbcdb4b25b8e206bc3d51471
+frontend/src/components/ErrorState/ErrorState.jsx | 558 | jsx | 851ac3da966890c0db193bd32acd72fa921efbb7f5cd664b352b924a78981edc
+frontend/src/components/ExamForm/ExamForm.jsx | 3722 | jsx | 1d6a662d307e50fffa0874fa6ffe81657ca9a34fd072104c1b9a5fcca26220d3
+frontend/src/components/ExamList/ExamList.jsx | 6298 | jsx | 16bedc845034db58df71ec45607394ecd16cc928369d1682390fb83cc2dcfd38
+frontend/src/components/ExamSection/ExamSection.jsx | 1986 | jsx | a8ca5f97b376661e6b145eafc6f94f6a717d91fb66548a27b73a8b446305d1b7
+frontend/src/components/Footer/Footer.jsx | 986 | jsx | d5d97bb52c87104d1ddff8348af4a46c14c5d325b0f0770c3958cfb4a3a58416
+frontend/src/components/Header/Header.jsx | 938 | jsx | fb3717540783a3494651f6b4781b4c27ba923f5e90347c2b5c73e200817096ef
+frontend/src/components/Hero/Hero.jsx | 1503 | jsx | d4c143ab1c88b2d9e21de7a8072c39c2c43662ddc32dc02c2618ff3430d0060a
+frontend/src/components/LoadingState/LoadingState.jsx | 283 | jsx | f08fe49aa106b2bb332d4821a544e076422858ab2881817342ad73059332c020
+frontend/src/components/MovieCard/MovieCard.jsx | 1715 | jsx | 53c934803c09097a85b85968bc62ce950b85b04c7f09a1641edd2c4658caaca0
+frontend/src/components/MovieList/MovieList.jsx | 1634 | jsx | 39a6c2941a6dfd900a73705a64fa90377fe45e643fd2d1947c9df44e652d630a
+frontend/src/components/MovieSearch/MovieSearch.jsx | 683 | jsx | 476bcbec7c110b96b3e2385f2b93ed572747f842059add72e1d9395030c23e2d
+frontend/src/components/PremieresCarousel/PremieresCarousel.jsx | 4184 | jsx | 64f6ec2194490ca0b96a384231b5380e471b48ec863ba10443f20b7b6b047669
+frontend/src/components/PremieresSection/PremieresSection.jsx | 1477 | jsx | c39fff244d324adc256880ceee7703a1266ef90c04392ed9cc18db55c3301d6f
+frontend/src/components/ProductCard/ProductCard.jsx | 1416 | jsx | 2f2aeb47066db16cfb5e27a2bc8a7fa61e62843e7887e4243ece1e1b56b840ba
+frontend/src/components/ProductForm/ProductForm.jsx | 7756 | jsx | d5b34c63cea60f25ca5908ca7e068d358e5d2d81190262c7ed0b428c8091eb07
+frontend/src/components/ProductGrid/ProductGrid.jsx | 268 | jsx | 5f8e54ea103979a00eaacf2e0fdb03ac0ef1e4c59e785aae79347063b156843e
+frontend/src/components/Router/Router.jsx | 488 | jsx | 84e13d1dcdc18ba597112fa52107de6dee69b62225bd40d920afa766e2308143
+frontend/src/components/Router/navigation.js | 429 | js | d4387e79ab27d1e76768fcd18397a6cf75308dec3924bd9b85a525b31168708a
+frontend/src/components/Skeleton/Skeleton.jsx | 531 | jsx | dfe8a50bdd1a040e03516143f267e016f05104d7aa0a327265871930ca4432bc
+frontend/src/components/StoreFooter/StoreFooter.jsx | 414 | jsx | 8f9539d14c46c372b8edca749782be194db297ddfa14cf75e026702f807b5983
+frontend/src/components/StoreHeader/StoreHeader.jsx | 998 | jsx | ec87c7921b283aff2525c651862adb976d6a99b15dcde58a21f66a274684e39f
+frontend/src/data/movies.js | 3175 | js | 955a71890a789a7f1dcf7b4f4fa387406aec39bf84f159f86c6d427cabc31f3a
+frontend/src/hooks/useDebounce.js | 439 | js | 884eae338c8fa88122ab2fa5ff65d7c0dbc1a8cb74390ccfae4186d8d6999ba6
+frontend/src/hooks/usePremieres.js | 1530 | js | a4a2430413dc26314014c9f964a60f0b40b04fe56e716758f714c1f187fe0414
+frontend/src/hooks/useStoreResource.js | 926 | js | 86705e0e04647372f2d0dd702ec14a2cc90b974c04fb91ceec4cef3357e93df4
+frontend/src/hooks/useWindowSize.js | 754 | js | fb638c0cdd6656258ad0cc44e73cffb1d8f69848735e349d9b1e4c7fb38682ae
+frontend/src/main.jsx | 237 | jsx | d8fb0b948fd230fe72354d676a6517329b2c4d4595dd6f7590077a43edcbdeb1
+frontend/src/pages/CatalogPage/CatalogPage.jsx | 5520 | jsx | e9d8ed881c11bad4c7c99128a0c015fd5867e018515a37305c6767c3e21ecd55
+frontend/src/pages/CreateProductPage/CreateProductPage.jsx | 1166 | jsx | 5a7ba73e86e48aafe29c4104ec526581e2e9db33dc6175b2d00915b9a4db5418
+frontend/src/pages/EditProductPage/EditProductPage.jsx | 1466 | jsx | 5a1790dd663cb5d2ed27277dd0b61569833d990dacbf728634952fd50e23c855
+frontend/src/services/api.js | 845 | js | a72e772d1707dd71c50d2d8c4c89c8da893b917615c53fc1813de0446e960f91
+frontend/src/services/categoryService.js | 154 | js | b25f165a2e2f9ae458db282e428d38dd62d0bc9c7829e6be1d1187313038b66a
+frontend/src/services/createCrudService.js | 954 | js | 9b6a70cb0160a74235fe5db599677ef92ea60e8fa8f7d596b7e5d731f28fb5bf
+frontend/src/services/getAllPages.js | 893 | js | 58046a849c067e0d7f892c2bb22b3ec939054bcee78971ad2d2b8c0bd6fd973d
+frontend/src/services/productService.js | 150 | js | d5345f72e71d0fc059410cda78a06926e28924864b02db7cb868fa06b27f9bae
+frontend/src/styles/exams.css | 3512 | css | 45b720e470d0b603c6ee9e0af5fde0b5125910fc91563df57139e1395ce3aa27
+frontend/src/styles/global.css | 12421 | css | 21a1f84cdba3ccaa7310490ab520085246bfa26de59349298d885351503ee5e3
+frontend/src/styles/techstore.css | 17471 | css | b826f790aa6011ec33740c15b1866bb199e07602a6cf43cdeca3d5b90f2df818
+frontend/src/utils/catalog.js | 2890 | js | 9692a08cd71150e13c27b6e9a3ea2f4d8f498b9114ca0c424b6ee756d9726889
+frontend/tests/browser.test.mjs | 28904 | mjs | 7ebf9e4bffed600a0840e89812425eca17c3ed2625380d5bc0566365f00bc920
+frontend/tests/catalog.integration.mjs | 7992 | mjs | fa809c8ec17fbc0486865be2b6981f459772dfea65adbaeec686289babedbddf
+frontend/tests/catalogServices.test.mjs | 7911 | mjs | 3730f096431967264d1432001adaf053d01b57899bfa04ede9e2702f47d7fa10
+frontend/tests/catalogUi.test.mjs | 5717 | mjs | 7a760dcf39ed852d8a3cc7ffde00f37c85d5959dd7f45f364d193d3819e4812e
+frontend/tests/exams.browser.mjs | 22486 | mjs | 0505a293ad3e5ba82b7bf5e9029ef3089fb0ab912795dc7f9d8dade4074ddc8d
+frontend/tests/exams.test.mjs | 4878 | mjs | f09371c0d49d870972e2ad6b6027b056934d79469ebea784080b3f43665dcfd7
+frontend/tests/fixtures/lab11Hooks.html | 378 | html | cf04614c9ce83d260044bd8bba6205a6c0af5e4f6fae1f023267744768928a63
+frontend/tests/fixtures/lab11HooksHarness.jsx | 5401 | jsx | b88915a1506d8be6702a991f70b4bd62ceb747817e631634bb4349e999aedf9f
+frontend/tests/fixtures/premieresSection.html | 395 | html | 78b1a04d77d3f2d4dcfcd909f097401a6e99c53d0b82c2e4dd6c96a703d47cd8
+frontend/tests/fixtures/premieresSectionHarness.jsx | 1966 | jsx | 5760943ff6b5bb5762b36a58f4257d431d625a64d699be15e5a0091672f6c62d
+frontend/tests/fixtures/useDebounce.html | 380 | html | 92f83141bc5285ad5cfcb0ca4a560bd45719bd5b6128616fa3ee2081bdcea1cc
+frontend/tests/fixtures/useDebounceHarness.jsx | 2217 | jsx | 757a33b5b9678c4243e2b5a67cfbebe26fb855b7ff876d7d1b3072e0bc096189
+frontend/tests/helpers/cdpClient.mjs | 2273 | mjs | 60daab11e95e0863cce20f4299f9c1daadf2b4744fbf3a529107fe38d6c1a405
+frontend/tests/helpers/corsRestoreGuard.mjs | 5514 | mjs | 398039f5c619fd5cf265cc0b101a22acfb9442e5d1853402bb54ac4516ede38c
+frontend/tests/helpers/examTestApi.mjs | 3503 | mjs | 70a62aad10bca1570dc83ae914020fb10dedb8d2a828f33d8dcaea470f2957e1
+frontend/tests/helpers/ownedProcess.mjs | 1226 | mjs | 18061e6aa968b1459e6ae927f022c9acc27c58fc0739806f1f97fa69b8037565
+frontend/tests/helpers/requestAudit.mjs | 6406 | mjs | 743f7eab05e4c2dae393ef1348bc852319c9466cdb50010d49ccce2556713389
+frontend/tests/lab12-errors.browser.mjs | 22596 | mjs | bf934103cf1bc6072e873fae56a405d39b1c6efe9a765f95fcd688ebf064f51e
+frontend/tests/movieAdapter.test.mjs | 2443 | mjs | a599ff9bc9680cd81a5be9cab82799344d317e7abd9ba3b856b8ccb2be07d1ee
+frontend/tests/premieresSection.browser.mjs | 15370 | mjs | 7f12780dcc00e185155dddb45faa3d2b485424ce71b1076f633f0bae22ebbe9c
+frontend/tests/requestAudit.test.mjs | 3920 | mjs | 1ff23c25d412613e5b752fd3370f96dd12b9e1849f777d8dc7127de5657f472b
+frontend/tests/sharedState.browser.mjs | 12237 | mjs | 291d2bf2276565c558a2c5616299462a71eef135bc1cc81f1022a5cdb8c9d299
+frontend/tests/techstore.browser.mjs | 29642 | mjs | a5aa339723b0e7305d43f4368f99d020afc401500c6d832460932d87790018b7
+frontend/tests/useDebounce.browser.mjs | 5358 | mjs | 8c07aa122c75dbab1726555529d957f5b1bb682c65a491fcc71cd9e8ad20e604
+frontend/tests/usePremieres.browser.mjs | 5591 | mjs | fd2872976151e6b793f021d0274cc18b03123f69a8d125aeac492ef121a906d9
+frontend/tests/useWindowSize.browser.mjs | 6566 | mjs | 9098cbb9811c10c7306ea614be179f87e29be686cf103abaeec1d7b6e47aa0a8
+frontend/tests/verify-publication.mjs | 2417 | mjs | 41ae6c8d31a89adc1d0f2635764fc49770f9f8084771de5b5df15cc3c5ab310f
+frontend/tests/verify-step7.mjs | 5749 | mjs | 76bf56a87bff8dbc94a97b5a96bb1bdb6c4d0a677d0c554b91b70cadd85f3d07
+frontend/vite.config.js | 224 | js | 1b10448787d4db58cce36080ba84d561cf8cb3203a98ec6ae2c8d1b6ce632f29
+
+EXCLUSIONES Y MOTIVOS
+- backend/.venv/, frontend/node_modules/: dependencias reconstruibles.
+- backend/db.sqlite3 y *.sqlite3*: datos locales; reconstruccion por migrate y seed.
+- backend/media/: medios locales; los ocho originales proceden de catalog/assets/demo/.
+- frontend/dist/: compilado reconstruible.
+- frontend/.npm-cache/, __pycache__/, .vite/, .cache/: caches.
+- frontend/evidencias/: salidas temporales de las suites heredadas; evidencia canonica en evidencias/01-03.
+- evidencias/*/.runtime/, .browser-profile/: logs, perfiles y capturas auxiliares no academicas.
+- .env y .env.* reales: configuracion privada; solo .env.example se incluye.
+- *.log, *.tmp, *.temp, *.bak y bases *.db: archivos temporales.
+
+PENDIENTES ANTES DE PUBLICAR
+- Cotejar el texto oficial de las tres capacidades y confirmar equipo si corresponde.
+- Autorizar expresamente la fase 05; revisar esta lista y agregar solo estas rutas.
+- No ejecutar git add ., ni publicar archivos externos a Lab13-DEA.
+- Verificar el README renderizado en GitHub solo despues de la publicacion autorizada.
